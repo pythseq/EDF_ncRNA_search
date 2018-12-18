@@ -1,0 +1,10 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+JNEH01002190          (null)               U6_snRNA               75.3     1e-20   1.7       5     113    -     18668   18563   18678   18557   70935   Cokeromyces recurvatus B5483 jtg7180000208165f_7180000208166f_1, whole genome shotgun sequence.
+JNEH01002553          (null)               U6_snRNA               74.6   1.7e-20   2.1       6     113    -     13343   13239   13353   13234   16268   Cokeromyces recurvatus B5483 jtg7180000207746f_7180000207747f_1, whole genome shotgun sequence.
+JNEH01002371          (null)               U6_snRNA                9.1       4.6   2.0       4      55    -     49865   49812   49868   49789   55762   Cokeromyces recurvatus B5483 jtg7180000207986f_7180000207987f_1, whole genome shotgun sequence.
+JNEH01001426          (null)               U6_snRNA                8.7       6.1   1.8       4      49    -     11900   11855   11903   11835   32576   Cokeromyces recurvatus B5483 ctg7180000207405_1, whole genome shotgun sequence.
+JNEH01002346          (null)               U6_snRNA                8.3       8.5   1.4      22      76    +     26765   26820   26748   26840   43055   Cokeromyces recurvatus B5483 jtg7180000207400f_7180000207401f_1, whole genome shotgun sequence.

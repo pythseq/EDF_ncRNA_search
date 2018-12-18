@@ -1,0 +1,133 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Mucor_racemosus_B9645.fasta
+# output directed to file:         results/U6_snRNA-vs-Mucor_racemosus_B9645.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Mucor_racemosus_B9645.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    1.1e-20   76.4   2.0  JNEI01003157   2845   2739  Mucor racemosus B9645 ctg7180000740983_1, whole genome shotgun s
+    2.2e-20   75.4   2.8  JNEI01006013   7758   7863  Mucor racemosus B9645 jtg7180000744015f_7180000744016f_1, whole 
+    5.8e-20   74.1   1.8  JNEI01002709  12896  12792  Mucor racemosus B9645 ctg7180000740410_1, whole genome shotgun s
+    5.8e-20   74.1   1.8  JNEI01003437  34156  34260  Mucor racemosus B9645 ctg7180000741291_1, whole genome shotgun s
+  ------ inclusion threshold ------
+        1.4   11.9   2.7  JNEI01005831   2360   2412  Mucor racemosus B9645 jtg7180000743216f_7180000743217f_1, whole 
+        5.6   10.0   1.6  JNEI01001075  12380  12441  Mucor racemosus B9645 ctg7180000738646_1, whole genome shotgun s
+
+
+Annotation for each hit  (and alignments):
+>> JNEI01003157  Mucor racemosus B9645 ctg7180000740983_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   76.4   2.0   1.1e-20         5       114 .]      2845      2739 ..      2853      2736 ..      7483    0.90
+
+  Alignment:
+  score: 76.4 bits
+      U6_snRNA    5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccct 99  
+                     cctc g   +c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g   gc ct
+  JNEI01003157 2845 ACCTCTG---GCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTCT 2754
+                    4556655...45567777889************************************************************************** PP
+
+      U6_snRNA  100 acggggcaagttttt 114 
+                    acgg gca  ttttt
+  JNEI01003157 2753 ACGGAGCACATTTTT 2739
+                    *******99987765 PP
+
+>> JNEI01006013  Mucor racemosus B9645 jtg7180000744015f_7180000744016f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   75.4   2.8   2.2e-20         6       114 .]      7758      7863 ..      7747      7866 ..     14392    0.89
+
+  Alignment:
+  score: 75.4 bits
+      U6_snRNA    6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgcccta 100 
+                    cctc+g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc cta
+  JNEI01006013 7758 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTCTA 7849
+                    444444...45567888899*************************************************************************** PP
+
+      U6_snRNA  101 cggggcaagttttt 114 
+                    cgg gca  ttttt
+  JNEI01006013 7850 CGGAGCACATTTTT 7863
+                    ******99987765 PP
+
+>> JNEI01002709  Mucor racemosus B9645 ctg7180000740410_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.1   1.8   5.8e-20         6       113 ..     12896     12792 ..     12906     12786 ..     57555    0.87
+
+  Alignment:
+  score: 74.1 bits
+      U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98   
+                     cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga g  tgc c
+  JNEI01002709 12896 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGACGGATGCTC 12807
+                     444444...45567788899************************************************************************* PP
+
+      U6_snRNA    99 tacggggcaag.tttt 113  
+                     tacgg gcaa  t tt
+  JNEI01002709 12806 TACGGAGCAACaT-TT 12792
+                     *******999852.33 PP
+
+>> JNEI01003437  Mucor racemosus B9645 ctg7180000741291_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.1   1.8   5.8e-20         6       113 ..     34156     34260 ..     34146     34266 ..     48345    0.87
+
+  Alignment:
+  score: 74.1 bits
+      U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98   
+                     cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga g  tgc c
+  JNEI01003437 34156 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGACGGATGCTC 34245
+                     444444...45567788899************************************************************************* PP
+
+      U6_snRNA    99 tacggggcaag.tttt 113  
+                     tacgg gcaa  t tt
+  JNEI01003437 34246 TACGGAGCAACaT-TT 34260
+                     *******999852.33 PP
+
+>> JNEI01005831  Mucor racemosus B9645 jtg7180000743216f_7180000743217f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.9   2.7       1.4        28        79 ..      2360      2412 ..      2349      2431 ..      6097    0.78
+
+  Alignment:
+  score: 11.9 bits
+      U6_snRNA   28 ttgaaacgatacagagaagattagcatggc.ccctgcgcaaggatgacacgct 79  
+                    t gaaa    a ag ga gatt gcatg c cc tg+ caaggatg  a g  
+  JNEI01005831 2360 TGGAAAGACAAGAGTGAGGATTTGCATGCCtCCATGTCCAAGGATGCTATGGA 2412
+                    44444444456688899*************9999***********97665554 PP
+
+>> JNEI01001075  Mucor racemosus B9645 ctg7180000738646_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.0   1.6       5.6        17        87 ..     12380     12441 ..     12369     12460 ..     21120    0.77
+
+  Alignment:
+  score: 10.0 bits
+      U6_snRNA    17 cattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactga 87   
+                       ttgg+a+  ttg+aacga acagagaagat a   tggc       caa g tgacacg   aa+c+ a
+  JNEI01001075 12380 TGTTGGAATCCTTGGAACGA-ACAGAGAAGATGAT-TTGGC-------CAATGTTGACACGAGCAACCAAA 12441
+                     56788999999*******98.8**********984.24444.......67888899999888777666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         4789  (129001086 residues searched)
+Residues passing SSV filter:           3169630  (0.0246); expected (0.02)
+Residues passing bias filter:          2766097  (0.0214); expected (0.02)
+Residues passing Vit filter:            304089  (0.00236); expected (0.003)
+Residues passing Fwd filter:             11688  (9.06e-05); expected (3e-05)
+Total number of hits:                        6  (4.17e-06)
+# CPU time: 7.01u 0.35s 00:00:07.36 Elapsed: 00:00:06.17
+# Mc/sec: 2383.49
+//
+[ok]

@@ -1,0 +1,237 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Mortierella_verticillata_NRRL_6337.fasta
+# output directed to file:         results/U6_snRNA-vs-Mortierella_verticillata_NRRL_6337.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Mortierella_verticillata_NRRL_6337.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence       start     end  Description
+    ------- ------ -----  --------       -----   -----  -----------
+    2.4e-17   66.0   3.5  AEVJ01000111   32871   32973  Mortierella verticillata NRRL 6337 cont1.111, whole genome sho
+    2.4e-17   66.0   3.5  KN042417     2190355 2190457  Mortierella verticillata NRRL 6337 unplaced genomic scaffold s
+  ------ inclusion threshold ------
+          4   10.8   0.0  AEVJ01000123  281965  282070  Mortierella verticillata NRRL 6337 cont1.123, whole genome sho
+          4   10.8   0.0  KN042417     3591050 3591155  Mortierella verticillata NRRL 6337 unplaced genomic scaffold s
+        5.3   10.4   0.0  AEVJ01000554   48987   48942  Mortierella verticillata NRRL 6337 cont1.554, whole genome sho
+        5.3   10.4   0.0  KN042428      607026  606981  Mortierella verticillata NRRL 6337 unplaced genomic scaffold s
+        6.3   10.2   0.2  AEVJ01000647   10009   10047  Mortierella verticillata NRRL 6337 cont1.647, whole genome sho
+        6.3   10.2   0.2  KN042434      410479  410517  Mortierella verticillata NRRL 6337 unplaced genomic scaffold s
+        7.5    9.9   1.2  AEVJ01000282   77056   77098  Mortierella verticillata NRRL 6337 cont1.282, whole genome sho
+        7.5    9.9   1.2  KN042420     1442707 1442749  Mortierella verticillata NRRL 6337 unplaced genomic scaffold s
+        8.9    9.7   0.9  AEVJ01000137  362531  362566  Mortierella verticillata NRRL 6337 cont1.137, whole genome sho
+        8.9    9.7   0.9  KN042417     4408841 4408876  Mortierella verticillata NRRL 6337 unplaced genomic scaffold s
+          9    9.7   0.7  AEVJ01000297   38522   38445  Mortierella verticillata NRRL 6337 cont1.297, whole genome sho
+          9    9.7   0.7  KN042420     2422937 2422860  Mortierella verticillata NRRL 6337 unplaced genomic scaffold s
+
+
+Annotation for each hit  (and alignments):
+>> AEVJ01000111  Mortierella verticillata NRRL 6337 cont1.111, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   66.0   3.5   2.4e-17        11       111 ..     32871     32973 ..     32862     32977 ..    153197    0.84
+
+  Alignment:
+  score: 66.0 bits
+      U6_snRNA    11 ggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacgg 103  
+                     g    c + t+ taaaa tg+aacgatacagagaagattagcatggcccctgc+caaggatgacacgc +a +++gag g+   gc ctacgg
+  AEVJ01000111 32871 GCCTACATATATTAAAAATGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGCATATCTAGAGCGAT-AGCACTACGG 32962
+                     5555566677788889999***********************************************************9865.5677888999 PP
+
+      U6_snRNA   104 ggcaag...tt 111  
+                      gcaa    tt
+  AEVJ01000111 32963 TGCAAActaTT 32973
+                     98887644433 PP
+
+>> KN042417  Mortierella verticillata NRRL 6337 unplaced genomic scaffold supercont1.2, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   66.0   3.5   2.4e-17        11       111 ..   2190355   2190457 ..   2190346   2190461 ..   4975777    0.84
+
+  Alignment:
+  score: 66.0 bits
+  U6_snRNA      11 ggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacgg 103    
+                   g    c + t+ taaaa tg+aacgatacagagaagattagcatggcccctgc+caaggatgacacgc +a +++gag g+   gc ctacgg
+  KN042417 2190355 GCCTACATATATTAAAAATGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGCATATCTAGAGCGAT-AGCACTACGG 2190446
+                   5555566677788889999***********************************************************9865.5677888999 PP
+
+  U6_snRNA     104 ggcaag...tt 111    
+                    gcaa    tt
+  KN042417 2190447 TGCAAActaTT 2190457
+                   98887644433 PP
+
+>> AEVJ01000123  Mortierella verticillata NRRL 6337 cont1.123, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.8   0.0         4        19        73 ..    281965    282070 ..    281950    282090 ..    291151    0.88
+
+  Alignment:
+  score: 10.8 bits
+      U6_snRNA     19 ttggtaaaattgaaacgatacagagaagat.....................................................tagcatgg 56    
+                        +g+a aat g+a +gat  agagaa a                                                       agcatgg
+  AEVJ01000123 281965 AAAGAAGAATAGGAGAGATCGAGAGAAAAAggcgagacccagtcttcttttctgttctcttttctctttccaatgcgagctggGAGCATGG 282055
+                      45667788999999999999999999988899999999***************************************************** PP
+
+      U6_snRNA     57 cccctgcgcaaggatga 73    
+                      c  ctg+ caaggatga
+  AEVJ01000123 282056 C--CTGTTCAAGGATGA 282070
+                      6..7***********98 PP
+
+>> KN042417  Mortierella verticillata NRRL 6337 unplaced genomic scaffold supercont1.2, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.8   0.0         4        19        73 ..   3591050   3591155 ..   3591035   3591175 ..   4975777    0.88
+
+  Alignment:
+  score: 10.8 bits
+  U6_snRNA      19 ttggtaaaattgaaacgatacagagaagat.....................................................tagcatggcc 58     
+                     +g+a aat g+a +gat  agagaa a                                                       agcatggc 
+  KN042417 3591050 AAAGAAGAATAGGAGAGATCGAGAGAAAAAggcgagacccagtcttcttttctgttctcttttctctttccaatgcgagctggGAGCATGGC- 3591141
+                   45667788999999999999999999988899999999*****************************************************6. PP
+
+  U6_snRNA      59 cctgcgcaaggatga 73     
+                    ctg+ caaggatga
+  KN042417 3591142 -CTGTTCAAGGATGA 3591155
+                   .7***********98 PP
+
+>> AEVJ01000554  Mortierella verticillata NRRL 6337 cont1.554, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.4   0.0       5.3        29        74 ..     48987     48942 ..     49007     48924 ..    224347    0.86
+
+  Alignment:
+  score: 10.4 bits
+      U6_snRNA    29 tgaaacgatacagagaagattagcatggcccctgcg.caaggatgac 74   
+                      gaa +gatacaga  agat agc tggc   tgcg caa gatg c
+  AEVJ01000554 48987 GGAACAGATACAGAAGAGATGAGCCTGGC-AATGCGtCAAAGATGGC 48942
+                     578999*********************97.46999999999999855 PP
+
+>> KN042428  Mortierella verticillata NRRL 6337 unplaced genomic scaffold supercont1.13, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.4   0.0       5.3        29        74 ..    607026    606981 ..    607046    606963 ..   1257480    0.86
+
+  Alignment:
+  score: 10.4 bits
+  U6_snRNA     29 tgaaacgatacagagaagattagcatggcccctgcg.caaggatgac 74    
+                   gaa +gatacaga  agat agc tggc   tgcg caa gatg c
+  KN042428 607026 GGAACAGATACAGAAGAGATGAGCCTGGC-AATGCGtCAAAGATGGC 606981
+                  578999*********************97.46999999999999855 PP
+
+>> AEVJ01000647  Mortierella verticillata NRRL 6337 cont1.647, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.2   0.2       6.3        62       100 ..     10009     10047 ..      9999     10056 ..     16849    0.82
+
+  Alignment:
+  score: 10.2 bits
+      U6_snRNA    62 gcgcaaggatgacacgctaaaactgagaggattgcccta 100  
+                       gcaaggatgacac ++++  +tgag g+a  + cct 
+  AEVJ01000647 10009 CAGCAAGGATGACACATATTGCTTGAGCGAAGCTGCCTC 10047
+                     4469*************************9988777665 PP
+
+>> KN042434  Mortierella verticillata NRRL 6337 unplaced genomic scaffold supercont1.19, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.2   0.2       6.3        62       100 ..    410479    410517 ..    410469    410526 ..    423492    0.82
+
+  Alignment:
+  score: 10.2 bits
+  U6_snRNA     62 gcgcaaggatgacacgctaaaactgagaggattgcccta 100   
+                    gcaaggatgacac ++++  +tgag g+a  + cct 
+  KN042434 410479 CAGCAAGGATGACACATATTGCTTGAGCGAAGCTGCCTC 410517
+                  4469*************************9988777665 PP
+
+>> AEVJ01000282  Mortierella verticillata NRRL 6337 cont1.282, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.9   1.2       7.5        22        59 ..     77056     77098 ..     77037     77118 ..     89047    0.77
+
+  Alignment:
+  score: 9.9 bits
+      U6_snRNA    22 gtaaaattgaaacgatacagagaagat.....tagcatggccc 59   
+                      ta aattg+a+cga ac gaga gat     tagcat  c c
+  AEVJ01000282 77056 TTACAATTGGATCGAAACGGAGACGATacgttTAGCATCTCTC 77098
+                     345789******************9975555589998876644 PP
+
+>> KN042420  Mortierella verticillata NRRL 6337 unplaced genomic scaffold supercont1.5, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.9   1.2       7.5        22        59 ..   1442707   1442749 ..   1442688   1442769 ..   3211776    0.77
+
+  Alignment:
+  score: 9.9 bits
+  U6_snRNA      22 gtaaaattgaaacgatacagagaagat.....tagcatggccc 59     
+                    ta aattg+a+cga ac gaga gat     tagcat  c c
+  KN042420 1442707 TTACAATTGGATCGAAACGGAGACGATacgttTAGCATCTCTC 1442749
+                   345789******************9975555589998876644 PP
+
+>> AEVJ01000137  Mortierella verticillata NRRL 6337 cont1.137, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.7   0.9       8.9        16        51 ..    362531    362566 ..    362520    362583 ..    395157    0.83
+
+  Alignment:
+  score: 9.7 bits
+      U6_snRNA     16 ccattggtaaaattgaaacgatacagagaagattag 51    
+                      + +t+ggt+a +ttgaa+  atacaga a gat ag
+  AEVJ01000137 362531 TTTTCGGTCATTTTGAATAAATACAGACAGGATCAG 362566
+                      4578899**************************987 PP
+
+>> KN042417  Mortierella verticillata NRRL 6337 unplaced genomic scaffold supercont1.2, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.7   0.9       8.9        16        51 ..   4408841   4408876 ..   4408830   4408893 ..   4975777    0.83
+
+  Alignment:
+  score: 9.7 bits
+  U6_snRNA      16 ccattggtaaaattgaaacgatacagagaagattag 51     
+                   + +t+ggt+a +ttgaa+  atacaga a gat ag
+  KN042417 4408841 TTTTCGGTCATTTTGAATAAATACAGACAGGATCAG 4408876
+                   4578899**************************987 PP
+
+>> AEVJ01000297  Mortierella verticillata NRRL 6337 cont1.297, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.7   0.7         9        12        57 ..     38522     38445 ..     38532     38425 ..     90244    0.82
+
+  Alignment:
+  score: 9.7 bits
+      U6_snRNA    12 gagcccattggtaaaattgaaacgatacagagaagat................................tagcatggc 57   
+                     g  c +at++g a+aattg a+cga acag ga gat                                 agcat gc
+  AEVJ01000297 38522 GGTCAAATCAGCATAATTGTATCGAAACAGCGACGATatcggggtgctgttgtagatgcccccaaacatCAGCATAGC 38445
+                     456678899999************************999999999999999988888888888888888777777666 PP
+
+>> KN042420  Mortierella verticillata NRRL 6337 unplaced genomic scaffold supercont1.5, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.7   0.7         9        12        57 ..   2422937   2422860 ..   2422947   2422840 ..   3211776    0.82
+
+  Alignment:
+  score: 9.7 bits
+  U6_snRNA      12 gagcccattggtaaaattgaaacgatacagagaagat................................tagcatggc 57     
+                   g  c +at++g a+aattg a+cga acag ga gat                                 agcat gc
+  KN042420 2422937 GGTCAAATCAGCATAATTGTATCGAAACAGCGACGATatcggggtgctgttgtagatgcccccaaacatCAGCATAGC 2422860
+                   456678899999************************999999999999999988888888888888888777777666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          757  (165575792 residues searched)
+Residues passing SSV filter:           4033398  (0.0244); expected (0.02)
+Residues passing bias filter:          3950059  (0.0239); expected (0.02)
+Residues passing Vit filter:            524165  (0.00317); expected (0.003)
+Residues passing Fwd filter:             30124  (0.000182); expected (3e-05)
+Total number of hits:                       14  (5.45e-06)
+# CPU time: 9.00u 0.46s 00:00:09.46 Elapsed: 00:00:06.36
+# Mc/sec: 2967.87
+//
+[ok]

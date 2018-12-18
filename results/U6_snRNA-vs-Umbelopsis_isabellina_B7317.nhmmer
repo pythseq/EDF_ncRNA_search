@@ -1,0 +1,92 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Umbelopsis_isabellina_B7317.fasta
+# output directed to file:         results/U6_snRNA-vs-Umbelopsis_isabellina_B7317.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Umbelopsis_isabellina_B7317.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    2.1e-17   64.3   3.1  JNEQ01000055   2230   2140  Umbelopsis isabellina B7317 jtg7180000025233f_7180000025234f_1, 
+  ------ inclusion threshold ------
+        2.2    9.8   1.1  JNEQ01000054  24106  23953  Umbelopsis isabellina B7317 jtg7180000025275f_7180000025276f_1, 
+        2.9    9.4   1.1  JNEQ01000055 991726 991769  Umbelopsis isabellina B7317 jtg7180000025233f_7180000025234f_1, 
+        9.8    7.7   2.2  JNEQ01000052 541825 541803  Umbelopsis isabellina B7317 ctg7180000025278_1, whole genome sho
+
+
+Annotation for each hit  (and alignments):
+>> JNEQ01000055  Umbelopsis isabellina B7317 jtg7180000025233f_7180000025234f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   64.3   3.1   2.1e-17         5        96 ..      2230      2140 ..      2233      2119 ..   1677896    0.83
+
+  Alignment:
+  score: 64.3 bits
+      U6_snRNA    5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgc 96  
+                    tcct+cgg  c ca t+  aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac+     +ctgaga gat g 
+  JNEQ01000055 2230 TCCTTCGGGACACA-TAACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAGCCTCTGAGATGATAGT 2140
+                    44455554444444.45567999***********************************************************9987776554 PP
+
+>> JNEQ01000054  Umbelopsis isabellina B7317 jtg7180000025275f_7180000025276f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.8   1.1       2.2        36        80 ..     24106     23953 ..     24126     23933 ..   1637904    0.82
+
+  Alignment:
+  score: 9.8 bits
+      U6_snRNA    36 atacagagaagat................................................................................ 48   
+                     ata agagaa at                                                                                
+  JNEQ01000054 24106 ATATAGAGAATATtgaaactacctttggctatgtttcttgtagaattcggcaagcttttctccgtcagcttccttgatctaatttatagaatt 24014
+                     677778888877788888888888888888888888888888888888888888888888888888888888888888888888888888888 PP
+
+      U6_snRNA    49 .............................tagcatggcccctgcgcaaggatgacacgcta 80   
+                                                  tagca ggc c tg + aag atgacac  + 
+  JNEQ01000054 24013 tagtgagtttacagctgtactaaaaccttTAGCAGGGCACTTGGAAAAGAATGACACTTAC 23953
+                     888888888888888888888888888889**************************98765 PP
+
+>> JNEQ01000055  Umbelopsis isabellina B7317 jtg7180000025233f_7180000025234f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.4   1.1       2.9        44        92 ..    991726    991769 ..    991713    991789 ..   1677896    0.84
+
+  Alignment:
+  score: 9.4 bits
+      U6_snRNA     44 aagattagcatggcccctgcgcaaggatgacacgctaaaactgagagga 92    
+                      aagat agcatggc c     caag atgac  gc+a +++t aga +a
+  JNEQ01000055 991726 AAGATCAGCATGGCTC-----CAAGTATGACTTGCAATCTTTCAGAAAA 991769
+                      79************66.....49***********999999988887554 PP
+
+>> JNEQ01000052  Umbelopsis isabellina B7317 ctg7180000025278_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    7.7   2.2       9.8        31        53 ..    541825    541803 ..    541845    541795 ..    747571    0.81
+
+  Alignment:
+  score: 7.7 bits
+      U6_snRNA     31 aaacgatacagagaagattagca 53    
+                       a+cgatacagagaaga  agca
+  JNEQ01000052 541825 TATCGATACAGAGAAGACCAGCA 541803
+                      4789****************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                           43  (43727894 residues searched)
+Residues passing SSV filter:            961338  (0.022); expected (0.02)
+Residues passing bias filter:           909912  (0.0208); expected (0.02)
+Residues passing Vit filter:             94679  (0.00217); expected (0.003)
+Residues passing Fwd filter:              4563  (0.000104); expected (3e-05)
+Total number of hits:                        4  (7.14e-06)
+# CPU time: 2.24u 0.14s 00:00:02.38 Elapsed: 00:00:01.38
+# Mc/sec: 3612.30
+//
+[ok]

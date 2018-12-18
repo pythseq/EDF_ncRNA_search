@@ -1,0 +1,70 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Cunninghamella_elegans_B9769.fasta
+# output directed to file:         results/U6_snRNA-vs-Cunninghamella_elegans_B9769.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Cunninghamella_elegans_B9769.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+      2e-19   71.3   1.9  JNDR01001292  44520  44421  Cunninghamella elegans B9769 jtg7180000172187f_7180000172188f_1,
+    2.1e-19   71.3   1.8  JNDR01001062 335911 335812  Cunninghamella elegans B9769 ctg7180000172190_1, whole genome sh
+
+
+Annotation for each hit  (and alignments):
+>> JNDR01001292  Cunninghamella elegans B9769 jtg7180000172187f_7180000172188f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.3   1.9     2e-19        16       114 .]     44520     44421 ..     44539     44419 ..     74870    0.89
+
+  Alignment:
+  score: 71.3 bits
+      U6_snRNA    16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgccctacggggca 107  
+                     c+ t++ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga gga  gc ctacgg gc+
+  JNDR01001292 44520 CACTCATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGAtGGAACGCTCTACGGAGCC 44428
+                     4556777889**************************************************************95488999999********** PP
+
+      U6_snRNA   108 agttttt 114  
+                     a ttttt
+  JNDR01001292 44427 ACTTTTT 44421
+                     9988775 PP
+
+>> JNDR01001062  Cunninghamella elegans B9769 ctg7180000172190_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.3   1.8   2.1e-19        16       114 .]    335911    335812 ..    335927    335810 ..    507483    0.90
+
+  Alignment:
+  score: 71.3 bits
+      U6_snRNA     16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgccctacgggg 105   
+                      c+ t++ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga gga  gc ctacgg g
+  JNDR01001062 335911 CACTCATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGAtGGAACGCTCTACGGAG 335821
+                      4556777889**************************************************************95488999999******** PP
+
+      U6_snRNA    106 caagttttt 114   
+                      c+a ttttt
+  JNDR01001062 335820 CCACTTTTT 335812
+                      **9988775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          889  (62950324 residues searched)
+Residues passing SSV filter:           1659636  (0.0264); expected (0.02)
+Residues passing bias filter:          1196373  (0.019); expected (0.02)
+Residues passing Vit filter:            102198  (0.00162); expected (0.003)
+Residues passing Fwd filter:              2578  (4.1e-05); expected (3e-05)
+Total number of hits:                        2  (3.18e-06)
+# CPU time: 3.25u 0.30s 00:00:03.55 Elapsed: 00:00:06.27
+# Mc/sec: 1144.55
+//
+[ok]

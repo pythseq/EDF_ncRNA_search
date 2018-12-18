@@ -1,0 +1,61 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Coemansia_mojavensis_RSA_71.Coemoj1.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Coemansia_mojavensis_RSA_71.Coemoj1.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Coemansia_mojavensis_RSA_71.Coemoj1.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence     start    end  Description
+    ------- ------ -----  --------     -----  -----  -----------
+    2.2e-13   50.8   1.9  scaffold_10 518722 518641  
+  ------ inclusion threshold ------
+        3.4    8.5   2.4  scaffold_1  243106 243129  
+
+
+Annotation for each hit  (and alignments):
+>> scaffold_10  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   50.8   1.9   2.2e-13        23       102 ..    518722    518641 ..    518742    518622 ..    686393    0.76
+
+  Alignment:
+  score: 50.8 bits
+     U6_snRNA     23 taaaattgaaacgatacagagaagattagcatggc..ccctgcgcaaggatgacacgctaaaactgagaggattgccctacg 102   
+                     +a aatt   acgatacagagaagattagcatg    ccctgcgcaaggatgacacg t a ++tgaga ga   cc ++c 
+  scaffold_10 518722 AAGAATTATTACGATACAGAGAAGATTAGCATGTTctCCCTGCGCAAGGATGACACGTTTATCTTGAGAAGAAATCCTCTCC 518641
+                     344555666689*********************86689******************************99888777766543 PP
+
+>> scaffold_1  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.5   2.4       3.4        35        58 ..    243106    243129 ..    243086    243149 ..   1667697    0.88
+
+  Alignment:
+  score: 8.5 bits
+    U6_snRNA     35 gatacagagaagattagcatggcc 58    
+                    g tacagagaa at agcatggcc
+  scaffold_1 243106 GCTACAGAGAATATAAGCATGGCC 243129
+                    5589******************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                           55  (28582892 residues searched)
+Residues passing SSV filter:            479323  (0.0168); expected (0.02)
+Residues passing bias filter:           467191  (0.0163); expected (0.02)
+Residues passing Vit filter:             65971  (0.00231); expected (0.003)
+Residues passing Fwd filter:              2691  (9.41e-05); expected (3e-05)
+Total number of hits:                        2  (3.71e-06)
+# CPU time: 1.41u 0.12s 00:00:01.52 Elapsed: 00:00:01.95
+# Mc/sec: 1671.00
+//
+[ok]

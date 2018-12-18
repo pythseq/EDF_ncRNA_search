@@ -1,0 +1,123 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Mortierella_alpina_B6842.fasta
+# output directed to file:         results/U6_snRNA-vs-Mortierella_alpina_B6842.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Mortierella_alpina_B6842.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    1.8e-20   75.0   1.6  AZCI01000531   7510   7612  Mortierella alpina B6842 WGS:AZCI01:ctg7180000083989, whole geno
+    1.8e-20   75.0   1.6  AZCI01000577   9881   9983  Mortierella alpina B6842 WGS:AZCI01:ctg7180000084047, whole geno
+  ------ inclusion threshold ------
+       0.96   11.7   0.6  AZCI01001078  44246  44202  Mortierella alpina B6842 WGS:AZCI01:jtg7180000084703f_7180000084
+        1.6   11.1   1.0  AZCI01001089  28642  28576  Mortierella alpina B6842 WGS:AZCI01:jtg7180000084444f_7180000084
+        3.4   10.0   0.7  AZCI01001023  30475  30540  Mortierella alpina B6842 WGS:AZCI01:jtg7180000084613f_7180000084
+        4.8    9.5   0.7  AZCI01001147  29708  29663  Mortierella alpina B6842 WGS:AZCI01:jtg7180000084381f_7180000084
+
+
+Annotation for each hit  (and alignments):
+>> AZCI01000531  Mortierella alpina B6842 WGS:AZCI01:ctg7180000083989, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   75.0   1.6   1.8e-20         8       109 ..      7510      7612 ..      7504      7620 ..      7743    0.83
+
+  Alignment:
+  score: 75.0 bits
+      U6_snRNA    8 tccggagcccat.tggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctac 101 
+                    tc+g  ++ cat t   aaaa tg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg+taaa++tgag+gg t gccctac
+  AZCI01000531 7510 TCGGCGCTACATaTTTCAAAAATGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTTAAACTTGAGTGGTTAGCCCTAC 7604
+                    55554444443312233456778999********************************************************************* PP
+
+      U6_snRNA  102 ggggcaag 109 
+                    ggggca  
+  AZCI01000531 7605 GGGGCACA 7612
+                    ***99765 PP
+
+>> AZCI01000577  Mortierella alpina B6842 WGS:AZCI01:ctg7180000084047, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   75.0   1.6   1.8e-20         8       109 ..      9881      9983 ..      9875      9991 ..     10114    0.83
+
+  Alignment:
+  score: 75.0 bits
+      U6_snRNA    8 tccggagcccat.tggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctac 101 
+                    tc+g  ++ cat t   aaaa tg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg+taaa++tgag+gg t gccctac
+  AZCI01000577 9881 TCGGCGCTACATaTTTCAAAAATGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTTAAACTTGAGTGGTTAGCCCTAC 9975
+                    55554444443312233456778999********************************************************************* PP
+
+      U6_snRNA  102 ggggcaag 109 
+                    ggggca  
+  AZCI01000577 9976 GGGGCACA 9983
+                    ***99765 PP
+
+>> AZCI01001078  Mortierella alpina B6842 WGS:AZCI01:jtg7180000084703f_7180000084704f, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.7   0.6      0.96        34        78 ..     44246     44202 ..     44267     44182 ..    122002    0.78
+
+  Alignment:
+  score: 11.7 bits
+      U6_snRNA    34 cgatacagagaagattagcatggc.ccctgcgcaaggatgacacgc 78   
+                     cga ac g gaag t ag atg   ccctg+ caaggatg  ac  
+  AZCI01001078 44246 CGA-ACCGTGAAGTTGAGTATGTTcCCCTGTCCAAGGATGTAACAG 44202
+                     443.67899*************9879*************9655543 PP
+
+>> AZCI01001089  Mortierella alpina B6842 WGS:AZCI01:jtg7180000084444f_7180000084445f, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.1   1.0       1.6        18        78 ..     28642     28576 ..     28660     28557 ..    120071    0.80
+
+  Alignment:
+  score: 11.1 bits
+      U6_snRNA    18 attggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaagga.......tgacacgc 78   
+                     + ++g+aa   tgaa  gataca  ga gat agcat gcc ctg + aagga       tgacac+ 
+  AZCI01001089 28642 TCCAGAAACGCTGAACGGATACATCGAGGAT-AGCATCGCCTCTGGAGAAGGActcgaggTGACACTG 28576
+                     44566777788999*************9*96.9******************98666666667777765 PP
+
+>> AZCI01001023  Mortierella alpina B6842 WGS:AZCI01:jtg7180000084613f_7180000084614f_7180000084615f, whole genome shotg
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.0   0.7       3.4        11        74 ..     30475     30540 ..     30466     30561 ..     40834    0.69
+
+  Alignment:
+  score: 10.0 bits
+      U6_snRNA    11 ggagcccattggtaaaattgaaacgatacagagaagat.......tagcatggcccctgcgcaaggatgac 74   
+                     g  + ccat+g  +  +ttg aacga acagagaaga        t gcatg c  ct   caagg  gac
+  AZCI01001023 30475 G--CGCCATCGCGCGTTTTGTAACGAGACAGAGAAGAAgatattcTTGCATGTCGACT---CAAGGTAGAC 30540
+                     4..35677788888999*****************998622233334477777663333...5666655555 PP
+
+>> AZCI01001147  Mortierella alpina B6842 WGS:AZCI01:jtg7180000084381f_7180000084382f, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.5   0.7       4.8        12        57 ..     29708     29663 ..     29718     29651 ..    225892    0.83
+
+  Alignment:
+  score: 9.5 bits
+      U6_snRNA    12 gagcccattggtaaaattgaaacgatacagagaagattagcatggc 57   
+                     gag ccat+ g +aa ttgaaa g   cagaga gattagc  g c
+  AZCI01001147 29708 GAGGCCATCCGCCAAGTTGAAATGCATCAGAGATGATTAGCGAGTC 29663
+                     566789999999****************************966655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          838  (78652742 residues searched)
+Residues passing SSV filter:           1684193  (0.0214); expected (0.02)
+Residues passing bias filter:          1669804  (0.0212); expected (0.02)
+Residues passing Vit filter:            226746  (0.00288); expected (0.003)
+Residues passing Fwd filter:              9764  (0.000124); expected (3e-05)
+Total number of hits:                        6  (5.47e-06)
+# CPU time: 4.08u 0.23s 00:00:04.31 Elapsed: 00:00:02.68
+# Mc/sec: 3345.68
+//
+[ok]

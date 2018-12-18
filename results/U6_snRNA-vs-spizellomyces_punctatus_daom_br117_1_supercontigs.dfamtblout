@@ -1,0 +1,10 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+Supercontig_1.6       (null)               U6_snRNA               80.3   2.4e-22   1.1       3     110    -   1104832 1104724 1104834 1104720 1496661   of Spizellomyces punctatus DAOM BR117
+Supercontig_1.4       (null)               U6_snRNA               80.0     3e-22   1.2       3     110    -    391630  391522  391633  391518 1741622   of Spizellomyces punctatus DAOM BR117
+Supercontig_1.14      (null)               U6_snRNA               11.0         1   0.6      45      91    +    476015  476061  476009  476075  636814   of Spizellomyces punctatus DAOM BR117
+Supercontig_1.1       (null)               U6_snRNA               10.1       1.9   0.6      51      82    -   1917860 1917830 1917880 1917811 2242449   of Spizellomyces punctatus DAOM BR117
+Supercontig_1.6       (null)               U6_snRNA                9.7       2.5   1.2      19      53    +    671458  671498  671445  671518 1496661   of Spizellomyces punctatus DAOM BR117

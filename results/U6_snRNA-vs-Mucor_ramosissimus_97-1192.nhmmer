@@ -1,0 +1,324 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Mucor_ramosissimus_97-1192.fasta
+# output directed to file:         results/U6_snRNA-vs-Mucor_ramosissimus_97-1192.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Mucor_ramosissimus_97-1192.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    2.4e-20   74.7   2.5  JNEF01003088   7709   7812  Mucor ramosissimus 97-1192 jcf7180000648589_3, whole genome shot
+    2.6e-20   74.6   2.6  JNEF01002587  19387  19491  Mucor ramosissimus 97-1192 jcf7180000648310_2, whole genome shot
+    9.4e-19   69.6   2.9  JNEF01002734    535    432  Mucor ramosissimus 97-1192 jcf7180000648419_1, whole genome shot
+    1.2e-18   69.3   1.4  JNEF01003087  86215  86112  Mucor ramosissimus 97-1192 jcf7180000648589_2, whole genome shot
+      4e-16   61.1   2.9  JNEF01002998  23490  23562  Mucor ramosissimus 97-1192 jcf7180000648554_5, whole genome shot
+    4.5e-16   61.0   4.2  JNEF01002607   7392   7297  Mucor ramosissimus 97-1192 jcf7180000648322_3, whole genome shot
+    5.5e-15   57.5   6.4  JNEF01002840   2154   2059  Mucor ramosissimus 97-1192 jcf7180000648482_2, whole genome shot
+    4.2e-13   51.5   2.7  JNEF01002494  87222  87136  Mucor ramosissimus 97-1192 jcf7180000648230_1, whole genome shot
+    4.4e-13   51.4   2.7  JNEF01004240  47868  47798  Mucor ramosissimus 97-1192 jcf7180000648805_64, whole genome sho
+    3.7e-12   48.4   6.7  JNEF01002786  53817  53719  Mucor ramosissimus 97-1192 jcf7180000648454_1, whole genome shot
+    4.6e-11   44.9   3.6  JNEF01002363   7945   7853  Mucor ramosissimus 97-1192 jcf7180000648126_1, whole genome shot
+    4.8e-06   28.8   7.4  JNEF01004063  11819  11722  Mucor ramosissimus 97-1192 jcf7180000648768_36, whole genome sho
+    5.6e-06   28.6   1.4  JNEF01003438  89605  89547  Mucor ramosissimus 97-1192 jcf7180000648711_4, whole genome shot
+    4.5e-05   25.7   2.7  JNEF01003735 251452 251391  Mucor ramosissimus 97-1192 jcf7180000648755_4, whole genome shot
+    6.8e-05   25.1   2.4  JNEF01003021 134353 134412  Mucor ramosissimus 97-1192 jcf7180000648562_9, whole genome shot
+  ------ inclusion threshold ------
+      0.076   15.4   1.5  JNEF01002779  14853  14800  Mucor ramosissimus 97-1192 jcf7180000648449_1, whole genome shot
+        2.6   10.4   0.7  JNEF01003007   7804   8007  Mucor ramosissimus 97-1192 jcf7180000648558_2, whole genome shot
+          5    9.5   1.6  JNEF01004000   2902   2932  Mucor ramosissimus 97-1192 jcf7180000648764_17, whole genome sho
+
+
+Annotation for each hit  (and alignments):
+>> JNEF01003088  Mucor ramosissimus 97-1192 jcf7180000648589_3, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.7   2.5   2.4e-20         7       113 ..      7709      7812 ..      7701      7817 ..     63709    0.89
+
+  Alignment:
+  score: 74.7 bits
+      U6_snRNA    7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctac 101 
+                    ctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g   gc ctac
+  JNEF01003088 7709 CTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTCTAC 7800
+                    45555...56677888899**************************************************************************** PP
+
+      U6_snRNA  102 ggggcaag.tttt 113 
+                    gg gcaa  t tt
+  JNEF01003088 7801 GGAGCAACaT-TT 7812
+                    *****99852.33 PP
+
+>> JNEF01002587  Mucor ramosissimus 97-1192 jcf7180000648310_2, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.6   2.6   2.6e-20         6       113 ..     19387     19491 ..     19382     19496 ..     30484    0.89
+
+  Alignment:
+  score: 74.6 bits
+      U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98   
+                     cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc c
+  JNEF01002587 19387 CCTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTC 19476
+                     566666...56677888889************************************************************************* PP
+
+      U6_snRNA    99 tacggggcaag.tttt 113  
+                     tacgg gcaa  t tt
+  JNEF01002587 19477 TACGGAGCAACaT-TT 19491
+                     ********99852.33 PP
+
+>> JNEF01002734  Mucor ramosissimus 97-1192 jcf7180000648419_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   69.6   2.9   9.4e-19         7       113 ..       535       432 ..       542       429 ..      3172    0.89
+
+  Alignment:
+  score: 69.6 bits
+      U6_snRNA   7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacgg 103
+                   ctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccct c+caaggatgacac   a  +ctgaga g   gc ctacgg
+  JNEF01002734 535 CTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTACACAAGGATGACACTAAATCTCTGAGAAGGCAGCTCTACGG 442
+                   55555...56677888899****************************************************************************** PP
+
+      U6_snRNA 104 ggcaagtttt 113
+                    gcaa  ttt
+  JNEF01002734 441 AGCAACATTT 432
+                   ***9984433 PP
+
+>> JNEF01003087  Mucor ramosissimus 97-1192 jcf7180000648589_2, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   69.3   1.4   1.2e-18         7       113 ..     86215     86112 ..     86222     86109 ..    145905    0.90
+
+  Alignment:
+  score: 69.3 bits
+      U6_snRNA     7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccct 99   
+                     ctc g    c+ ttg taaaattg+aacgat cagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g   gc ct
+  JNEF01003087 86215 CTCTG---TCACTTGTTAAAATTGGAACGATGCAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTGAATCTCTGAGAAGGAAGCTCT 86126
+                     45544...6677899999*************************************************************************** PP
+
+      U6_snRNA   100 acggggcaagtttt 113  
+                     a gg gca+  ttt
+  JNEF01003087 86125 ATGGAGCATCATTT 86112
+                     *9999999874433 PP
+
+>> JNEF01002998  Mucor ramosissimus 97-1192 jcf7180000648554_5, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   61.1   2.9     4e-16         5        80 ..     23490     23562 ..     23486     23582 ..     90618    0.88
+
+  Alignment:
+  score: 61.1 bits
+      U6_snRNA     5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgcta 80   
+                     +cctc g    c  tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a
+  JNEF01002998 23490 GCCTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAA 23562
+                     5666666...56677788889**************************************************98765 PP
+
+>> JNEF01002607  Mucor ramosissimus 97-1192 jcf7180000648322_3, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   61.0   4.2   4.5e-16        16       110 ..      7392      7297 ..      7405      7291 ..     83957    0.86
+
+  Alignment:
+  score: 61.0 bits
+      U6_snRNA   16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaag. 109 
+                    c  tt+ t a attg+aacgatacagagaagattagcatggcccctgc+ aaggatgaca    a ++ctgaga g   gc ctacg   caa  
+  JNEF01002607 7392 CACTTATTGAGATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCAAAAGGATGACAGTAAATCTCTGAGAAGGAAGCTCTACGAAACAACa 7298
+                    455667777899****************************************************************9999999999888777764 PP
+
+      U6_snRNA  110 t 110 
+                    t
+  JNEF01002607 7297 T 7297
+                    2 PP
+
+>> JNEF01002840  Mucor ramosissimus 97-1192 jcf7180000648482_2, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   57.5   6.4   5.5e-15        15       110 ..      2154      2059 ..      2167      2055 ..     25077    0.91
+
+  Alignment:
+  score: 57.5 bits
+      U6_snRNA   15 cccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaag 109 
+                     c  tt+ taaaattg+aa  ata agagaagattagcat gcccctg++caaggatgacac   a + ctgaga ga  g  ctacgg gca  
+  JNEF01002840 2154 TCACTTATTAAAATTGGAAGAATATAGAGAAGATTAGCATAGCCCCTGTACAAGGATGACACTAAATCTCTGAGAAGAAAGTTCTACGGAGCAGC 2060
+                    55667788899*****************************************************************************9999876 PP
+
+      U6_snRNA  110 t 110 
+                     
+  JNEF01002840 2059 A 2059
+                    4 PP
+
+>> JNEF01002494  Mucor ramosissimus 97-1192 jcf7180000648230_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   51.5   2.7   4.2e-13         6        95 ..     87222     87136 ..     87227     87116 ..    121618    0.82
+
+  Alignment:
+  score: 51.5 bits
+      U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattg 95   
+                     cctc g    c+ t + taaaattg+aacgatacagagaagattag atg cccctgc+caaggatg cac   a +act a ag attg
+  JNEF01002494 87222 CCTCTG---TCACTGATTAAAATTGGAACGATACAGAGAAGATTAGTATGACCCCTGCACAAGGATGGCACTAAATCACTTACAGCATTG 87136
+                     566666...4444556677899*************************************************9998888887776665554 PP
+
+>> JNEF01004240  Mucor ramosissimus 97-1192 jcf7180000648805_64, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   51.4   2.7   4.4e-13         7        80 ..     47868     47798 ..     47875     47777 ..     81460    0.88
+
+  Alignment:
+  score: 51.4 bits
+      U6_snRNA     7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgcta 80   
+                     ctc+g   +c  ttg taaaatt +aacgatacagaga gattagcat gcccctgc+caaggatgacac    
+  JNEF01004240 47868 CTCTG---TCACTTGTTAAAATTAGAACGATACAGAGAGGATTAGCATAGCCCCTGCACAAGGATGACACTACC 47798
+                     45544...66778899999**************************************************98665 PP
+
+>> JNEF01002786  Mucor ramosissimus 97-1192 jcf7180000648454_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   48.4   6.7   3.7e-12         8       109 ..     53817     53719 ..     53825     53715 ..     55700    0.90
+
+  Alignment:
+  score: 48.4 bits
+      U6_snRNA     8 tccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgcccta 100  
+                     tc g    c  tt+ taaaattg+aacga acaga aa attagcat   ccctg+++aaggatgacac   a ++ctgaga g    c cta
+  JNEF01002786 53817 TCTG---TCACTTATTAAAATTGGAACGAGACAGAAAATATTAGCATTATCCCTGTATAAGGATGACACTAAATCTCTGAGAAGGAAACTCTA 53728
+                     5544...56667788889*************************************************************************** PP
+
+      U6_snRNA   101 cggggcaag 109  
+                     cgg gcaa 
+  JNEF01002786 53727 CGGAGCAAC 53719
+                     **9998765 PP
+
+>> JNEF01002363  Mucor ramosissimus 97-1192 jcf7180000648126_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   44.9   3.6   4.6e-11         6       103 ..      7945      7853 ..      7951      7844 ..     35219    0.72
+
+  Alignment:
+  score: 44.9 bits
+      U6_snRNA    6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgcccta 100 
+                    cctc+g   +c  tt +taaaattg+aacga acagagaagattagcatggcccctgc+caa g  g ca     a a +ga agga    ccta
+  JNEF01002363 7945 CCTCTG---TCACTTTATAAAATTGGAACGACACAGAGAAGATTAGCATGGCCCCTGCACAAAGTAGCCAGAGAGAGAGAGAAAGGA--AGCCTA 7856
+                    555555...56677888999****************************************998876666655544444444444433..334444 PP
+
+      U6_snRNA  101 cgg 103 
+                    c+g
+  JNEF01002363 7855 CTG 7853
+                    444 PP
+
+>> JNEF01004063  Mucor ramosissimus 97-1192 jcf7180000648768_36, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   28.8   7.4   4.8e-06        15       109 ..     11819     11722 ..     11831     11716 ..     82804    0.78
+
+  Alignment:
+  score: 28.8 bits
+      U6_snRNA    15 cccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagagga...ttgccctacggg 104  
+                     +c  tt  taaaat g+aacgatacagagaag t    a g  c ctgc+caaggat acac   a ++ctgag  g      g  ctacgg 
+  JNEF01004063 11819 TCACTTAATAAAATAGGAACGATACAGAGAAGGTGGATAGGATCACTGCACAAGGATAACACTAAATCTCTGAGGAGGaggAAGATCTACGGA 11727
+                     56678889999*********************998777778889********************99999999864332000234566677776 PP
+
+      U6_snRNA   105 gcaag 109  
+                     g aa+
+  JNEF01004063 11726 GTAAC 11722
+                     66665 PP
+
+>> JNEF01003438  Mucor ramosissimus 97-1192 jcf7180000648711_4, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   28.6   1.4   5.6e-06        25        78 ..     89605     89547 ..     89622     89528 ..    118350    0.75
+
+  Alignment:
+  score: 28.6 bits
+      U6_snRNA    25 aaattgaaacgat...acag..agaagattagcatggcccctgcgcaaggatgacacgc 78   
+                     a  t g+aacgat   a ag  a aagattagcatgg ccctgc caaggatgac c  
+  JNEF01003438 89605 AGTTAGGAACGATtttAAAGgaAAAAGATTAGCATGGTCCCTGCTCAAGGATGACGCCA 89547
+                     55555666666532222222224589****************************98754 PP
+
+>> JNEF01003735  Mucor ramosissimus 97-1192 jcf7180000648755_4, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   25.7   2.7   4.5e-05        24        85 ..    251452    251391 ..    251471    251371 ..    258783    0.85
+
+  Alignment:
+  score: 25.7 bits
+      U6_snRNA     24 aaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaact 85    
+                      aaaa tg+aac  ta aga aag ttag atggcccctgc+c agg tga ac  t + act
+  JNEF01003735 251452 AAAACTGGAACTGTATAGATAAGCTTAGTATGGCCCCTGCACCAGGGTGATACTTTTGGACT 251391
+                      467889999*****************************************999887666655 PP
+
+>> JNEF01003021  Mucor ramosissimus 97-1192 jcf7180000648562_9, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   25.1   2.4   6.8e-05        20        81 ..    134353    134412 ..    134338    134434 ..    173675    0.78
+
+  Alignment:
+  score: 25.1 bits
+      U6_snRNA     20 tggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaa 81    
+                      tg+taaaa tgaa  ga a   aga gattag atg cc ctgc+caa gatgacac   + 
+  JNEF01003021 134353 TGATAAAACTGAAGTGACAT--AGAGGATTAGTATGTCCTCTGCACAAAGATGACACTAGCC 134412
+                      56677888889888886555..5666******************************987643 PP
+
+>> JNEF01002779  Mucor ramosissimus 97-1192 jcf7180000648449_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   15.4   1.5     0.076        12        65 ..     14853     14800 ..     14864     14780 ..     35149    0.88
+
+  Alignment:
+  score: 15.4 bits
+      U6_snRNA    12 gagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgc 65   
+                       g c  ttg taa a tg+ ac at cagagaaga tag atg c cctgc+c
+  JNEF01002779 14853 CTGTCACTTGTTAACACTGGGACAATGCAGAGAAGACTAGAATGACACCTGCAC 14800
+                     55667788899999999999*******************************986 PP
+
+>> JNEF01003007  Mucor ramosissimus 97-1192 jcf7180000648558_2, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.4   0.7       2.6        15        79 ..      7804      8007 ..      7793      8027 ..    116126    0.89
+
+  Alignment:
+  score: 10.4 bits
+      U6_snRNA   15 cccattggtaaaattgaaacgatacagagaagat............................................................. 48  
+                    +ccat+  t+aaat g aac+a acaga  agat                                                             
+  JNEF01003007 7804 GCCATCAATCAAATCGCAACCAGACAGAT-AGATatttgtacaattttaaaataagaaggattagataaaagtgtctatagtacatttggcaaaa 7897
+                    56788899999999999999999999986.58889999999999999999999999999999999999999999999999999999999999999 PP
+
+      U6_snRNA   49 ...............................................................................tagcatggcccctgcg 64  
+                                                                                                      catg cccctg++
+  JNEF01003007 7898 aatcgacaattttttacgaaggataatagaaaagtcttaaaaatcaagaattaaaaacactttccagccttagttttacCCACATGTCCCCTGTA 7992
+                    99999999999999999999999999999999999999999999999999999999999999999999997777776664459************ PP
+
+      U6_snRNA   65 caaggatgacacgct 79  
+                    caagg t  cacg+ 
+  JNEF01003007 7993 CAAGGGTATCACGGA 8007
+                    *****9888888765 PP
+
+>> JNEF01004000  Mucor ramosissimus 97-1192 jcf7180000648764_17, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.5   1.6         5        37        67 ..      2902      2932 ..      2882      2952 ..     26912    0.88
+
+  Alignment:
+  score: 9.5 bits
+      U6_snRNA   37 tacagagaagattagcatggcccctgcgcaa 67  
+                     acagagaagatt g atgg  cctg g+aa
+  JNEF01004000 2902 CACAGAGAAGATTGGGATGGTTCCTGAGTAA 2932
+                    48***********************998775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         3018  (83670980 residues searched)
+Residues passing SSV filter:           2495198  (0.0298); expected (0.02)
+Residues passing bias filter:          2216896  (0.0265); expected (0.02)
+Residues passing Vit filter:            251255  (0.003); expected (0.003)
+Residues passing Fwd filter:             18495  (0.000221); expected (3e-05)
+Total number of hits:                       18  (1.91e-05)
+# CPU time: 4.81u 0.22s 00:00:05.02 Elapsed: 00:00:04.54
+# Mc/sec: 2100.99
+//
+[ok]

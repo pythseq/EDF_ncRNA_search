@@ -1,0 +1,13 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+JNEM01010190          (null)               U6_snRNA               73.3   1.3e-19   1.9      16     113    -       852     753     871     749    6888   Conidiobolus incongruus B7586 ctg7180000968180_1, whole genome shotgun sequence.
+JNEM01012342          (null)               U6_snRNA               73.3   1.3e-19   1.9      16     113    +     18595   18694   18576   18698   19037   Conidiobolus incongruus B7586 ctg7180000971936_1, whole genome shotgun sequence.
+JNEM01010917          (null)               U6_snRNA               73.2   1.5e-19   1.9      16     113    -     11486   11387   11505   11384   23353   Conidiobolus incongruus B7586 ctg7180000969440_1, whole genome shotgun sequence.
+JNEM01011667          (null)               U6_snRNA               73.2   1.5e-19   1.9      16     113    +     11807   11906   11788   11909   17346   Conidiobolus incongruus B7586 ctg7180000970778_1, whole genome shotgun sequence.
+JNEM01000419          (null)               U6_snRNA               73.1   1.6e-19   2.0      16     113    -       852     753     871     749    2047   Conidiobolus incongruus B7586 ctg7180000813176_1, whole genome shotgun sequence.
+JNEM01010568          (null)               U6_snRNA               73.0   1.7e-19   2.0      16     113    -      7768    7669    7787    7667   43195   Conidiobolus incongruus B7586 ctg7180000968805_1, whole genome shotgun sequence.
+JNEM01010116          (null)               U6_snRNA               67.2   1.1e-17   2.1      27     112    -     28349   28262   28369   28258   31777   Conidiobolus incongruus B7586 ctg7180000968082_1, whole genome shotgun sequence.
+JNEM01011206          (null)               U6_snRNA               11.5       2.6   1.4       7      77    -     16766   16619   16772   16599   77814   Conidiobolus incongruus B7586 ctg7180000969980_1, whole genome shotgun sequence.

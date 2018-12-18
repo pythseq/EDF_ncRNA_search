@@ -1,0 +1,105 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Pandora_formicae.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Pandora_formicae.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Pandora_formicae.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence            start    end  Description
+    ------- ------ -----  --------            -----  -----  -----------
+    1.2e-17   66.2   1.9  gb|GCRV01028975.1|     50    148  TSA: insect metagenome Unigene16363_All transcribed RNA se
+  ------ inclusion threshold ------
+        9.8    8.8   4.4  gb|GCRV01010684.1|    935    881  TSA: insect metagenome CL3935.Contig1_All transcribed RNA 
+        9.8    8.8   4.4  gb|GCRV01010685.1|    835    781  TSA: insect metagenome CL3935.Contig2_All transcribed RNA 
+        9.8    8.8   4.4  gb|GCRV01010686.1|    935    881  TSA: insect metagenome CL3935.Contig3_All transcribed RNA 
+        9.8    8.8   4.4  gb|GCRV01010687.1|    835    781  TSA: insect metagenome CL3935.Contig4_All transcribed RNA 
+
+
+Annotation for each hit  (and alignments):
+>> gb|GCRV01028975.1|  TSA: insect metagenome Unigene16363_All transcribed RNA sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   66.2   1.9   1.2e-17         6       113 ..        50       148 ..        46       150 ..       211    0.79
+
+  Alignment:
+  score: 66.2 bits
+            U6_snRNA   6 cctccggagccc.attggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattg 95 
+                         c+tc+g ag+ c + t+ taaaattg+aacgatacagagaagattagcatggcccctgcgcaaggatgacacgc+a aa+ g ga g +t 
+  gb|GCRV01028975.1|  50 CTTCGGCAGTACaTATACTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCGCAAGGATGACACGCAA-AATCGTGAAGCGTT 139
+                         5555555554441456778899****************************************************95.55556666666666 PP
+
+            U6_snRNA  96 ccctacggggcaagtttt 113
+                         cc +a         tttt
+  gb|GCRV01028975.1| 140 CCACA---------TTTT 148
+                         66666.........5554 PP
+
+>> gb|GCRV01010684.1|  TSA: insect metagenome CL3935.Contig1_All transcribed RNA sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.8   4.4       9.8        20        71 ..       935       881 ..       951       861 ..      3311    0.87
+
+  Alignment:
+  score: 8.8 bits
+            U6_snRNA  20 tggtaaaattgaaacgatacagagaagatta...gcatggcccctgcgcaaggat 71 
+                         t   aaaattgaa cg ta a agaagatt    gca   cc  tgc+caaggat
+  gb|GCRV01010684.1| 935 TAAAAAAATTGAAGCGCTAGAAAGAAGATTGtatGCACATCCTTTGCACAAGGAT 881
+                         55677899********************984445999999*************97 PP
+
+>> gb|GCRV01010685.1|  TSA: insect metagenome CL3935.Contig2_All transcribed RNA sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.8   4.4       9.8        20        71 ..       835       781 ..       851       761 ..      3211    0.87
+
+  Alignment:
+  score: 8.8 bits
+            U6_snRNA  20 tggtaaaattgaaacgatacagagaagatta...gcatggcccctgcgcaaggat 71 
+                         t   aaaattgaa cg ta a agaagatt    gca   cc  tgc+caaggat
+  gb|GCRV01010685.1| 835 TAAAAAAATTGAAGCGCTAGAAAGAAGATTGtatGCACATCCTTTGCACAAGGAT 781
+                         55677899********************984445999999*************97 PP
+
+>> gb|GCRV01010686.1|  TSA: insect metagenome CL3935.Contig3_All transcribed RNA sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.8   4.4       9.8        20        71 ..       935       881 ..       951       861 ..      1546    0.87
+
+  Alignment:
+  score: 8.8 bits
+            U6_snRNA  20 tggtaaaattgaaacgatacagagaagatta...gcatggcccctgcgcaaggat 71 
+                         t   aaaattgaa cg ta a agaagatt    gca   cc  tgc+caaggat
+  gb|GCRV01010686.1| 935 TAAAAAAATTGAAGCGCTAGAAAGAAGATTGtatGCACATCCTTTGCACAAGGAT 881
+                         55677899********************984445999999*************97 PP
+
+>> gb|GCRV01010687.1|  TSA: insect metagenome CL3935.Contig4_All transcribed RNA sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.8   4.4       9.8        20        71 ..       835       781 ..       851       761 ..      1446    0.87
+
+  Alignment:
+  score: 8.8 bits
+            U6_snRNA  20 tggtaaaattgaaacgatacagagaagatta...gcatggcccctgcgcaaggat 71 
+                         t   aaaattgaa cg ta a agaagatt    gca   cc  tgc+caaggat
+  gb|GCRV01010687.1| 835 TAAAAAAATTGAAGCGCTAGAAAGAAGATTGtatGCACATCCTTTGCACAAGGAT 781
+                         55677899********************984445999999*************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                        54964  (95867072 residues searched)
+Residues passing SSV filter:           1512342  (0.0158); expected (0.02)
+Residues passing bias filter:          1454615  (0.0152); expected (0.02)
+Residues passing Vit filter:            188514  (0.00197); expected (0.003)
+Residues passing Fwd filter:              9359  (9.76e-05); expected (3e-05)
+Total number of hits:                        5  (3.33e-06)
+# CPU time: 5.89u 0.62s 00:00:06.51 Elapsed: 00:00:06.57
+# Mc/sec: 1663.45
+//
+[ok]

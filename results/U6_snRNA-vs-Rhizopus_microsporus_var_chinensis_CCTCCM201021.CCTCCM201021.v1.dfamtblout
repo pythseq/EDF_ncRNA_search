@@ -1,0 +1,7 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+ANKS01001339          (null)               U6_snRNA               73.9   4.7e-20   1.9       6     113    +     31353   31457   31343   31462   31641   Rhizopus microsporus var. chinensis CCTCC M201021 scaffold1274, whole genome shotgun sequence
+ANKS01001341          (null)               U6_snRNA               73.9   4.7e-20   1.9       6     113    +     30608   30712   30598   30717   50250   Rhizopus microsporus var. chinensis CCTCC M201021 scaffold1276, whole genome shotgun sequence

@@ -1,0 +1,66 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Zoophagus_insidians.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Zoophagus_insidians.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Zoophagus_insidians.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence                           start    end  Description
+    ------- ------ -----  --------                           -----  -----  -----------
+    2.2e-21   77.0   1.1  NODE_160_length_68568_cov_61.2579  11404  11298  
+  ------ inclusion threshold ------
+        2.4    9.6   2.9  NODE_579_length_40194_cov_72.0796  23249  23280  
+
+
+Annotation for each hit  (and alignments):
+>> NODE_160_length_68568_cov_61.2579  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   77.0   1.1   2.2e-21         5       114 .]     11404     11298 ..     11408     11297 ..     68568    0.89
+
+  Alignment:
+  score: 77.0 bits
+                           U6_snRNA     5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacac 76   
+                                          tcctc gg+ c    t +taa attg+aa++atacagagaagattagcatgg ccctgcgcaaggatgacac
+  NODE_160_length_68568_cov_61.2579 11404 TCCTCTGGCAC---GTTATAACATTGGAAACATACAGAGAAGATTAGCATGGTCCCTGCGCAAGGATGACAC 11336
+                                          56666664443...345667899************************************************* PP
+
+                           U6_snRNA    77 gctaaaactgagaggattgccctacggggcaagttttt 114  
+                                          g +aa ++tgag+ggat +ccctacgggg a  ttttt
+  NODE_160_length_68568_cov_61.2579 11335 GTAAATCTTGAGTGGATACCCCTACGGGGGAGTTTTTT 11298
+                                          ****************************9999887775 PP
+
+>> NODE_579_length_40194_cov_72.0796  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.6   2.9       2.4        43        74 ..     23249     23280 ..     23229     23300 ..     40194    0.90
+
+  Alignment:
+  score: 9.6 bits
+                           U6_snRNA    43 gaagattagcatggcccctgcgcaaggatgac 74   
+                                          gaagattag atggc c tg  caaggatg c
+  NODE_579_length_40194_cov_72.0796 23249 GAAGATTAGTATGGCGCTTGGTCAAGGATGGC 23280
+                                          79**************************9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         2432  (42029040 residues searched)
+Residues passing SSV filter:            878937  (0.0209); expected (0.02)
+Residues passing bias filter:           823224  (0.0196); expected (0.02)
+Residues passing Vit filter:             76692  (0.00182); expected (0.003)
+Residues passing Fwd filter:              2737  (6.51e-05); expected (3e-05)
+Total number of hits:                        2  (3.31e-06)
+# CPU time: 2.16u 0.17s 00:00:02.33 Elapsed: 00:00:01.24
+# Mc/sec: 3863.96
+//
+[ok]

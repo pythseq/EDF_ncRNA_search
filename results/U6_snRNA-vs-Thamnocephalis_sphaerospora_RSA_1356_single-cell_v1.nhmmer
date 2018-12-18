@@ -1,0 +1,52 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Thamnocephalis_sphaerospora_RSA_1356_single-cell_v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Thamnocephalis_sphaerospora_RSA_1356_single-cell_v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Thamnocephalis_sphaerospora_RSA_1356_single-cell_v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+      1e-21   77.9   2.4  NODE_471  12762  12865  
+
+
+Annotation for each hit  (and alignments):
+>> NODE_471  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   77.9   2.4     1e-21        10       113 ..     12762     12865 ..     12749     12867 ..     13002    0.84
+
+  Alignment:
+  score: 77.9 bits
+  U6_snRNA    10 cggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgcccta.cgggg 105  
+                 c g+g c++ tg++aaaattg+aacgatacagagaagattagcat gcccctgc++aaggatgacacg +aa ++tgag+ggatt ccc++ cgggg
+  NODE_471 12762 C-GCGACATATGAAAAAATTGGAACGATACAGAGAAGATTAGCATTGCCCCTGCATAAGGATGACACGTAAATCTTGAGTGGATTACCCCTaCGGGG 12857
+                 3.3556778889999*******************************************************************999887766155555 PP
+
+  U6_snRNA   106 caagtttt 113  
+                 +aa tttt
+  NODE_471 12858 GAATTTTT 12865
+                 55554444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         1385  (36407634 residues searched)
+Residues passing SSV filter:            491423  (0.0135); expected (0.02)
+Residues passing bias filter:           490628  (0.0135); expected (0.02)
+Residues passing Vit filter:             56653  (0.00156); expected (0.003)
+Residues passing Fwd filter:               382  (1.05e-05); expected (3e-05)
+Total number of hits:                        1  (2.86e-06)
+# CPU time: 1.73u 0.12s 00:00:01.85 Elapsed: 00:00:01.24
+# Mc/sec: 3347.15
+//
+[ok]

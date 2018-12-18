@@ -1,0 +1,229 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Rhizophagus_clarus_HR1.fasta
+# output directed to file:         results/U6_snRNA-vs-Rhizophagus_clarus_HR1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Rhizophagus_clarus_HR1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence        start    end  Description
+    ------- ------ -----  --------        -----  -----  -----------
+    6.8e-19   71.4   1.3  BEXD01004161.1  23706  23802  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold761, whole genome s
+    7.4e-19   71.3   1.4  BEXD01000440.1   7464   7560  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1394, whole genome 
+    7.4e-19   71.3   1.4  BEXD01000440.1   8440   8536  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1394, whole genome 
+    9.1e-19   71.0   1.8  BEXD01000735.1  54676  54774  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold166, whole genome s
+      1e-18   70.9   1.9  BEXD01002524.1    117     19  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold327, whole genome s
+    4.2e-14   56.1   5.1  BEXD01002008.1   1538   1456  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold2805, whole genome 
+    8.3e-14   55.1   4.8  BEXD01003435.1  69356  69275  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold409, whole genome s
+  ------ inclusion threshold ------
+      0.023   18.4   0.0  BEXD01003879.1  11684  11645  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold507, whole genome s
+      0.023   18.4   0.0  BEXD01003879.1  16940  16901  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold507, whole genome s
+      0.024   18.4   4.5  BEXD01000644.1   9369   9422  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1578, whole genome 
+      0.088   16.6   3.5  BEXD01001485.1    899    844  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold2334, whole genome 
+       0.42   14.4   4.6  BEXD01000836.1  18808  18849  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1750, whole genome 
+        2.8   11.7   0.3  BEXD01002967.1   1261   1299  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold3669, whole genome 
+
+
+Annotation for each hit  (and alignments):
+>> BEXD01004161.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold761, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.4   1.3   6.8e-19         8       104 ..     23706     23802 ..     23699     23819 ..     47842    0.79
+
+  Alignment:
+  score: 71.4 bits
+        U6_snRNA     8 tccgga.gcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgcc 97   
+                       tc+g   g c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg t a ++tgag+ggat gc 
+  BEXD01004161.1 23706 TCGGAGcGACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTT-ATCTTGAGTGGATAGCT 23795
+                       444433034566888999*****************************************************99.8999*******999876 PP
+
+        U6_snRNA    98 ctacggg 104  
+                        ++  gg
+  BEXD01004161.1 23796 GCTACGG 23802
+                       5543333 PP
+
+>> BEXD01000440.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1394, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.3   1.4   7.4e-19         8       104 ..      7464      7560 ..      7457      7576 ..     25867    0.79
+
+  Alignment:
+  score: 71.3 bits
+        U6_snRNA    8 tccgga.gcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccct 99  
+                      tc+g   g c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg t a ++tgag+ggat gc  +
+  BEXD01000440.1 7464 TCGGAGcGACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTT-ATCTTGAGTGGATAGCTGC 7555
+                      444433034566888999*****************************************************99.8999*******99987655 PP
+
+        U6_snRNA  100 acggg 104 
+                      +  gg
+  BEXD01000440.1 7556 TACGG 7560
+                      43333 PP
+
+>> BEXD01000440.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1394, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.3   1.4   7.4e-19         8       104 ..      8440      8536 ..      8433      8552 ..     25867    0.79
+
+  Alignment:
+  score: 71.3 bits
+        U6_snRNA    8 tccgga.gcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccct 99  
+                      tc+g   g c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg t a ++tgag+ggat gc  +
+  BEXD01000440.1 8440 TCGGAGcGACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTT-ATCTTGAGTGGATAGCTGC 8531
+                      444433034566888999*****************************************************99.8999*******99987655 PP
+
+        U6_snRNA  100 acggg 104 
+                      +  gg
+  BEXD01000440.1 8532 TACGG 8536
+                      43333 PP
+
+>> BEXD01000735.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold166, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.0   1.8   9.1e-19         6       104 ..     54676     54774 ..     54671     54791 ..    109516    0.79
+
+  Alignment:
+  score: 71.0 bits
+        U6_snRNA     6 cctccggagc.ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattg 95   
+                       c+tc+g a++ c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg t a ++tgag+ggat g
+  BEXD01000735.1 54676 CTTCGGAACGaCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTT-ATCTTGAGTGGATAG 54765
+                       455555544414567888999****************************************************99.8999*******9998 PP
+
+        U6_snRNA    96 ccctacggg 104  
+                       c  ++  gg
+  BEXD01000735.1 54766 CTGCTACGG 54774
+                       765543333 PP
+
+>> BEXD01002524.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold327, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   70.9   1.9     1e-18         6       104 ..       117        19 ..       122         3 ..     82590    0.79
+
+  Alignment:
+  score: 70.9 bits
+        U6_snRNA   6 cctccggagc.ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccct 99 
+                     c+tc+g a++ c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg t a ++tgag+ggat gc  +
+  BEXD01002524.1 117 CTTCGGAACGaCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTT-ATCTTGAGTGGATAGCTGC 24 
+                     455555544414567888999****************************************************99.8999*******99987655 PP
+
+        U6_snRNA 100 acggg 104
+                     +  gg
+  BEXD01002524.1  23 TACGG 19 
+                     43333 PP
+
+>> BEXD01002008.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold2805, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   56.1   5.1   4.2e-14        16        99 ..      1538      1456 ..      1552      1441 ..      6867    0.88
+
+  Alignment:
+  score: 56.1 bits
+        U6_snRNA   16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccct 99  
+                        +tt+ taaa+t g+aa gata agagaagattagcatgg ccctgc+caaggatgacacg t a ++tgag+ggat gc  +
+  BEXD01002008.1 1538 TTTTTATTAAATTCGGAATGATATAGAGAAGATTAGCATGGTCCCTGCACAAGGATGACACGTT-ATCTTGAGTGGATAGCTGC 1456
+                      55677888999***************************************************99.8999******999877544 PP
+
+>> BEXD01003435.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold409, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   55.1   4.8   8.3e-14        17        99 ..     69356     69275 ..     69371     69260 ..     72483    0.88
+
+  Alignment:
+  score: 55.1 bits
+        U6_snRNA    17 cattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccct 99   
+                        +tt+ taaa+t  +aa gatacagagaagattagcatggcc ctgc+caaggatgacacg t a ++tgag+ggat gc  +
+  BEXD01003435.1 69356 TTTTATTAAATTCAGAATGATACAGAGAAGATTAGCATGGCCTCTGCACAAGGATGACACGTT-ATCTTGAGTGGATAGCTGC 69275
+                       5566777888899999*********************************************99.8999*******99887654 PP
+
+>> BEXD01003879.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold507, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   18.4   0.0     0.023        49        88 ..     11684     11645 ..     11704     11628 ..     64398    0.85
+
+  Alignment:
+  score: 18.4 bits
+        U6_snRNA    49 tagcatggcccctgcgcaaggatgacacgctaaaactgag 88   
+                        ag atggcccct c+caaggatgacacg t  a + gag
+  BEXD01003879.1 11684 GAGAATGGCCCCTTCACAAGGATGACACGATGCAGTCGAG 11645
+                       58889************************99877776665 PP
+
+>> BEXD01003879.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold507, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   18.4   0.0     0.023        49        88 ..     16940     16901 ..     16960     16884 ..     64398    0.85
+
+  Alignment:
+  score: 18.4 bits
+        U6_snRNA    49 tagcatggcccctgcgcaaggatgacacgctaaaactgag 88   
+                        ag atggcccct c+caaggatgacacg t  a + gag
+  BEXD01003879.1 16940 GAGAATGGCCCCTTCACAAGGATGACACGATGCAGTCGAG 16901
+                       58889************************99877776665 PP
+
+>> BEXD01000644.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1578, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   18.4   4.5     0.024        20        74 ..      9369      9422 ..      9351      9442 ..     22040    0.82
+
+  Alignment:
+  score: 18.4 bits
+        U6_snRNA   20 tggtaaaattgaaacgata.cagagaagattagcatggc.ccctgcgcaaggatgac 74  
+                      t  taa at+gaaac ata caga   gattagcat  c ccctgc+caagga ga 
+  BEXD01000644.1 9369 TCATAACATGGAAACAATAtCAGA---GATTAGCATTACtCCCTGCACAAGGAAGAG 9422
+                      556778899999999999878997...579**********************98875 PP
+
+>> BEXD01001485.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold2334, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   16.6   3.5     0.088        18        74 ..       899       844 ..       915       821 ..     10826    0.81
+
+  Alignment:
+  score: 16.6 bits
+        U6_snRNA  18 attggtaaaattgaaacgatac.agagaagattagcatggc.ccctgcgcaaggatgac 74 
+                     + t  t a+at gaaac atac aga   gattagcat  c  cctgc+caagga ga 
+  BEXD01001485.1 899 TATCATGACATGGAAACAATACcAGA---GATTAGCATTACtTCCTGCACAAGGAAGAG 844
+                     45566778999*********963775...68***********************98875 PP
+
+>> BEXD01000836.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1750, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   14.4   4.6      0.42        31        73 ..     18808     18849 ..     18785     18870 ..     19181    0.78
+
+  Alignment:
+  score: 14.4 bits
+        U6_snRNA    31 aaacgatac.agagaagattagcatggc.ccctgcgcaaggatga 73   
+                       aaac atac aga   gattagcat  c ccctgc +aagga ga
+  BEXD01000836.1 18808 AAACAATACcAGA---GATTAGCATTACtCCCTGCATAAGGAAGA 18849
+                       5555566542564...68***********************9876 PP
+
+>> BEXD01002967.1  Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold3669, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.7   0.3       2.8        40        83 ..      1261      1299 ..      1240      1319 ..      2429    0.79
+
+  Alignment:
+  score: 11.7 bits
+        U6_snRNA   40 agagaagattagcatggcccctgcgcaaggatgacacgctaaaa 83  
+                      agagaa    ag a ggcccc g +caaggatgaca g     +
+  BEXD01002967.1 1261 AGAGAA----AG-AAGGCCCCCGAACAAGGATGACATGTCTTTC 1299
+                      555553....22.5689******************998775544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         4424  (232837470 residues searched)
+Residues passing SSV filter:           5218625  (0.0224); expected (0.02)
+Residues passing bias filter:          4161559  (0.0179); expected (0.02)
+Residues passing Vit filter:            415219  (0.00178); expected (0.003)
+Residues passing Fwd filter:             72338  (0.000311); expected (3e-05)
+Total number of hits:                       13  (3.97e-06)
+# CPU time: 12.03u 0.62s 00:00:12.64 Elapsed: 00:00:09.50
+# Mc/sec: 2794.05
+//
+[ok]

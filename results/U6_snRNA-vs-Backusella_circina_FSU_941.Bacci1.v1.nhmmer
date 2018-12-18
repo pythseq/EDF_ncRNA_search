@@ -1,0 +1,110 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Backusella_circina_FSU_941.Bacci1.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Backusella_circina_FSU_941.Bacci1.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Backusella_circina_FSU_941.Bacci1.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence             start    end  Description
+    ------- ------ -----  --------             -----  -----  -----------
+    2.3e-20   74.9   2.0  Bacci1|scaffold_282  22107  22001  
+    2.3e-20   74.9   2.0  Bacci1|scaffold_52   63138  63244  
+    6.4e-12   47.9   2.2  Bacci1|scaffold_127 120259 120202  
+  ------ inclusion threshold ------
+       0.64   12.6   3.3  Bacci1|scaffold_57   18889  18928  
+       0.93   12.1   3.8  Bacci1|scaffold_18  305546 305514  
+
+
+Annotation for each hit  (and alignments):
+>> Bacci1|scaffold_282  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.9   2.0   2.3e-20         5       114 .]     22107     22001 ..     22116     21998 ..     40796    0.89
+
+  Alignment:
+  score: 74.9 bits
+             U6_snRNA     5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagag 90   
+                             cctc g   +c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga 
+  Bacci1|scaffold_282 22107 ACCTCTG---GCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGAT 22025
+                            4555555...45567777889***************************************************************** PP
+
+             U6_snRNA    91 gattgccctacggggcaagttttt 114  
+                            g   gc ctacgg gcaa  tttt
+  Bacci1|scaffold_282 22024 GGAAGCTCTACGGAGCAAACTTTT 22001
+                            ****************99966654 PP
+
+>> Bacci1|scaffold_52  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.9   2.0   2.3e-20         5       114 .]     63138     63244 ..     63129     63247 ..    222419    0.89
+
+  Alignment:
+  score: 74.9 bits
+            U6_snRNA     5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagagg 91   
+                            cctc g   +c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga g
+  Bacci1|scaffold_52 63138 ACCTCTG---GCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGATG 63221
+                           4555555...45567777889****************************************************************** PP
+
+            U6_snRNA    92 attgccctacggggcaagttttt 114  
+                              gc ctacgg gcaa  tttt
+  Bacci1|scaffold_52 63222 GAAGCTCTACGGAGCAAACTTTT 63244
+                           ***************99966654 PP
+
+>> Bacci1|scaffold_127  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   47.9   2.2   6.4e-12        22        79 ..    120259    120202 ..    120278    120182 ..    128760    0.89
+
+  Alignment:
+  score: 47.9 bits
+             U6_snRNA     22 gtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgct 79    
+                              +++aattg+aac atacagagaagat agca ggcccct c+caaggatgacac   
+  Bacci1|scaffold_127 120259 CACTAATTGGAACAATACAGAGAAGATCAGCACGGCCCCTACACAAGGATGACACTAA 120202
+                             567899***********************************************99765 PP
+
+>> Bacci1|scaffold_57  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   12.6   3.3      0.64        33        73 ..     18889     18928 ..     18864     18950 ..    208956    0.78
+
+  Alignment:
+  score: 12.6 bits
+            U6_snRNA    33 acgatacagagaagattagcatggcccctgcgcaaggatga 73   
+                           +   tacagagaa at agcatggc  ctg++ aa g tga
+  Bacci1|scaffold_57 18889 TTATTACAGAGAAAATCAGCATGGCTGCTGTAGAAAG-TGA 18928
+                           445589************************9966644.555 PP
+
+>> Bacci1|scaffold_18  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   12.1   3.8      0.93        17        49 ..    305546    305514 ..    305563    305494 ..    372495    0.87
+
+  Alignment:
+  score: 12.1 bits
+            U6_snRNA     17 cattggtaaaattgaaacgatacagagaagatt 49    
+                             +ttg taaa t+gaa cga acagagaagatt
+  Bacci1|scaffold_18 305546 ATTTGATAAACTGGAACCGAAACAGAGAAGATT 305514
+                            5678899999*********************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         1095  (97296576 residues searched)
+Residues passing SSV filter:           2886440  (0.0297); expected (0.02)
+Residues passing bias filter:          2551995  (0.0262); expected (0.02)
+Residues passing Vit filter:            314693  (0.00323); expected (0.003)
+Residues passing Fwd filter:             18280  (0.000188); expected (3e-05)
+Total number of hits:                        5  (3.55e-06)
+# CPU time: 5.48u 0.27s 00:00:05.75 Elapsed: 00:00:04.09
+# Mc/sec: 2711.93
+//
+[ok]

@@ -1,0 +1,70 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Rhizopus_microsporus_var_chinensis_CCTCCM201021.CCTCCM201021.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Rhizopus_microsporus_var_chinensis_CCTCCM201021.CCTCCM201021.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Rhizopus_microsporus_var_chinensis_CCTCCM201021.CCTCCM201021.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    4.7e-20   73.9   1.9  ANKS01001339  31353  31457  Rhizopus microsporus var. chinensis CCTCC M201021 scaffold1274, 
+    4.7e-20   73.9   1.9  ANKS01001341  30608  30712  Rhizopus microsporus var. chinensis CCTCC M201021 scaffold1276, 
+
+
+Annotation for each hit  (and alignments):
+>> ANKS01001339  Rhizopus microsporus var. chinensis CCTCC M201021 scaffold1274, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.9   1.9   4.7e-20         6       113 ..     31353     31457 ..     31343     31462 ..     31641    0.87
+
+  Alignment:
+  score: 73.9 bits
+      U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98   
+                     cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga g  tgc c
+  ANKS01001339 31353 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGACGGATGCTC 31442
+                     444444...45567788899************************************************************************* PP
+
+      U6_snRNA    99 tacggggcaag.tttt 113  
+                     tacgg gcaa  t tt
+  ANKS01001339 31443 TACGGAGCAACaT-TT 31457
+                     *******999852.33 PP
+
+>> ANKS01001341  Rhizopus microsporus var. chinensis CCTCC M201021 scaffold1276, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.9   1.9   4.7e-20         6       113 ..     30608     30712 ..     30598     30717 ..     50250    0.87
+
+  Alignment:
+  score: 73.9 bits
+      U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98   
+                     cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga g  tgc c
+  ANKS01001341 30608 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGACGGATGCTC 30697
+                     444444...45567788899************************************************************************* PP
+
+      U6_snRNA    99 tacggggcaag.tttt 113  
+                     tacgg gcaa  t tt
+  ANKS01001341 30698 TACGGAGCAACaT-TT 30712
+                     *******999852.33 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         3431  (91400240 residues searched)
+Residues passing SSV filter:           2687641  (0.0294); expected (0.02)
+Residues passing bias filter:          2452431  (0.0268); expected (0.02)
+Residues passing Vit filter:            295368  (0.00323); expected (0.003)
+Residues passing Fwd filter:             15556  (0.00017); expected (3e-05)
+Total number of hits:                        2  (2.3e-06)
+# CPU time: 5.21u 0.25s 00:00:05.46 Elapsed: 00:00:04.73
+# Mc/sec: 2202.88
+//
+[ok]

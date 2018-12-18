@@ -1,0 +1,18 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+BEXD01004161.1        (null)               U6_snRNA               71.4   6.8e-19   1.3       8     104    +     23706   23802   23699   23819   47842   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold761, whole genome shotgun sequence
+BEXD01000440.1        (null)               U6_snRNA               71.3   7.4e-19   1.4       8     104    +      7464    7560    7457    7576   25867   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1394, whole genome shotgun sequence
+BEXD01000440.1        (null)               U6_snRNA               71.3   7.4e-19   1.4       8     104    +      8440    8536    8433    8552   25867   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1394, whole genome shotgun sequence
+BEXD01000735.1        (null)               U6_snRNA               71.0   9.1e-19   1.8       6     104    +     54676   54774   54671   54791  109516   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold166, whole genome shotgun sequence
+BEXD01002524.1        (null)               U6_snRNA               70.9     1e-18   1.9       6     104    -       117      19     122       3   82590   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold327, whole genome shotgun sequence
+BEXD01002008.1        (null)               U6_snRNA               56.1   4.2e-14   5.1      16      99    -      1538    1456    1552    1441    6867   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold2805, whole genome shotgun sequence
+BEXD01003435.1        (null)               U6_snRNA               55.1   8.3e-14   4.8      17      99    -     69356   69275   69371   69260   72483   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold409, whole genome shotgun sequence
+BEXD01003879.1        (null)               U6_snRNA               18.4     0.023   0.0      49      88    -     11684   11645   11704   11628   64398   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold507, whole genome shotgun sequence
+BEXD01003879.1        (null)               U6_snRNA               18.4     0.023   0.0      49      88    -     16940   16901   16960   16884   64398   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold507, whole genome shotgun sequence
+BEXD01000644.1        (null)               U6_snRNA               18.4     0.024   4.5      20      74    +      9369    9422    9351    9442   22040   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1578, whole genome shotgun sequence
+BEXD01001485.1        (null)               U6_snRNA               16.6     0.088   3.5      18      74    -       899     844     915     821   10826   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold2334, whole genome shotgun sequence
+BEXD01000836.1        (null)               U6_snRNA               14.4      0.42   4.6      31      73    +     18808   18849   18785   18870   19181   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold1750, whole genome shotgun sequence
+BEXD01002967.1        (null)               U6_snRNA               11.7       2.8   0.3      40      83    +      1261    1299    1240    1319    2429   Rhizophagus clarus HR1 DNA, Rcl_v1_scaffold3669, whole genome shotgun sequence

@@ -1,0 +1,92 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Calcarisporiella_thermophila_CBS279.70.v1.assembly.fasta
+# output directed to file:         results/U6_snRNA-vs-Calcarisporiella_thermophila_CBS279.70.v1.assembly.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Calcarisporiella_thermophila_CBS279.70.v1.assembly.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence                      start     end  Description
+    ------- ------ -----  --------                      -----   -----  -----------
+    1.2e-20   75.1   0.3  Calth2|Calth2_scaffold00030  253322  253416  
+  ------ inclusion threshold ------
+          2   10.2   1.5  Calth2|Calth2_scaffold00008  754018  754089  
+        5.7    8.8   6.1  Calth2|Calth2_scaffold00014  668481  668416  
+        5.8    8.8   3.4  Calth2|Calth2_scaffold00001  736182  736213  
+
+
+Annotation for each hit  (and alignments):
+>> Calth2|Calth2_scaffold00030  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   75.1   0.3   1.2e-20         7       104 ..    253322    253416 ..    253309    253432 ..    305921    0.82
+
+  Alignment:
+  score: 75.1 bits
+                     U6_snRNA      7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaa 82    
+                                     ctc+g    c+ ttg+ aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacgct a 
+  Calth2|Calth2_scaffold00030 253322 CTCTG---ACACTTGACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGCTGAC 253394
+                                     33333...4566899999********************************************************** PP
+
+                     U6_snRNA     83 actgagaggattgccctacggg 104   
+                                     +ctgag+ggat   c ++  gg
+  Calth2|Calth2_scaffold00030 253395 TCTGAGTGGATGCACACTTCGG 253416
+                                     *********9998877664443 PP
+
+>> Calth2|Calth2_scaffold00008  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.2   1.5         2        27        90 ..    754018    754089 ..    753998    754103 ..   1236294    0.71
+
+  Alignment:
+  score: 10.2 bits
+                     U6_snRNA     27 attgaaacgatacagagaagattagcatggcccctgcgcaaggat.........gacacgctaaaactgagag 90    
+                                     +t  aa  +a  ca agaagat agcatggcc  tg+gca g at         gaca g  +  +c+gag+g
+  Calth2|Calth2_scaffold00008 754018 TTCCAACTCAATCACAGAAGATGAGCATGGCC-ATGTGCATGTATatgcaatggGACAGGAGTTTCCAGAGTG 754089
+                                     455556667778999***************75.6888877776654444444556666666666666666665 PP
+
+>> Calth2|Calth2_scaffold00014  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.8   6.1       5.7        32        97 ..    668481    668416 ..    668503    668398 ..    781212    0.80
+
+  Alignment:
+  score: 8.8 bits
+                     U6_snRNA     32 aacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgcc 97    
+                                     aa    a agagaagatt gcat gc c t  g  ag atga ac  taaaac g g g a  gc 
+  Calth2|Calth2_scaffold00014 668481 AAATGAAGAGAGAAGATTGGCATTGCTCGTTGGAGAGTATGAAACAATAAAACAGCGCGAACAGCT 668416
+                                     444445679*****************777766778999********99999999999998776665 PP
+
+>> Calth2|Calth2_scaffold00001  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.8   3.4       5.8        23        54 ..    736182    736213 ..    736165    736233 ..   1703125    0.84
+
+  Alignment:
+  score: 8.8 bits
+                     U6_snRNA     23 taaaattgaaacgatacagagaagattagcat 54    
+                                      aaa ttgaaa ga a agagaagatt gcat
+  Calth2|Calth2_scaffold00001 736182 CAAAGTTGAAAAGAGAGAGAGAAGATTTGCAT 736213
+                                     567889************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          119  (56394982 residues searched)
+Residues passing SSV filter:           1270219  (0.0225); expected (0.02)
+Residues passing bias filter:          1212316  (0.0215); expected (0.02)
+Residues passing Vit filter:            143563  (0.00255); expected (0.003)
+Residues passing Fwd filter:              6585  (0.000117); expected (3e-05)
+Total number of hits:                        4  (4.7e-06)
+# CPU time: 3.00u 0.15s 00:00:03.15 Elapsed: 00:00:03.65
+# Mc/sec: 1761.38
+//
+[ok]

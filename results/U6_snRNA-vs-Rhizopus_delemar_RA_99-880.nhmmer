@@ -1,0 +1,359 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Rhizopus_delemar_RA_99-880.fasta
+# output directed to file:         results/U6_snRNA-vs-Rhizopus_delemar_RA_99-880.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Rhizopus_delemar_RA_99-880.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence   start     end  Description
+    ------- ------ -----  --------   -----   -----  -----------
+    2.9e-20   74.6   2.6  CH476733 1041843 1041947  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole gen
+    2.9e-20   74.5   2.6  CH476740 1541640 1541743  Rhizopus oryzae RA 99-880 supercont3.9 genomic scaffold, whole gen
+    1.5e-19   72.2   2.9  CH476733  506628  506526  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole gen
+    4.7e-17   64.3   3.0  CH476740 1468233 1468134  Rhizopus oryzae RA 99-880 supercont3.9 genomic scaffold, whole gen
+    5.5e-15   57.6   1.2  CH476745 1021155 1021082  Rhizopus oryzae RA 99-880 supercont3.14 genomic scaffold, whole ge
+    8.8e-15   57.0   1.3  CH476733 3561686 3561617  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole gen
+    3.7e-14   55.0   2.7  CH476732  554132  554045  Rhizopus oryzae RA 99-880 supercont3.1 genomic scaffold, whole gen
+    4.1e-14   54.8   2.2  CH476733 4688498 4688401  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole gen
+    6.5e-13   51.0   1.4  CH476742 1566328 1566258  Rhizopus oryzae RA 99-880 supercont3.11 genomic scaffold, whole ge
+    2.8e-10   42.5   1.0  CH476742 1199470 1199411  Rhizopus oryzae RA 99-880 supercont3.11 genomic scaffold, whole ge
+    1.4e-09   40.3   1.2  CH476745 1037436 1037381  Rhizopus oryzae RA 99-880 supercont3.14 genomic scaffold, whole ge
+    2.8e-07   32.9   2.0  CH476733  575032  575096  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole gen
+    3.1e-07   32.8   3.8  CH476733 2203629 2203686  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole gen
+    3.9e-06   29.3   3.1  CH476733 3310004 3310064  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole gen
+    6.4e-06   28.5   1.5  CH476747   93296   93355  Rhizopus oryzae RA 99-880 supercont3.16 genomic scaffold, whole ge
+    0.00047   22.6   1.8  CH476738 1856550 1856496  Rhizopus oryzae RA 99-880 supercont3.7 genomic scaffold, whole gen
+     0.0042   19.5   8.0  CH476736  297770  297861  Rhizopus oryzae RA 99-880 supercont3.5 genomic scaffold, whole gen
+  ------ inclusion threshold ------
+       0.64   12.5   1.5  CH476736 3103744 3103717  Rhizopus oryzae RA 99-880 supercont3.5 genomic scaffold, whole gen
+        1.7   11.2   2.7  CH476737 1316805 1316760  Rhizopus oryzae RA 99-880 supercont3.6 genomic scaffold, whole gen
+        5.1    9.6   0.3  CH476750  162646  162619  Rhizopus oryzae RA 99-880 supercont3.19 genomic scaffold, whole ge
+        5.5    9.5   0.6  CH476735  885864  885894  Rhizopus oryzae RA 99-880 supercont3.4 genomic scaffold, whole gen
+        8.7    8.9   1.0  CH476733 4806992 4806919  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole gen
+        8.9    8.8   1.6  CH476735 1397196 1397228  Rhizopus oryzae RA 99-880 supercont3.4 genomic scaffold, whole gen
+
+
+Annotation for each hit  (and alignments):
+>> CH476733  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.6   2.6   2.9e-20         6       113 ..   1041843   1041947 ..   1041838   1041952 ..   5107421    0.89
+
+  Alignment:
+  score: 74.6 bits
+  U6_snRNA       6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98     
+                   cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc c
+  CH476733 1041843 CCTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTC 1041932
+                   566666...56677888889************************************************************************* PP
+
+  U6_snRNA      99 tacggggcaag.tttt 113    
+                   tacgg gcaa  t tt
+  CH476733 1041933 TACGGAGCAACaT-TT 1041947
+                   ********99852.33 PP
+
+>> CH476740  Rhizopus oryzae RA 99-880 supercont3.9 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.5   2.6   2.9e-20         7       113 ..   1541640   1541743 ..   1541628   1541747 ..   2296105    0.89
+
+  Alignment:
+  score: 74.5 bits
+  U6_snRNA       7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccct 99     
+                   ctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga g   gc ct
+  CH476740 1541640 CTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTCT 1541729
+                   45544...56677888899************************************************************************** PP
+
+  U6_snRNA     100 acggggcaag.tttt 113    
+                   acgg gcaa  t tt
+  CH476740 1541730 ACGGAGCAACaT-TT 1541743
+                   ******999842.33 PP
+
+>> CH476733  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.2   2.9   1.5e-19         7       112 ..    506628    506526 ..    506635    506523 ..   5107421    0.90
+
+  Alignment:
+  score: 72.2 bits
+  U6_snRNA      7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctac 101   
+                  ctc+g   +c  tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a  +ctgaga g   gc ctac
+  CH476733 506628 CTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTCTAC 506537
+                  55555...56677888899**************************************************************************** PP
+
+  U6_snRNA    102 ggggcaagttt 112   
+                  gg gcaa  tt
+  CH476733 506536 GGAGCAACATT 506526
+                  ***99987554 PP
+
+>> CH476740  Rhizopus oryzae RA 99-880 supercont3.9 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   64.3   3.0   4.7e-17        11       113 ..   1468233   1468134 ..   1468245   1468132 ..   2296105    0.90
+
+  Alignment:
+  score: 64.3 bits
+  U6_snRNA      11 ggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacgg 103    
+                   g    c+ tt+ taaaattg+aacgat cagag agattagcatgg ccctgc+caaggatgacac  +a ++ctgaga ga  gc ctacgg
+  CH476740 1468233 G---TCACTTATTAAAATTGGAACGATGCAGAGGAGATTAGCATGGTCCCTGCACAAGGATGACACTAAATCTCTGAGAAGAAAGCTCTACGG 1468144
+                   3...55667888899****************************************************************************** PP
+
+  U6_snRNA     104 ggcaagtttt 113    
+                    gcaa  ttt
+  CH476740 1468143 AGCAATATTT 1468134
+                   **99884444 PP
+
+>> CH476745  Rhizopus oryzae RA 99-880 supercont3.14 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   57.6   1.2   5.5e-15         8        84 ..   1021155   1021082 ..   1021165   1021062 ..   1243555    0.87
+
+  Alignment:
+  score: 57.6 bits
+  U6_snRNA       8 tccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaac 84     
+                   tc g    c+ tt +taaaattgaaacga acagagaagattagcatggcc ctgc++aaggatgacacgc+ a +c
+  CH476745 1021155 TCTG---TCACTTTATAAAATTGAAACGACACAGAGAAGATTAGCATGGCCGCTGCATAAGGATGACACGCATAGCC 1021082
+                   4444...55667778899****************************************************9977665 PP
+
+>> CH476733  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   57.0   1.3   8.8e-15         7        79 ..   3561686   3561617 ..   3561695   3561597 ..   5107421    0.84
+
+  Alignment:
+  score: 57.0 bits
+  U6_snRNA       7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgct 79     
+                   ctc g        t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatga ac   
+  CH476733 3561686 CTCTGTCA---CCTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGAGACTTC 3561617
+                   45555333...3345567899**********************************************998765 PP
+
+>> CH476732  Rhizopus oryzae RA 99-880 supercont3.1 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   55.0   2.7   3.7e-14         6        96 ..    554132    554045 ..    554139    554026 ..   5735491    0.83
+
+  Alignment:
+  score: 55.0 bits
+  U6_snRNA      6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgc 96    
+                  cctc g    c+ t + taaaattg+aacgatacagagaagattag atggcccctgc+caaggatg cac   a +act a ag attg 
+  CH476732 554132 CCTCTG---TCACTGATTAAAATTGGAACGATACAGAGAAGATTAGTATGGCCCCTGCACAAGGATGGCACTAAATCACTTACAGTATTGA 554045
+                  566666...4444556677899*************************************************99988888877776666554 PP
+
+>> CH476733  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   54.8   2.2   4.1e-14         7       107 ..   4688498   4688401 ..   4688504   4688395 ..   5107421    0.90
+
+  Alignment:
+  score: 54.8 bits
+  U6_snRNA       7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccct 99     
+                   ctc g    c+ ttg taaaattg+aacga acagagaa attagcat g ccctgc++aagg tgacac  +a ++ctgaga g   gc ct
+  CH476733 4688498 CTCTG---TCACTTGTTAAAATTGGAACGAGACAGAGAATATTAGCATTGTCCCTGCATAAGGTTGACACTAAATCCCTGAGAAGGAAGCTCT 4688409
+                   55555...6677899999*************************************************************************99 PP
+
+  U6_snRNA     100 acggggca 107    
+                   acgg g a
+  CH476733 4688408 ACGGAGTA 4688401
+                   99988765 PP
+
+>> CH476742  Rhizopus oryzae RA 99-880 supercont3.11 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   51.0   1.4   6.5e-13         7        80 ..   1566328   1566258 ..   1566334   1566238 ..   1718185    0.86
+
+  Alignment:
+  score: 51.0 bits
+  U6_snRNA       7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgcta 80     
+                   ctc g    c+ ttg taaaat g+aacgatacagagaagattag atggcccctgc+caaggatg ca   t 
+  CH476742 1566328 CTCTG---TCACTTGTTAAAATCGGAACGATACAGAGAAGATTAGTATGGCCCCTGCACAAGGATGGCATTATC 1566258
+                   45544...6677899999************************************************99876654 PP
+
+>> CH476742  Rhizopus oryzae RA 99-880 supercont3.11 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   42.5   1.0   2.8e-10         6        68 ..   1199470   1199411 ..   1199478   1199391 ..   1718185    0.81
+
+  Alignment:
+  score: 42.5 bits
+  U6_snRNA       6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaag 68     
+                   cctc g    c+ tt+  aaaattg+aacgatacagagaagatta catggcccctgc+caag
+  CH476742 1199470 CCTCTG---TCACTTATCAAAATTGGAACGATACAGAGAAGATTATCATGGCCCCTGCACAAG 1199411
+                   555555...455667777899*************************************99875 PP
+
+>> CH476745  Rhizopus oryzae RA 99-880 supercont3.14 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   40.3   1.2   1.4e-09         7        65 ..   1037436   1037381 ..   1037442   1037361 ..   1243555    0.86
+
+  Alignment:
+  score: 40.3 bits
+  U6_snRNA       7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgc 65     
+                   ctc g    c+ tt+ taaaattg+aacgatacagagaagattagcat gcccctgc+c
+  CH476745 1037436 CTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATTGCCCCTGCAC 1037381
+                   55555...56667788889*************************************975 PP
+
+>> CH476733  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   32.9   2.0   2.8e-07        24        88 ..    575032    575096 ..    575014    575114 ..   5107421    0.83
+
+  Alignment:
+  score: 32.9 bits
+  U6_snRNA     24 aaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgag 88    
+                  aaaa tg+aac  ta aga aag ttagcatggcccctgc+c aggatga ac  t + act  g
+  CH476733 575032 AAAACTGGAACTGTATAGATAAGCTTAGCATGGCCCCTGCACCAGGATGATACTTTTGGACTTTG 575096
+                  3677899999*****************************************99988777666555 PP
+
+>> CH476733  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   32.8   3.8   3.1e-07         6        66 ..   2203629   2203686 ..   2203623   2203706 ..   5107421    0.87
+
+  Alignment:
+  score: 32.8 bits
+  U6_snRNA       6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgca 66     
+                   cctc g    c  tt  taaaattg+aa gatacagagaagatta catg cccctgc+ca
+  CH476733 2203629 CCTCTG---TCACTTATTAAAATTGGAATGATACAGAGAAGATTAACATGACCCCTGCACA 2203686
+                   556655...56677888889**************************************986 PP
+
+>> CH476733  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   29.3   3.1   3.9e-06        18        80 ..   3310004   3310064 ..   3309991   3310085 ..   5107421    0.80
+
+  Alignment:
+  score: 29.3 bits
+  U6_snRNA      18 attggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgcta 80     
+                   + tg+taaaa tgaaa  a  ca aga gattag atg cc ctgc+caaggatgacac  ++
+  CH476733 3310004 TGTGATAAAACTGAAATAA--CATAGAGGATTAGTATGTCCTCTGCACAAGGATGACACTACC 3310064
+                   5566777888888888765..5666777******************************98664 PP
+
+>> CH476747  Rhizopus oryzae RA 99-880 supercont3.16 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   28.5   1.5   6.4e-06        24        78 ..     93296     93355 ..     93280     93374 ..    824240    0.75
+
+  Alignment:
+  score: 28.5 bits
+  U6_snRNA    24 aaaattgaaacgat...acag..agaagattagcatggcccctgcgcaaggatgacacgc 78   
+                 aa  t g+aacgat   a ag  a aagattagcatgg ccctgc caaggatgac c  
+  CH476747 93296 AAGTTAGGAACGATtttAAAGgaAAAAGATTAGCATGGTCCCTGCTCAAGGATGACGCCA 93355
+                 555566666666533222232225589****************************98754 PP
+
+>> CH476738  Rhizopus oryzae RA 99-880 supercont3.7 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   22.6   1.8   0.00047        11        65 ..   1856550   1856496 ..   1856560   1856476 ..   2712543    0.88
+
+  Alignment:
+  score: 22.6 bits
+  U6_snRNA      11 ggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgc 65     
+                   g  g c  ttg taa attg+aac at cagagaaga tagcatg c cc gc+c
+  CH476738 1856550 GCTGTCACTTGTTAACATTGGAACAATGCAGAGAAGACTAGCATGACACCAGCAC 1856496
+                   5566778899999********************************9988877765 PP
+
+>> CH476736  Rhizopus oryzae RA 99-880 supercont3.5 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   19.5   8.0    0.0042        15       105 ..    297770    297861 ..    297762    297871 ..   3273655    0.75
+
+  Alignment:
+  score: 19.5 bits
+  U6_snRNA     15 cccattggtaaaattgaaacgatacagaga.agattagcatggc.ccctgcgcaaggatgacacgctaaaactgagaggattgccctacgggg 105   
+                   c  ttg taaaattg+aa gatacaga a agat    a  gc ccct c+caaggat a ac   a +++tga   g  +  cctacg  g
+  CH476736 297770 TCACTTGATAAAATTGGAATGATACAGAAAaAGATGGATAG-GCtCCCTACACAAGGATAAAACTAAATCTTTGATGAGGAGAACCTACGAAG 297861
+                  5667899999*****************86426777655554.555*******************99999998887554445555566655554 PP
+
+>> CH476736  Rhizopus oryzae RA 99-880 supercont3.5 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   12.5   1.5      0.64        25        52 ..   3103744   3103717 ..   3103763   3103697 ..   3273655    0.88
+
+  Alignment:
+  score: 12.5 bits
+  U6_snRNA      25 aaattgaaacgatacagagaagattagc 52     
+                   a attg a + a acagagaagat agc
+  CH476736 3103744 AGATTGTATATAAACAGAGAAGATGAGC 3103717
+                   568999********************97 PP
+
+>> CH476737  Rhizopus oryzae RA 99-880 supercont3.6 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.2   2.7       1.7        64       109 ..   1316805   1316760 ..   1316825   1316752 ..   3104119    0.86
+
+  Alignment:
+  score: 11.2 bits
+  U6_snRNA      64 gcaaggatgacacgctaaaactgagaggattgccctacggggcaag 109    
+                   ++aaggatgacac   a + ctgaga g   gc ctacg  g a +
+  CH476737 1316805 ATAAGGATGACACTAAATCTCTGAGAAGGAAGCTCTACGAAGTAGC 1316760
+                   589******************************9999988776655 PP
+
+>> CH476750  Rhizopus oryzae RA 99-880 supercont3.19 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.6   0.3       5.1        52        79 ..    162646    162619 ..    162666    162599 ..    597430    0.89
+
+  Alignment:
+  score: 9.6 bits
+  U6_snRNA     52 catggcccctgcgcaaggatgacacgct 79    
+                  catg cccctg +caaggat  cacg +
+  CH476750 162646 CATGTCCCCTGTACAAGGATATCACGGA 162619
+                  799*****************99999876 PP
+
+>> CH476735  Rhizopus oryzae RA 99-880 supercont3.4 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.5   0.6       5.5        31        61 ..    885864    885894 ..    885844    885906 ..   3274887    0.77
+
+  Alignment:
+  score: 9.5 bits
+  U6_snRNA     31 aaacgatacagagaagattagcatggcccct 61    
+                  aa+c atacagagaag ttagc t   cc t
+  CH476735 885864 AATCCATACAGAGAAGGTTAGCCTTATCCTT 885894
+                  57899****************9776666655 PP
+
+>> CH476733  Rhizopus oryzae RA 99-880 supercont3.2 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.9   1.0       8.7        22        98 ..   4806992   4806919 ..   4807010   4806912 ..   5107421    0.73
+
+  Alignment:
+  score: 8.9 bits
+  U6_snRNA      22 gtaaaattgaaacgatacagagaagattagcatggcccctgcgcaa.....ggatgacacgctaaaactgagaggattgccc 98     
+                   gt aa ttg+ +cgat  agaga gat agcatg        g aa     ggatga  c  +   ac+ a agga tgccc
+  CH476733 4806992 GTGAACTTGGCTCGATTAAGAGATGATGAGCATG-------TGAAAtttctGGATGAGCCATAGT-ACATACAGGAATGCCC 4806919
+                   45678899999*********************86.......555556666688888887777744.4444445555444444 PP
+
+>> CH476735  Rhizopus oryzae RA 99-880 supercont3.4 genomic scaffold, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.8   1.6       8.9        27        57 ..   1397196   1397228 ..   1397175   1397248 ..   3274887    0.79
+
+  Alignment:
+  score: 8.8 bits
+  U6_snRNA      27 attgaaacgatacagagaagattag..catggc 57     
+                   a tgaa c atacagaga gat ag  ca ggc
+  CH476735 1397196 AGTGAAGCAATACAGAGATGATGAGaaCAAGGC 1397228
+                   45799*****************99844555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                           83  (92297756 residues searched)
+Residues passing SSV filter:           2620458  (0.0284); expected (0.02)
+Residues passing bias filter:          2321447  (0.0252); expected (0.02)
+Residues passing Vit filter:            304150  (0.0033); expected (0.003)
+Residues passing Fwd filter:             24239  (0.000263); expected (3e-05)
+Total number of hits:                       23  (1.69e-05)
+# CPU time: 5.14u 0.23s 00:00:05.37 Elapsed: 00:00:04.76
+# Mc/sec: 2205.86
+//
+[ok]

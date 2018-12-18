@@ -1,0 +1,79 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Coemansia_reversa_NRRL_1564.Coere1.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Coemansia_reversa_NRRL_1564.Coere1.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Coemansia_reversa_NRRL_1564.Coere1.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence            start    end  Description
+    ------- ------ -----  --------            -----  -----  -----------
+    9.2e-13   49.4   2.1  Coere1|scaffold_25 197111 197193  
+  ------ inclusion threshold ------
+        1.6   10.2   4.5  Coere1|scaffold_51  22327  22209  
+        5.6    8.5   4.6  Coere1|scaffold_29 141432 141478  
+
+
+Annotation for each hit  (and alignments):
+>> Coere1|scaffold_25  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   49.4   2.1   9.2e-13        33       114 .]    197111    197193 ..    197090    197195 ..    322458    0.85
+
+  Alignment:
+  score: 49.4 bits
+            U6_snRNA     33 acgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgccctacggggcaagttttt 114   
+                            acgatacagagaagattagcat  cccctgcgcaaggatg  acg t a ++tgaga gga t+ cct+cggg +aa ttttt
+  Coere1|scaffold_25 197111 ACGATACAGAGAAGATTAGCATTCCCCCTGCGCAAGGATGGAACGTTTATCTTGAGAcGGAATCTCCTTCGGGAGAAATTTTT 197193
+                            689****************************************************9746677777888888888888877664 PP
+
+>> Coere1|scaffold_51  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.2   4.5       1.6        25        96 ..     22327     22209 ..     22347     22189 ..    116528    0.84
+
+  Alignment:
+  score: 10.2 bits
+            U6_snRNA    25 aaattgaaacgatacagagaagat.............................................tagcatggcccctgcgca 66   
+                           a attg aac a  cagagaagat                                             tagca  gc  ct c+  
+  Coere1|scaffold_51 22327 ATATTGCAACAAACCAGAGAAGATtaagaaaggataaatgaatcaacgaccatctgagcgtattagatgTAGCACAGCATCTACAAT 22241
+                           56899****************************************************************9********99****999 PP
+
+            U6_snRNA    67 aggatgacacgc..taaaactgagaggattgc 96   
+                           aggatga +     ta+a+ tg g+gg tt  
+  Coere1|scaffold_51 22240 AGGATGATCATGgaTAGACATGCGTGGGTTTT 22209
+                           9*****96543311345556666776666554 PP
+
+>> Coere1|scaffold_29  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.5   4.6       5.6         7        53 ..    141432    141478 ..    141427    141488 ..    267608    0.85
+
+  Alignment:
+  score: 8.5 bits
+            U6_snRNA      7 ctccggagcccattggtaaaattgaaacgatacagagaagattagca 53    
+                             tc g ++  cat  gt +a+ t aaa +atacagaga gat agca
+  Coere1|scaffold_29 141432 ATCAGAGCAGCATAAGTTTATGTCAAAACATACAGAGATGATGAGCA 141478
+                            566677777788888888888899999******************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          346  (43676028 residues searched)
+Residues passing SSV filter:            788490  (0.0181); expected (0.02)
+Residues passing bias filter:           757350  (0.0173); expected (0.02)
+Residues passing Vit filter:             88663  (0.00203); expected (0.003)
+Residues passing Fwd filter:              4817  (0.00011); expected (3e-05)
+Total number of hits:                        3  (5.7e-06)
+# CPU time: 2.15u 0.14s 00:00:02.29 Elapsed: 00:00:02.17
+# Mc/sec: 2294.50
+//
+[ok]

@@ -1,0 +1,110 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Apophysomyces_trapeziformis_B9324.fasta
+# output directed to file:         results/U6_snRNA-vs-Apophysomyces_trapeziformis_B9324.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Apophysomyces_trapeziformis_B9324.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+      8e-20   72.8   1.4  JNDP01001254   5312   5419  Apophysomyces trapeziformis B9324 ctg7180000161296_1, whole geno
+    1.1e-19   72.3   1.3  JNDP01001356  46403  46296  Apophysomyces trapeziformis B9324 jtg7180000160804f_718000016080
+  ------ inclusion threshold ------
+        1.2   11.3   0.8  JNDP01000893 126121 126079  Apophysomyces trapeziformis B9324 ctg7180000160712_1, whole geno
+        1.6   10.9   3.3  JNDP01001278 112172 112148  Apophysomyces trapeziformis B9324 jtg7180000160848f_718000016084
+          6    9.1   1.8  JNDP01001359  39461  39424  Apophysomyces trapeziformis B9324 jtg7180000160891f_718000016089
+
+
+Annotation for each hit  (and alignments):
+>> JNDP01001254  Apophysomyces trapeziformis B9324 ctg7180000161296_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.8   1.4     8e-20         5       114 .]      5312      5419 ..      5303      5421 ..     36544    0.86
+
+  Alignment:
+  score: 72.8 bits
+      U6_snRNA    5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgccc 98  
+                    +cctc+g    c+  t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +   +ctgaga gga  gc c
+  JNDP01001254 5312 GCCTCTG---TCACATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAATCTCCTGAGAtGGAAAGCTC 5403
+                    3344444...344456677899*************************************************************9648899999** PP
+
+      U6_snRNA   99 tacggggcaagttttt 114 
+                    tacgg gcaa ttttt
+  JNDP01001254 5404 TACGGAGCAACTTTTT 5419
+                    **********988875 PP
+
+>> JNDP01001356  Apophysomyces trapeziformis B9324 jtg7180000160804f_7180000160805f_7180000160806f_1, whole genome shotg
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.3   1.3   1.1e-19         5       114 .]     46403     46296 ..     46413     46294 ..    287398    0.85
+
+  Alignment:
+  score: 72.3 bits
+      U6_snRNA     5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgc 96   
+                     +cctc+g   +c+  t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +   +ctgaga gga  gc
+  JNDP01001356 46403 GCCTCTG---TCACATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAATCTCCTGAGAtGGACAGC 46314
+                     3334433...334456677899*************************************************************9648889999 PP
+
+      U6_snRNA    97 cctacggggcaagttttt 114  
+                      ctacgg gcaa ttttt
+  JNDP01001356 46313 TCTACGGAGCAACTTTTT 46296
+                     9**********9988875 PP
+
+>> JNDP01000893  Apophysomyces trapeziformis B9324 ctg7180000160712_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.3   0.8       1.2        37        79 ..    126121    126079 ..    126141    126058 ..    228313    0.87
+
+  Alignment:
+  score: 11.3 bits
+      U6_snRNA     37 tacagagaagattagcatggcccctgcgcaaggatgacacgct 79    
+                      tacagaga ga  agca g    ct ++caaggatgac c  +
+  JNDP01000893 126121 TACAGAGAGGAGCAGCAAGAGTACTTTACAAGGATGACTCCTG 126079
+                      79*****************99999*************988654 PP
+
+>> JNDP01001278  Apophysomyces trapeziformis B9324 jtg7180000160848f_7180000160849f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.9   3.3       1.6        29        53 ..    112172    112148 ..    112193    112139 ..    264247    0.85
+
+  Alignment:
+  score: 10.9 bits
+      U6_snRNA     29 tgaaacgatacagagaagattagca 53    
+                       gaa+c a acagagaagattagca
+  JNDP01001278 112172 AGAATCCACACAGAGAAGATTAGCA 112148
+                      5899*******************97 PP
+
+>> JNDP01001359  Apophysomyces trapeziformis B9324 jtg7180000160891f_7180000160892f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.1   1.8         6        44        80 ..     39461     39424 ..     39481     39404 ..     89668    0.84
+
+  Alignment:
+  score: 9.1 bits
+      U6_snRNA    44 aagattagcatggc.ccctgcgcaaggatgacacgcta 80   
+                     aagattag atggc cc tg + aagga g c c c +
+  JNDP01001359 39461 AAGATTAGTATGGCaCCTTGGAAAAGGAAGGCCCACAT 39424
+                     789***********9999**********9988887654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         1028  (71268284 residues searched)
+Residues passing SSV filter:           1914365  (0.0269); expected (0.02)
+Residues passing bias filter:          1816899  (0.0255); expected (0.02)
+Residues passing Vit filter:            222752  (0.00313); expected (0.003)
+Residues passing Fwd filter:             15696  (0.00022); expected (3e-05)
+Total number of hits:                        5  (4.52e-06)
+# CPU time: 4.00u 0.18s 00:00:04.18 Elapsed: 00:00:03.56
+# Mc/sec: 2282.19
+//
+[ok]

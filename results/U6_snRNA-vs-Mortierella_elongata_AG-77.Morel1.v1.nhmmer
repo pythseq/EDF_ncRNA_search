@@ -1,0 +1,118 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Mortierella_elongata_AG-77.Morel1.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Mortierella_elongata_AG-77.Morel1.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Mortierella_elongata_AG-77.Morel1.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence              start     end  Description
+    ------- ------ -----  --------              -----   -----  -----------
+    9.5e-21   76.2   2.2  Morel1|scaffold_120   36899   36793  
+  ------ inclusion threshold ------
+        1.2   11.7   0.2  Morel1|scaffold_4   1101349 1101308  
+        2.7   10.6   2.3  Morel1|scaffold_80    64798   64750  
+        3.4   10.3   1.4  Morel1|scaffold_57   121936  121874  
+        5.6    9.6   1.3  Morel1|scaffold_6    954987  955055  
+        8.9    9.0   3.5  Morel1|scaffold_25   515042  514992  
+
+
+Annotation for each hit  (and alignments):
+>> Morel1|scaffold_120  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   76.2   2.2   9.5e-21         6       111 ..     36899     36793 ..     36903     36785 ..     92219    0.84
+
+  Alignment:
+  score: 76.2 bits
+             U6_snRNA     6 cctccggagcccat.tggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagag 90   
+                            c+tc+g a++ cat t  taaa+ tg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg+taaa++tgag+g
+  Morel1|scaffold_120 36899 CTTCGGCACTACATaTTCTAAATATGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTTAAACTTGAGTG 36814
+                            55555555544443134455667799************************************************************ PP
+
+             U6_snRNA    91 gattgccctacggggcaagtt 111  
+                            ga  gccctacggggcaa  t
+  Morel1|scaffold_120 36813 GAAAGCCCTACGGGGCAAACT 36793
+                            ***************998744 PP
+
+>> Morel1|scaffold_4  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.7   0.2       1.2        23        64 ..   1101349   1101308 ..   1101367   1101288 ..   1189409    0.85
+
+  Alignment:
+  score: 11.7 bits
+           U6_snRNA      23 taaaattgaaacgatacagagaagattagcatggcccctgcg 64     
+                            ta+ +t g a  ga a agagaagat agc  g c cctgcg
+  Morel1|scaffold_4 1101349 TATCTTGGTAGGGACAAAGAGAAGATCAGCGAGACTCCTGCG 1101308
+                            4567888999999**************************997 PP
+
+>> Morel1|scaffold_80  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.6   2.3       2.7        19        77 ..     64798     64750 ..     64811     64729 ..    191987    0.76
+
+  Alignment:
+  score: 10.6 bits
+            U6_snRNA    19 ttggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacg 77   
+                            tg t aa+ttgaa+ ga   aga aaga  agca g cccctg+        gac c 
+  Morel1|scaffold_80 64798 CTGATTAATTTGAATGGAA--AGAAAAGAACAGCACGTCCCCTGT--------GACCCA 64750
+                           4566778899999999987..6999******************96........455554 PP
+
+>> Morel1|scaffold_57  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.3   1.4       3.4        32        92 ..    121936    121874 ..    121952    121854 ..    315718    0.73
+
+  Alignment:
+  score: 10.3 bits
+            U6_snRNA     32 aacgatacagagaagattagcatggcccctg......cgcaaggatgacacgctaaaactgagagga 92    
+                            aac atac gagaagatt     gg cc tg      cgcaaggatga a   t   + tga agga
+  Morel1|scaffold_57 121936 AACCATACCGAGAAGATTT----GGGCCTTGgctgttCGCAAGGATGAGAACATGGTCGTGACAGGA 121874
+                            7899*************95....4444443333333389********98777666666666655555 PP
+
+>> Morel1|scaffold_6  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.6   1.3       5.6        39       108 ..    954987    955055 ..    954977    955067 ..   1088523    0.84
+
+  Alignment:
+  score: 9.6 bits
+           U6_snRNA     39 cagagaagattagcatggc.ccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaa 108   
+                           cagag  gat ag at  c ccctg   aaggatga  cg+ + a c+ ag     tg+cct+ g ggca+
+  Morel1|scaffold_6 954987 CAGAGCCGATGAGTATATCcCCCTG--GAAGGATGAGCCGTCTGAGCACAGGATGGTGACCTTGGAGGCAT 955055
+                           79999************99777776..69***********9999999998877777777777766666665 PP
+
+>> Morel1|scaffold_25  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.0   3.5       8.9         4        54 ..    515042    514992 ..    515045    514972 ..    574627    0.90
+
+  Alignment:
+  score: 9.0 bits
+            U6_snRNA      4 gtcctccggagcccattggtaaaattgaaacgatacagagaagattagcat 54    
+                            g+cctc gga +  at + ++aaat+ +aa +atacagag  gat ag at
+  Morel1|scaffold_25 515042 GCCCTCTGGAAGATATAACACAAATGAGAAACATACAGAGTTGATCAGTAT 514992
+                            67899999999999999******************************9887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          473  (99918950 residues searched)
+Residues passing SSV filter:           2327066  (0.0233); expected (0.02)
+Residues passing bias filter:          2249020  (0.0225); expected (0.02)
+Residues passing Vit filter:            302357  (0.00303); expected (0.003)
+Residues passing Fwd filter:             15389  (0.000154); expected (3e-05)
+Total number of hits:                        6  (3.81e-06)
+# CPU time: 5.31u 0.29s 00:00:05.60 Elapsed: 00:00:04.79
+# Mc/sec: 2378.03
+//
+[ok]

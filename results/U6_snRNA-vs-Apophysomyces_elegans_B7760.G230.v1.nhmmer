@@ -1,0 +1,110 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Apophysomyces_elegans_B7760.G230.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Apophysomyces_elegans_B7760.G230.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Apophysomyces_elegans_B7760.G230.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence          start    end  Description
+    ------- ------ -----  --------          -----  -----  -----------
+    7.1e-20   73.0   1.6  jcf7180000077886  56269  56376  
+    1.2e-19   72.3   1.3  jcf7180000078007 278268 278161  
+  ------ inclusion threshold ------
+       0.79   12.0   0.9  jcf7180000077765  46533  46484  
+        0.9   11.8   2.8  jcf7180000077629   9714   9738  
+        2.7   10.2   1.8  jcf7180000077853  16671  16641  
+
+
+Annotation for each hit  (and alignments):
+>> jcf7180000077886  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.0   1.6   7.1e-20         5       114 .]     56269     56376 ..     56259     56377 ..     98094    0.86
+
+  Alignment:
+  score: 73.0 bits
+          U6_snRNA     5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.gga 92   
+                         +cctc+g    c++ t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +   +ctgaga gga
+  jcf7180000077886 56269 GCCTCTG---TCATATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAATCTCCTGAGAtGGA 56354
+                         3333333...455667778899*************************************************************954889 PP
+
+          U6_snRNA    93 ttgccctacggggcaagttttt 114  
+                           gc ctacgg gcaa ttttt
+  jcf7180000077886 56355 AAGCTCTACGGAGCAACTTTTT 56376
+                         9999************988875 PP
+
+>> jcf7180000078007  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.3   1.3   1.2e-19         5       114 .]    278268    278161 ..    278278    278159 ..    550768    0.85
+
+  Alignment:
+  score: 72.3 bits
+          U6_snRNA      5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.g 90    
+                          +cctc+g   +c+  t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +   +ctgaga g
+  jcf7180000078007 278268 GCCTCTG---TCACATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAATCTCCTGAGAtG 278185
+                          3334433...334456677899*************************************************************9648 PP
+
+          U6_snRNA     91 gattgccctacggggcaagttttt 114   
+                          ga  gc ctacgg gcaa ttttt
+  jcf7180000078007 278184 GACAGCTCTACGGAGCAACTTTTT 278161
+                          8899999**********9988875 PP
+
+>> jcf7180000077765  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   12.0   0.9      0.79        48        96 ..     46533     46484 ..     46553     46468 ..     54656    0.80
+
+  Alignment:
+  score: 12.0 bits
+          U6_snRNA    48 ttagcatggcccctgcg.caaggatgacacgctaaaactgagaggattgc 96   
+                         t agcat gcccctg   caa gatga  c  t  a+ t agag+    c
+  jcf7180000077765 46533 TCAGCATTGCCCCTGTTgCAACGATGATTCAGTTTACGTCAGAGATAAAC 46484
+                         479************977*********99999999999999988766544 PP
+
+>> jcf7180000077629  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.8   2.8       0.9        29        53 ..      9714      9738 ..      9693      9748 ..     59597    0.83
+
+  Alignment:
+  score: 11.8 bits
+          U6_snRNA   29 tgaaacgatacagagaagattagca 53  
+                         gaa+c a acagagaagattagca
+  jcf7180000077629 9714 AGAATCCACACAGAGAAGATTAGCA 9738
+                        5899*******************98 PP
+
+>> jcf7180000077853  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.2   1.8       2.7        23        53 ..     16671     16641 ..     16685     16621 ..     38046    0.82
+
+  Alignment:
+  score: 10.2 bits
+          U6_snRNA    23 taaaattgaaacgatacagagaagattagca 53   
+                         +++a ttg+aacga acagagaa at a ca
+  jcf7180000077853 16671 ACTACTTGGAACGAAACAGAGAAAATGACCA 16641
+                         457899*****************99988665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         1266  (77019000 residues searched)
+Residues passing SSV filter:           2092209  (0.0272); expected (0.02)
+Residues passing bias filter:          1985798  (0.0258); expected (0.02)
+Residues passing Vit filter:            284316  (0.00369); expected (0.003)
+Residues passing Fwd filter:             17662  (0.000229); expected (3e-05)
+Total number of hits:                        5  (4.18e-06)
+# CPU time: 4.42u 0.20s 00:00:04.62 Elapsed: 00:00:04.17
+# Mc/sec: 2105.56
+//
+[ok]

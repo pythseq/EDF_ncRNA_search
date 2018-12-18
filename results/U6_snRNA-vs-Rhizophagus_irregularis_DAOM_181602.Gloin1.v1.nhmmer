@@ -1,0 +1,92 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Rhizophagus_irregularis_DAOM_181602.Gloin1.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Rhizophagus_irregularis_DAOM_181602.Gloin1.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Rhizophagus_irregularis_DAOM_181602.Gloin1.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence               start    end  Description
+    ------- ------ -----  --------               -----  -----  -----------
+    1.1e-18   70.5   1.8  Gloin1|scaffold_5248    1902   1997  
+    2.9e-06   30.6   1.3  Gloin1|scaffold_6519    2087   2124  
+    6.4e-06   29.5   3.9  Gloin1|scaffold_14072   1356   1402  
+  ------ inclusion threshold ------
+      0.031   17.7   0.7  Gloin1|scaffold_6519    1844   1882  
+
+
+Annotation for each hit  (and alignments):
+>> Gloin1|scaffold_5248  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   70.5   1.8   1.1e-18         8       103 ..      1902      1997 ..      1895      2014 ..      4932    0.80
+
+  Alignment:
+  score: 70.5 bits
+              U6_snRNA    8 tccgga.gcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggat 93  
+                            tc+g   g c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg t a ++tgag+ggat
+  Gloin1|scaffold_5248 1902 TCGGAGcGACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTT-ATCTTGAGTGGAT 1987
+                            444433034566888999*****************************************************99.8999*******99 PP
+
+              U6_snRNA   94 tgccctacgg 103 
+                             gc  ++  g
+  Gloin1|scaffold_5248 1988 AGCAGCTAAG 1997
+                            9887665444 PP
+
+>> Gloin1|scaffold_6519  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   30.6   1.3   2.9e-06        47        84 ..      2087      2124 ..      2067      2144 ..     11025    0.88
+
+  Alignment:
+  score: 30.6 bits
+              U6_snRNA   47 attagcatggcccctgcgcaaggatgacacgctaaaac 84  
+                            attagcatggcccctgc caaggatgacacg t+ a+c
+  Gloin1|scaffold_6519 2087 ATTAGCATGGCCCCTGCACAAGGATGACACGATGCATC 2124
+                            79****************************98865544 PP
+
+>> Gloin1|scaffold_14072  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   29.5   3.9   6.4e-06        16        62 ..      1356      1402 ..      1346      1423 ..      3938    0.84
+
+  Alignment:
+  score: 29.5 bits
+               U6_snRNA   16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctg 62  
+                             c  tt  taaaattg+aacgatacagagaagattagcatggc  ct 
+  Gloin1|scaffold_14072 1356 CACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCTGCTA 1402
+                             5678888999*******************************977764 PP
+
+>> Gloin1|scaffold_6519  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   17.7   0.7     0.031        23        61 ..      1844      1882 ..      1826      1886 ..     11025    0.77
+
+  Alignment:
+  score: 17.7 bits
+              U6_snRNA   23 taaaattgaaacgatacagagaagattagcatggcccct 61  
+                            t aa+   +aacga acag gaagatt gcatggcccct
+  Gloin1|scaffold_6519 1844 TGAATCAAGAACGACACAGGGAAGATTGGCATGGCCCCT 1882
+                            333344447999*************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                        28371  (182167584 residues searched)
+Residues passing SSV filter:           3910089  (0.0215); expected (0.02)
+Residues passing bias filter:          3169419  (0.0174); expected (0.02)
+Residues passing Vit filter:            309855  (0.0017); expected (0.003)
+Residues passing Fwd filter:             51459  (0.000282); expected (3e-05)
+Total number of hits:                        4  (1.21e-06)
+# CPU time: 10.12u 0.54s 00:00:10.66 Elapsed: 00:00:07.96
+# Mc/sec: 2608.93
+//
+[ok]

@@ -1,0 +1,9 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+Supercontig_3.1       (null)               U6_snRNA               67.8   4.6e-18   0.8       4     114    -    555072  554964  555075  554962 3145054   of Allomyces macrogynus ATCC 38327
+Supercontig_3.19      (null)               U6_snRNA               67.5   5.5e-18   1.4       5     114    -    523568  523461  523571  523460 1031938   of Allomyces macrogynus ATCC 38327
+Supercontig_3.13      (null)               U6_snRNA               67.4   6.1e-18   0.9       5     114    -    999532  999425  999536  999424 1334280   of Allomyces macrogynus ATCC 38327
+Supercontig_3.21      (null)               U6_snRNA               67.4   6.1e-18   0.9       5     114    +    311787  311894  311783  311895 1072379   of Allomyces macrogynus ATCC 38327

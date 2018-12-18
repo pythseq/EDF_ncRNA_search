@@ -1,0 +1,20 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+JNEB01007848          (null)               U6_snRNA               74.7   1.9e-20   2.5       7     113    -      2767    2664    2775    2659    3616   Rhizopus oryzae 99-892 NODE_15377_length_239814_cov_9.569796_18, whole genome shotgun sequence.
+JNEB01009429          (null)               U6_snRNA               74.6   2.1e-20   2.6       6     113    +       833     937     828     942    1066   Rhizopus oryzae 99-892 NODE_16048_length_111812_cov_9.650986_10, whole genome shotgun sequence.
+JNEB01007885          (null)               U6_snRNA               67.9   2.5e-18   2.4       7     113    +      3262    3365    3255    3368    4370   Rhizopus oryzae 99-892 NODE_15377_length_239814_cov_9.569796_56, whole genome shotgun sequence.
+JNEB01000022          (null)               U6_snRNA               58.1   2.9e-15   2.5       7      80    +       839     909     830     929    1280   Rhizopus oryzae 99-892 NODE_85_length_81578_cov_9.574885_17, whole genome shotgun sequence.
+JNEB01008501          (null)               U6_snRNA               55.4     2e-14   7.9      15     111    -      2432    2336    2445    2333   11667   Rhizopus oryzae 99-892 NODE_15582_length_71331_cov_9.869958_17, whole genome shotgun sequence.
+JNEB01011001          (null)               U6_snRNA               51.7   2.9e-13   2.8       6      96    +        47     134      42     154    2324   Rhizopus oryzae 99-892 NODE_16346_length_253797_cov_9.909692_37, whole genome shotgun sequence.
+JNEB01008680          (null)               U6_snRNA               50.0   9.6e-13   6.6       5     109    -      5386    5285    5390    5277    6452   Rhizopus oryzae 99-892 NODE_15623_length_124705_cov_9.302321_50, whole genome shotgun sequence.
+JNEB01007733          (null)               U6_snRNA               39.1   2.4e-09   2.8       7      81    -      2068    1997    2075    1977    2701   Rhizopus oryzae 99-892 NODE_15332_length_102971_cov_10.384778_33, whole genome shotgun sequence.
+JNEB01007495          (null)               U6_snRNA               29.2   2.9e-06   3.2      24      85    -      3942    3881    3961    3861    4912   Rhizopus oryzae 99-892 NODE_15205_length_245888_cov_9.407186_14, whole genome shotgun sequence.
+JNEB01000070          (null)               U6_snRNA               28.6   4.6e-06   1.4      25      78    +       776     834     759     853    5850   Rhizopus oryzae 99-892 NODE_477_length_187171_cov_9.533208_15, whole genome shotgun sequence.
+JNEB01001247          (null)               U6_snRNA               28.3   5.6e-06   7.3      15     107    -      3062    2964    3074    2956    7081   Rhizopus oryzae 99-892 NODE_5298_length_67105_cov_10.588526_5, whole genome shotgun sequence.
+JNEB01014873          (null)               U6_snRNA               25.1   5.5e-05   2.4      20      80    +      2109    2167    2094    2188    8608   Rhizopus oryzae 99-892 NODE_25145_length_416521_cov_10.148473_155, whole genome shotgun sequence.
+JNEB01002233          (null)               U6_snRNA               17.9    0.0099   1.5      12      65    +      2609    2662    2598    2682    9218   Rhizopus oryzae 99-892 NODE_7350_length_39067_cov_9.144112_15, whole genome shotgun sequence.
+JNEB01003972          (null)               U6_snRNA               11.5      0.96   0.5      31      62    -       828     797     848     784    4069   Rhizopus oryzae 99-892 NODE_11729_length_28941_cov_10.322484_7, whole genome shotgun sequence.
+JNEB01013680          (null)               U6_snRNA                9.4       4.5   1.8      37      67    +      1663    1693    1643    1713    2404   Rhizopus oryzae 99-892 NODE_22796_length_139736_cov_9.781967_34, whole genome shotgun sequence.

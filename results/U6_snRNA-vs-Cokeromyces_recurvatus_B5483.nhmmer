@@ -1,0 +1,110 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Cokeromyces_recurvatus_B5483.fasta
+# output directed to file:         results/U6_snRNA-vs-Cokeromyces_recurvatus_B5483.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Cokeromyces_recurvatus_B5483.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+      1e-20   75.3   1.7  JNEH01002190  18668  18563  Cokeromyces recurvatus B5483 jtg7180000208165f_7180000208166f_1,
+    1.7e-20   74.6   2.1  JNEH01002553  13343  13239  Cokeromyces recurvatus B5483 jtg7180000207746f_7180000207747f_1,
+  ------ inclusion threshold ------
+        4.6    9.1   2.0  JNEH01002371  49865  49812  Cokeromyces recurvatus B5483 jtg7180000207986f_7180000207987f_1,
+        6.1    8.7   1.8  JNEH01001426  11900  11855  Cokeromyces recurvatus B5483 ctg7180000207405_1, whole genome sh
+        8.5    8.3   1.4  JNEH01002346  26765  26820  Cokeromyces recurvatus B5483 jtg7180000207400f_7180000207401f_1,
+
+
+Annotation for each hit  (and alignments):
+>> JNEH01002190  Cokeromyces recurvatus B5483 jtg7180000208165f_7180000208166f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   75.3   1.7     1e-20         5       113 ..     18668     18563 ..     18678     18557 ..     70935    0.87
+
+  Alignment:
+  score: 75.3 bits
+      U6_snRNA     5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgcc 97   
+                      cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g  tgc 
+  JNEH01002190 18668 ACCTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGATGCT 18579
+                     4455555...55667888899************************************************************************ PP
+
+      U6_snRNA    98 ctacggggcaag.tttt 113  
+                     ctacgg gca   t tt
+  JNEH01002190 18578 CTACGGAGCACTaT-TT 18563
+                     *******9987642.22 PP
+
+>> JNEH01002553  Cokeromyces recurvatus B5483 jtg7180000207746f_7180000207747f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.6   2.1   1.7e-20         6       113 ..     13343     13239 ..     13353     13234 ..     16268    0.88
+
+  Alignment:
+  score: 74.6 bits
+      U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98   
+                     cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g  tgc c
+  JNEH01002553 13343 CCTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGATGCTC 13254
+                     455555...55667888899************************************************************************* PP
+
+      U6_snRNA    99 tacggggcaag.tttt 113  
+                     tacgg gca   t tt
+  JNEH01002553 13253 TACGGAGCACTaT-TT 13239
+                     ******9987642.22 PP
+
+>> JNEH01002371  Cokeromyces recurvatus B5483 jtg7180000207986f_7180000207987f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.1   2.0       4.6         4        55 ..     49865     49812 ..     49868     49789 ..     55762    0.81
+
+  Alignment:
+  score: 9.1 bits
+      U6_snRNA     4 gtcctccggagcccattggtaaaattgaaacgatacagagaaga..ttagcatg 55   
+                     +tcct+ g +g +  t+g++++ +ttgaaa ga acagaga ga  t ag a g
+  JNEH01002371 49865 TTCCTTGGACGATTGTCGAACTTTTTGAAAGGAAACAGAGAGGAgcTCAGGAAG 49812
+                     56788888899999999**********************997663355555555 PP
+
+>> JNEH01001426  Cokeromyces recurvatus B5483 ctg7180000207405_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.7   1.8       6.1         4        49 ..     11900     11855 ..     11903     11835 ..     32576    0.91
+
+  Alignment:
+  score: 8.7 bits
+      U6_snRNA     4 gtcctccggagcccattggtaaaattgaaacgatacagagaagatt 49   
+                     g+cctc g +  cc+t g +   attgaa+cga a  gagaagatt
+  JNEH01001426 11900 GCCCTCTGTCTTCCTTGGTAGTTATTGAATCGAAAAGGAGAAGATT 11855
+                     78999***9999999999999***********************95 PP
+
+>> JNEH01002346  Cokeromyces recurvatus B5483 jtg7180000207400f_7180000207401f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.3   1.4       8.5        22        76 ..     26765     26820 ..     26748     26840 ..     43055    0.83
+
+  Alignment:
+  score: 8.3 bits
+      U6_snRNA    22 gtaaaattgaaacgatacagagaagattagcatggcccctgcg.caaggatgacac 76   
+                      t aaattg+a  g  ac  aga gat agca  g ccct c+ + ag  tga ac
+  JNEH01002346 26765 CTTAAATTGGACGGTCACCAAGATGATCAGCAGAGTCCCTACAaTGAGTTTGAAAC 26820
+                     5668899********************************98765555555665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         1820  (57768870 residues searched)
+Residues passing SSV filter:           1674427  (0.029); expected (0.02)
+Residues passing bias filter:          1398510  (0.0242); expected (0.02)
+Residues passing Vit filter:            134266  (0.00232); expected (0.003)
+Residues passing Fwd filter:              9782  (0.000169); expected (3e-05)
+Total number of hits:                        5  (6.35e-06)
+# CPU time: 3.24u 0.29s 00:00:03.53 Elapsed: 00:00:06.47
+# Mc/sec: 1017.87
+//
+[ok]

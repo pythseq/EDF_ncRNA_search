@@ -1,0 +1,239 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Mucor_indicus_B7402.fasta
+# output directed to file:         results/U6_snRNA-vs-Mucor_indicus_B7402.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Mucor_indicus_B7402.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    1.1e-19   72.5   3.4  JNEK01001424  64362  64463  Mucor indicus B7402 ctg7180000282166_1, whole genome shotgun seq
+    1.1e-19   72.4   3.4  JNEK01001424  52417  52316  Mucor indicus B7402 ctg7180000282166_1, whole genome shotgun seq
+    1.5e-19   72.1   3.7  JNEK01000982   8452   8355  Mucor indicus B7402 ctg7180000281378_1, whole genome shotgun seq
+    1.5e-19   72.1   3.7  JNEK01001109  31283  31380  Mucor indicus B7402 ctg7180000281532_1, whole genome shotgun seq
+    1.5e-19   72.1   3.7  JNEK01002428   3054   2957  Mucor indicus B7402 ctg7180000283690_1, whole genome shotgun seq
+    1.5e-19   72.1   3.7  JNEK01002742  26971  27068  Mucor indicus B7402 jtg7180000281551f_7180000281552f_1, whole ge
+    1.7e-19   71.9   3.8  JNEK01001384  44340  44437  Mucor indicus B7402 ctg7180000282079_1, whole genome shotgun seq
+    3.8e-17   64.3   3.9  JNEK01002742     86      4  Mucor indicus B7402 jtg7180000281551f_7180000281552f_1, whole ge
+    0.00059   22.0   0.3  JNEK01002788  36534  36572  Mucor indicus B7402 jtg7180000282206f_7180000282207f_71800002822
+  ------ inclusion threshold ------
+       0.29   13.4   4.6  JNEK01002696  63089  63149  Mucor indicus B7402 jtg7180000280799r_7180000282362f_1, whole ge
+        2.7   10.3   1.3  JNEK01003078  64753  64788  Mucor indicus B7402 jtg7180000282849f_7180000282850f_71800002828
+        3.9    9.8   2.6  JNEK01001479   2096   2186  Mucor indicus B7402 ctg7180000282283_1, whole genome shotgun seq
+        5.7    9.2   3.1  JNEK01002995  35367  35406  Mucor indicus B7402 jtg7180000283159f_7180000283160f_1, whole ge
+
+
+Annotation for each hit  (and alignments):
+>> JNEK01001424  Mucor indicus B7402 ctg7180000282166_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.5   3.4   1.1e-19        13       114 .]     64362     64463 ..     64348     64466 ..     85031    0.84
+
+  Alignment:
+  score: 72.5 bits
+      U6_snRNA    13 agcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacgggg 105  
+                      g c   t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac+  a ++ctgaga g   gc ctacgg g
+  JNEK01001424 64362 CGACACATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCACTACGGTG 64454
+                     2334556778899******************************************************************************** PP
+
+      U6_snRNA   106 caag.ttttt 114  
+                     caa  t ttt
+  JNEK01001424 64455 CAAAaT-TTT 64463
+                     998853.332 PP
+
+>> JNEK01001424  Mucor indicus B7402 ctg7180000282166_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.4   3.4   1.1e-19        13       114 .]     52417     52316 ..     52431     52313 ..     85031    0.85
+
+  Alignment:
+  score: 72.4 bits
+      U6_snRNA    13 agcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacgggg 105  
+                     +g c   t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc ctacgg g
+  JNEK01001424 52417 CGACACATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCACTACGGTG 52325
+                     3344556778899******************************************************************************** PP
+
+      U6_snRNA   106 caag.ttttt 114  
+                     caa  t ttt
+  JNEK01001424 52324 CAAAaT-TTT 52316
+                     998853.332 PP
+
+>> JNEK01000982  Mucor indicus B7402 ctg7180000281378_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.1   3.7   1.5e-19        16       113 ..      8452      8355 ..      8469      8349 ..     12258    0.85
+
+  Alignment:
+  score: 72.1 bits
+      U6_snRNA   16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaag. 109 
+                    c   t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc ctacgg gcaa  
+  JNEK01000982 8452 CACATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCACTACGGTGCAAAa 8358
+                    34456678899*******************************************************************************99885 PP
+
+      U6_snRNA  110 tttt 113 
+                    t tt
+  JNEK01000982 8357 T-TT 8355
+                    2.32 PP
+
+>> JNEK01001109  Mucor indicus B7402 ctg7180000281532_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.1   3.7   1.5e-19        16       113 ..     31283     31380 ..     31266     31386 ..     36157    0.85
+
+  Alignment:
+  score: 72.1 bits
+      U6_snRNA    16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaa 108  
+                     c   t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc ctacgg gcaa
+  JNEK01001109 31283 CACATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCACTACGGTGCAA 31375
+                     34456678899*******************************************************************************998 PP
+
+      U6_snRNA   109 g.tttt 113  
+                       t tt
+  JNEK01001109 31376 AaT-TT 31380
+                     852.32 PP
+
+>> JNEK01002428  Mucor indicus B7402 ctg7180000283690_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.1   3.7   1.5e-19        16       113 ..      3054      2957 ..      3071      2951 ..      3223    0.85
+
+  Alignment:
+  score: 72.1 bits
+      U6_snRNA   16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaag. 109 
+                    c   t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc ctacgg gcaa  
+  JNEK01002428 3054 CACATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCACTACGGTGCAAAa 2960
+                    34456678899*******************************************************************************99885 PP
+
+      U6_snRNA  110 tttt 113 
+                    t tt
+  JNEK01002428 2959 T-TT 2957
+                    2.32 PP
+
+>> JNEK01002742  Mucor indicus B7402 jtg7180000281551f_7180000281552f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.1   3.7   1.5e-19        16       113 ..     26971     27068 ..     26954     27074 ..     27363    0.85
+
+  Alignment:
+  score: 72.1 bits
+      U6_snRNA    16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaa 108  
+                     c   t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc ctacgg gcaa
+  JNEK01002742 26971 CACATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCACTACGGTGCAA 27063
+                     34456678899*******************************************************************************998 PP
+
+      U6_snRNA   109 g.tttt 113  
+                       t tt
+  JNEK01002742 27064 AaT-TT 27068
+                     852.32 PP
+
+>> JNEK01001384  Mucor indicus B7402 ctg7180000282079_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.9   3.8   1.7e-19        16       113 ..     44340     44437 ..     44323     44442 ..     65282    0.85
+
+  Alignment:
+  score: 71.9 bits
+      U6_snRNA    16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaa 108  
+                     c   t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc ctacgg gcaa
+  JNEK01001384 44340 CACATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCACTACGGTGCAA 44432
+                     34456678899*******************************************************************************998 PP
+
+      U6_snRNA   109 g.tttt 113  
+                       t tt
+  JNEK01001384 44433 AaT-TT 44437
+                     852.33 PP
+
+>> JNEK01002742  Mucor indicus B7402 jtg7180000281551f_7180000281552f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   64.3   3.9   3.8e-17        16        98 ..        86         4 ..       103         1 ..     27363    0.82
+
+  Alignment:
+  score: 64.3 bits
+      U6_snRNA 16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98
+                  c   t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac+  a+ +ctgaga g   gc c
+  JNEK01002742 86 CACATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCAC 4 
+                  34456778899*************************************************************98877666655 PP
+
+>> JNEK01002788  Mucor indicus B7402 jtg7180000282206f_7180000282207f_7180000282208f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   22.0   0.3   0.00059        27        65 ..     36534     36572 ..     36514     36580 ..     52952    0.88
+
+  Alignment:
+  score: 22.0 bits
+      U6_snRNA    27 attgaaacgatacagagaagattagcatggcccctgcgc 65   
+                      t g+aa gataca  ga gattagcatggcccctgc+c
+  JNEK01002788 36534 GTCGGAATGATACAAGGATGATTAGCATGGCCCCTGCAC 36572
+                     577999******************************975 PP
+
+>> JNEK01002696  Mucor indicus B7402 jtg7180000280799r_7180000282362f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   13.4   4.6      0.29        37        99 ..     63089     63149 ..     63063     63160 ..    120950    0.81
+
+  Alignment:
+  score: 13.4 bits
+      U6_snRNA    37 tacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccct 99   
+                     tacagaga gat+a ca ggcc ctg  +aag atga   g t aa++  a +g at+ c c+
+  JNEK01002696 63089 TACAGAGAGGATCAACACGGCCACTG--TAAGTATGAATTGATGAATTATAATGAATGTCTCC 63149
+                     79**********************98..58999999988888888888777777777666655 PP
+
+>> JNEK01003078  Mucor indicus B7402 jtg7180000282849f_7180000282850f_7180000282851f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.3   1.3       2.7        33        63 ..     64753     64788 ..     64734     64809 ..    182505    0.80
+
+  Alignment:
+  score: 10.3 bits
+      U6_snRNA    33 acgatacagagaagat.....tagcatggcccctgc 63   
+                     ac a acagagaagat     tag atgg ccctg+
+  JNEK01003078 64753 ACTACACAGAGAAGATgttttTAGTATGGACCCTGT 64788
+                     467899*********7666669************96 PP
+
+>> JNEK01001479  Mucor indicus B7402 ctg7180000282283_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.8   2.6       3.9        20       113 ..      2096      2186 ..      2079      2187 ..     10881    0.85
+
+  Alignment:
+  score: 9.8 bits
+      U6_snRNA   20 tggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaagtttt 113 
+                    t  taaa   gaa  ga  cagagaaga  agc t      t cg aag atg cac++ +++ +  agagg t   c  a +g gc + tttt
+  JNEK01001479 2096 TTCTAAAGCAGAAGAGAGCCAGAGAAGAGGAGCTTCAT---TCCGAAAGAATGGCACTTCTTCGTCAAGAGGCTGATCTAAGTGAGCGTATTTT 2186
+                    4445556666888899999*************987555...45699*******************************99999999999988876 PP
+
+>> JNEK01002995  Mucor indicus B7402 jtg7180000283159f_7180000283160f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.2   3.1       5.7        14        53 ..     35367     35406 ..     35356     35414 ..    120748    0.84
+
+  Alignment:
+  score: 9.2 bits
+      U6_snRNA    14 gcccattggtaaaattgaaacgatacagagaagattagca 53   
+                     + +  tt+ t a+at g+a   atac gagaagat agca
+  JNEK01002995 35367 CATACTTAATGACATGGGACGAATACTGAGAAGATAAGCA 35406
+                     4556778888999*************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         2202  (78457336 residues searched)
+Residues passing SSV filter:           1940508  (0.0247); expected (0.02)
+Residues passing bias filter:          1769361  (0.0226); expected (0.02)
+Residues passing Vit filter:            208849  (0.00266); expected (0.003)
+Residues passing Fwd filter:             11727  (0.000149); expected (3e-05)
+Total number of hits:                       13  (1.33e-05)
+# CPU time: 4.21u 0.21s 00:00:04.42 Elapsed: 00:00:02.45
+# Mc/sec: 3650.67
+//
+[ok]

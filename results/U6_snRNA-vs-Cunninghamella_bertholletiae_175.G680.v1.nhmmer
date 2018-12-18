@@ -1,0 +1,70 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Cunninghamella_bertholletiae_175.G680.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Cunninghamella_bertholletiae_175.G680.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Cunninghamella_bertholletiae_175.G680.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence          start    end  Description
+    ------- ------ -----  --------          -----  -----  -----------
+    2.1e-19   71.3   1.8  jcf7180000074472 237790 237691  
+    2.1e-19   71.3   1.8  jcf7180000074500 171748 171847  
+
+
+Annotation for each hit  (and alignments):
+>> jcf7180000074472  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.3   1.8   2.1e-19        16       114 .]    237790    237691 ..    237806    237689 ..    307305    0.90
+
+  Alignment:
+  score: 71.3 bits
+          U6_snRNA     16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgccctac 101   
+                          c+ t++ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga gga  gc ctac
+  jcf7180000074472 237790 CACTCATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGAtGGAACGCTCTAC 237704
+                          4556777889**************************************************************95488999999**** PP
+
+          U6_snRNA    102 ggggcaagttttt 114   
+                          gg gc+a ttttt
+  jcf7180000074472 237703 GGAGCCACTTTTT 237691
+                          ******9988775 PP
+
+>> jcf7180000074500  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.3   1.8   2.1e-19        16       114 .]    171748    171847 ..    171732    171849 ..    464370    0.90
+
+  Alignment:
+  score: 71.3 bits
+          U6_snRNA     16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgccctac 101   
+                          c+ t++ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga gga  gc ctac
+  jcf7180000074500 171748 CACTCATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGAtGGAACGCTCTAC 171834
+                          4556777889**************************************************************95488999999**** PP
+
+          U6_snRNA    102 ggggcaagttttt 114   
+                          gg gc+a ttttt
+  jcf7180000074500 171835 GGAGCCACTTTTT 171847
+                          ******9988775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          655  (62803774 residues searched)
+Residues passing SSV filter:           1648223  (0.0262); expected (0.02)
+Residues passing bias filter:          1188590  (0.0189); expected (0.02)
+Residues passing Vit filter:             97573  (0.00155); expected (0.003)
+Residues passing Fwd filter:              2578  (4.1e-05); expected (3e-05)
+Total number of hits:                        2  (3.18e-06)
+# CPU time: 3.23u 0.18s 00:00:03.41 Elapsed: 00:00:02.50
+# Mc/sec: 2863.85
+//
+[ok]

@@ -1,0 +1,38 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Caupr_SCcomb_AssemblyScaffolds.fasta
+# output directed to file:         results/U6_snRNA-vs-Caupr_SCcomb_AssemblyScaffolds.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Caupr_SCcomb_AssemblyScaffolds.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Annotation for each hit  (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         5001  (21243402 residues searched)
+Residues passing SSV filter:            212531  (0.01); expected (0.02)
+Residues passing bias filter:           212531  (0.01); expected (0.02)
+Residues passing Vit filter:             30104  (0.00142); expected (0.003)
+Residues passing Fwd filter:                 0  (0); expected (3e-05)
+Total number of hits:                        0  (0)
+# CPU time: 1.09u 0.10s 00:00:01.19 Elapsed: 00:00:00.97
+# Mc/sec: 2496.65
+//
+[ok]

@@ -1,0 +1,162 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Mucor_velutinosus_B5328.fasta
+# output directed to file:         results/U6_snRNA-vs-Mucor_velutinosus_B5328.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Mucor_velutinosus_B5328.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    8.3e-21   75.9   2.3  JNDK01002183  59139  59034  Mucor velutinosus B5328 jtg7180000608555f_7180000608556f_1, whol
+    9.5e-21   75.7   2.4  JNDK01001023  68895  69000  Mucor velutinosus B5328 ctg7180000608199_1, whole genome shotgun
+  ------ inclusion threshold ------
+        2.3   10.4   0.7  JNDK01002283  41214  41274  Mucor velutinosus B5328 jtg7180000609441f_7180000609442f_1, whol
+        5.2    9.2   4.1  JNDK01001353  11881  11943  Mucor velutinosus B5328 ctg7180000608676_1, whole genome shotgun
+          7    8.8   1.5  JNDK01002340  27735  27780  Mucor velutinosus B5328 jtg7180000608931f_7180000608932f_1, whol
+        7.2    8.8   3.6  JNDK01001827   2715   2686  Mucor velutinosus B5328 ctg7180000609563_1, whole genome shotgun
+        7.4    8.7   1.7  JNDK01000738    599    526  Mucor velutinosus B5328 ctg7180000607849_1, whole genome shotgun
+        7.4    8.7   1.7  JNDK01001570  14430  14503  Mucor velutinosus B5328 ctg7180000609073_1, whole genome shotgun
+        7.4    8.7   1.7  JNDK01001811   2999   2926  Mucor velutinosus B5328 ctg7180000609536_1, whole genome shotgun
+
+
+Annotation for each hit  (and alignments):
+>> JNDK01002183  Mucor velutinosus B5328 jtg7180000608555f_7180000608556f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   75.9   2.3   8.3e-21         6       114 .]     59139     59034 ..     59149     59030 ..     72119    0.89
+
+  Alignment:
+  score: 75.9 bits
+      U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98   
+                     cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g   gc c
+  JNDK01002183 59139 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTC 59050
+                     444444...45567788889************************************************************************* PP
+
+      U6_snRNA    99 tacggggcaagttttt 114  
+                     tacgg gca  ttttt
+  JNDK01002183 59049 TACGGAGCACATTTTT 59034
+                     ********99977765 PP
+
+>> JNDK01001023  Mucor velutinosus B5328 ctg7180000608199_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   75.7   2.4   9.5e-21         6       114 .]     68895     69000 ..     68885     69003 ..     70729    0.89
+
+  Alignment:
+  score: 75.7 bits
+      U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98   
+                     cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g   gc c
+  JNDK01001023 68895 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTC 68984
+                     444444...45567788899************************************************************************* PP
+
+      U6_snRNA    99 tacggggcaagttttt 114  
+                     tacgg gca  ttttt
+  JNDK01001023 68985 TACGGAGCACATTTTT 69000
+                     ********99987765 PP
+
+>> JNDK01002283  Mucor velutinosus B5328 jtg7180000609441f_7180000609442f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.4   0.7       2.3        19        77 ..     41214     41274 ..     41199     41294 ..     50833    0.80
+
+  Alignment:
+  score: 10.4 bits
+      U6_snRNA    19 ttggtaaaattgaaacgatacagagaagatta..gcatggcccctgcgcaaggatgacacg 77   
+                     tt  ++a +t   aac atac  agaag tt   gcat g c  tgcgcaaggatga a  
+  JNDK01002283 41214 TTCTACACTTGATAACCATACGCAGAAGGTTTggGCATTGGCTGTGCGCAAGGATGAGAAA 41274
+                     555566777777899*************9875227*********************97654 PP
+
+>> JNDK01001353  Mucor velutinosus B5328 ctg7180000608676_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.2   4.1       5.2        25        84 ..     11881     11943 ..     11863     11963 ..     30643    0.69
+
+  Alignment:
+  score: 9.2 bits
+      U6_snRNA    25 aaattgaaacgatacagagaagattagcatggcc...cctgcgcaaggatgacacgctaaaac 84   
+                     a +t gaaa  a a agagaag ttagcatg  c   c tg  ca g  tgaca gcta a+ 
+  JNDK01001353 11881 ATTTGGAAAGAAAAGAGAGAAGGTTAGCATGTGCcggCATGGCCATGTTTGACAGGCTATACA 11943
+                     344555666667889**************9865512234555566666677777666655554 PP
+
+>> JNDK01002340  Mucor velutinosus B5328 jtg7180000608931f_7180000608932f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.8   1.5         7        29        74 ..     27735     27780 ..     27715     27800 ..     35857    0.83
+
+  Alignment:
+  score: 8.8 bits
+      U6_snRNA    29 tgaaacgatacagagaagattagcatggcccctgcgcaaggatgac 74   
+                     tg+a +   acag gaaga ta ca  gcc c g+gcaagga ga 
+  JNDK01002340 27735 TGGACATGGACAGTGAAGAATACCAATGCCGCCGTGCAAGGAAGAG 27780
+                     4555666679*******************************98875 PP
+
+>> JNDK01001827  Mucor velutinosus B5328 ctg7180000609563_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.8   3.6       7.2        32        61 ..      2715      2686 ..      2736      2682 ..     18726    0.82
+
+  Alignment:
+  score: 8.8 bits
+      U6_snRNA   32 aacgatacagagaagattagcatggcccct 61  
+                    a+ ga a agagaagatta cat gc cct
+  JNDK01001827 2715 ATAGAGAAAGAGAAGATTACCATTGCTCCT 2686
+                    567888899*****************8776 PP
+
+>> JNDK01000738  Mucor velutinosus B5328 ctg7180000607849_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.7   1.7       7.4        18        87 ..       599       526 ..       612       506 ..      3985    0.74
+
+  Alignment:
+  score: 8.7 bits
+      U6_snRNA  18 attggtaaaattgaaacgatacagagaagattagcatggcccct.......gcg.caaggatgacacgctaaaactga 87 
+                   +ttg ++  attgaaacgatacag ga     agcat gc c t       g + ca ggat aca gc   a ctga
+  JNDK01000738 599 TTTGAACGCATTGAAACGATACAGTGA----CAGCATTGCTCATctcaattGGAtCATGGATCACAAGCACCAGCTGA 526
+                   678888999****************99....69******977432233333444477788888888777766666554 PP
+
+>> JNDK01001570  Mucor velutinosus B5328 ctg7180000609073_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.7   1.7       7.4        18        87 ..     14430     14503 ..     14417     14523 ..     15028    0.74
+
+  Alignment:
+  score: 8.7 bits
+      U6_snRNA    18 attggtaaaattgaaacgatacagagaagattagcatggcccct.......gcg.caaggatgacacgctaaaactga 87   
+                     +ttg ++  attgaaacgatacag ga     agcat gc c t       g + ca ggat aca gc   a ctga
+  JNDK01001570 14430 TTTGAACGCATTGAAACGATACAGTGA----CAGCATTGCTCATctcaattGGAtCATGGATCACAAGCACCAGCTGA 14503
+                     678888999****************99....69******977432233333444477788888888777766666554 PP
+
+>> JNDK01001811  Mucor velutinosus B5328 ctg7180000609536_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.7   1.7       7.4        18        87 ..      2999      2926 ..      3012      2906 ..      5946    0.74
+
+  Alignment:
+  score: 8.7 bits
+      U6_snRNA   18 attggtaaaattgaaacgatacagagaagattagcatggcccct.......gcg.caaggatgacacgctaaaactga 87  
+                    +ttg ++  attgaaacgatacag ga     agcat gc c t       g + ca ggat aca gc   a ctga
+  JNDK01001811 2999 TTTGAACGCATTGAAACGATACAGTGA----CAGCATTGCTCATctcaattGGAtCATGGATCACAAGCACCAGCTGA 2926
+                    678888999****************99....69******977432233333444477788888888777766666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         1676  (70776718 residues searched)
+Residues passing SSV filter:           1799391  (0.0254); expected (0.02)
+Residues passing bias filter:          1688293  (0.0239); expected (0.02)
+Residues passing Vit filter:            250501  (0.00354); expected (0.003)
+Residues passing Fwd filter:             15850  (0.000224); expected (3e-05)
+Total number of hits:                        9  (8.96e-06)
+# CPU time: 3.95u 0.17s 00:00:04.12 Elapsed: 00:00:03.65
+# Mc/sec: 2210.56
+//
+[ok]

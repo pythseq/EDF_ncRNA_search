@@ -1,0 +1,61 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Umbelopsis_ramanniana_AG_#.Umbra1.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Umbelopsis_ramanniana_AG_#.Umbra1.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Umbelopsis_ramanniana_AG_#.Umbra1.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence             start    end  Description
+    ------- ------ -----  --------             -----  -----  -----------
+    3.2e-17   63.8   3.2  Umbra1|scaffold_5     5851   5938  
+  ------ inclusion threshold ------
+        3.8    9.1   1.7  Umbra1|scaffold_140   1002   1040  
+
+
+Annotation for each hit  (and alignments):
+>> Umbra1|scaffold_5  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   63.8   3.2   3.2e-17         5        93 ..      5851      5938 ..      5848      5961 ..    581151    0.82
+
+  Alignment:
+  score: 63.8 bits
+           U6_snRNA    5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggat 93  
+                         tcct+cgg  c ca t+  aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac+     +ctgaga ga 
+  Umbra1|scaffold_5 5851 TCCTTCGGGACACA-TAACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAGCTTCTGAGATGAA 5938
+                         44455554444444.45567999****************************************************99999999986654 PP
+
+>> Umbra1|scaffold_140  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.1   1.7       3.8        16        54 ..      1002      1040 ..       996      1060 ..      4621    0.88
+
+  Alignment:
+  score: 9.1 bits
+             U6_snRNA   16 ccattggtaaaattgaaacgatacagagaagattagcat 54  
+                           +c tt  t aaattgaa c a acag gaagat a cat
+  Umbra1|scaffold_140 1002 GCGTTCATGAAATTGAAGCAAGACAGCGAAGATCATCAT 1040
+                           45677778899**********************998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          198  (46154144 residues searched)
+Residues passing SSV filter:            967797  (0.021); expected (0.02)
+Residues passing bias filter:           923753  (0.02); expected (0.02)
+Residues passing Vit filter:             89646  (0.00194); expected (0.003)
+Residues passing Fwd filter:              2938  (6.37e-05); expected (3e-05)
+Total number of hits:                        2  (2.75e-06)
+# CPU time: 2.33u 0.16s 00:00:02.49 Elapsed: 00:00:01.42
+# Mc/sec: 3705.33
+//
+[ok]

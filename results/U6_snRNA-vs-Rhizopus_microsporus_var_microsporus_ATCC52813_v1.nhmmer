@@ -1,0 +1,118 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Rhizopus_microsporus_var_microsporus_ATCC52813_v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Rhizopus_microsporus_var_microsporus_ATCC52813_v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Rhizopus_microsporus_var_microsporus_ATCC52813_v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start     end  Description
+    ------- ------ -----  --------      -----   -----  -----------
+    2.6e-20   73.9   1.9  scaffold_6    88483   88587  
+  ------ inclusion threshold ------
+        1.3   10.7   1.4  scaffold_25  261273  261204  
+        2.3   10.0   1.6  scaffold_8   942396  942457  
+        2.9    9.6   1.4  scaffold_24  133577  133536  
+        8.6    8.1   3.6  scaffold_10  568661  568691  
+        9.9    7.9   3.9  scaffold_10  446351  446384  
+
+
+Annotation for each hit  (and alignments):
+>> scaffold_6  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.9   1.9   2.6e-20         6       113 ..     88483     88587 ..     88473     88592 ..   1198863    0.87
+
+  Alignment:
+  score: 73.9 bits
+    U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgcccta 100  
+                   cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga g  tgc cta
+  scaffold_6 88483 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGACGGATGCTCTA 88574
+                   444444...45567788899*************************************************************************** PP
+
+    U6_snRNA   101 cggggcaag.tttt 113  
+                   cgg gcaa  t tt
+  scaffold_6 88575 CGGAGCAACaT-TT 88587
+                   *****999852.33 PP
+
+>> scaffold_25  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.7   1.4       1.3        25        90 ..    261273    261204 ..    261293    261184 ..    267845    0.77
+
+  Alignment:
+  score: 10.7 bits
+     U6_snRNA     25 aaattga.aacgatacagagaagattagca...tggcccctgcgcaaggatgacacgctaaaactgagag 90    
+                     a attga aacg   caga aagat  gca   t gcc c  c+ a ggatgacacg  +   ct  gag
+  scaffold_25 261273 ATATTGAaAACGGACCAGATAAGATCGGCAgttTTGCCTCCTCAAATGGATGACACGACGTTTCTATGAG 261204
+                     4445554156667779**********999955556777777788888**********9988877776665 PP
+
+>> scaffold_8  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.0   1.6       2.3        17        87 ..    942396    942457 ..    942385    942476 ..   1118338    0.77
+
+  Alignment:
+  score: 10.0 bits
+    U6_snRNA     17 cattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactga 87    
+                      ttgg+a+  ttg+aacga acagagaagat a   tggc       caa g tgacacg   aa+c+ a
+  scaffold_8 942396 TGTTGGAATCCTTGGAACGA-ACAGAGAAGATGAT-TTGGC-------CAATGTTGACACGAGCAACCAAA 942457
+                    56788999999*******98.8**********984.24444.......67888899999888777666554 PP
+
+>> scaffold_24  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.6   1.4       2.9        25        64 ..    133577    133536 ..    133597    133512 ..    295255    0.83
+
+  Alignment:
+  score: 9.6 bits
+     U6_snRNA     25 aaattgaaacgatacagagaagatta..gcatggcccctgcg 64    
+                      aattg+aac a  cagagaa atta  gc tggcc ctgc 
+  scaffold_24 133577 CAATTGGAACAAGCCAGAGAACATTActGCTTGGCCGCTGCT 133536
+                     4789*********************9889***********96 PP
+
+>> scaffold_10  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.1   3.6       8.6        36        66 ..    568661    568691 ..    568642    568711 ..    970981    0.73
+
+  Alignment:
+  score: 8.1 bits
+     U6_snRNA     36 atacagagaagattagcatggcccctgcgca 66    
+                     a a aga aaga t gcatggc cctg+gca
+  scaffold_10 568661 ACAAAGAAAAGAGTTGCATGGCACCTGTGCA 568691
+                     3344677789************999988854 PP
+
+>> scaffold_10  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    7.9   3.9       9.9        21        54 ..    446351    446384 ..    446331    446392 ..    970981    0.85
+
+  Alignment:
+  score: 7.9 bits
+     U6_snRNA     21 ggtaaaattgaaacgatacagagaagattagcat 54    
+                     +g ++a+t g+aac a acagaga  at agca 
+  scaffold_10 446351 AGGCTATTGGGAACAAAACAGAGAGAATAAGCAC 446384
+                     5568899************************983 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          131  (51944790 residues searched)
+Residues passing SSV filter:           1596521  (0.0307); expected (0.02)
+Residues passing bias filter:          1455233  (0.028); expected (0.02)
+Residues passing Vit filter:            185042  (0.00356); expected (0.003)
+Residues passing Fwd filter:             10095  (0.000194); expected (3e-05)
+Total number of hits:                        6  (6.62e-06)
+# CPU time: 2.98u 0.15s 00:00:03.13 Elapsed: 00:00:02.52
+# Mc/sec: 2349.88
+//
+[ok]

@@ -1,0 +1,9 @@
+# hit scores
+# ----------
+#
+# target name                acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# -------------------        -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+Calth2|Calth2_scaffold00030  (null)               U6_snRNA               75.1   1.2e-20   0.3       7     104    +    253322  253416  253309  253432  305921   -
+Calth2|Calth2_scaffold00008  (null)               U6_snRNA               10.2         2   1.5      27      90    +    754018  754089  753998  754103 1236294   -
+Calth2|Calth2_scaffold00014  (null)               U6_snRNA                8.8       5.7   6.1      32      97    -    668481  668416  668503  668398  781212   -
+Calth2|Calth2_scaffold00001  (null)               U6_snRNA                8.8       5.8   3.4      23      54    +    736182  736213  736165  736233 1703125   -

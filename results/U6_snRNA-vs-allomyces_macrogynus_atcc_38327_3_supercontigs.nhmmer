@@ -1,0 +1,106 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/allomyces_macrogynus_atcc_38327_3_supercontigs.fasta
+# output directed to file:         results/U6_snRNA-vs-allomyces_macrogynus_atcc_38327_3_supercontigs.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-allomyces_macrogynus_atcc_38327_3_supercontigs.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence          start    end  Description
+    ------- ------ -----  --------          -----  -----  -----------
+    4.6e-18   67.8   0.8  Supercontig_3.1  555072 554964  of Allomyces macrogynus ATCC 38327
+    5.5e-18   67.5   1.4  Supercontig_3.19 523568 523461  of Allomyces macrogynus ATCC 38327
+    6.1e-18   67.4   0.9  Supercontig_3.13 999532 999425  of Allomyces macrogynus ATCC 38327
+    6.1e-18   67.4   0.9  Supercontig_3.21 311787 311894  of Allomyces macrogynus ATCC 38327
+
+
+Annotation for each hit  (and alignments):
+>> Supercontig_3.1  of Allomyces macrogynus ATCC 38327
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   67.8   0.8   4.6e-18         4       114 .]    555072    554964 ..    555075    554962 ..   3145054    0.82
+
+  Alignment:
+  score: 67.8 bits
+         U6_snRNA      4 gtcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagagg 91    
+                         gtcct+cgg  c catt +  aaattg+aacgatacagagaagattagcatgg ccctgc+caaggatgacac ct   +ct     g
+  Supercontig_3.1 555072 GTCCTTCGGGACACATTCA--AAATTGGAACGATACAGAGAAGATTAGCATGGTCCCTGCACAAGGATGACACACTTCGTCTTCTGAG 554987
+                         4556666666667777666..899*************************************************998776665544444 PP
+
+         U6_snRNA     92 attgccctacggggcaagttttt 114   
+                            gc ct+cgg gcaa ttttt
+  Supercontig_3.1 554986 GAAGCTCTTCGGAGCAAATTTTT 554964
+                         45677889999999999988775 PP
+
+>> Supercontig_3.19  of Allomyces macrogynus ATCC 38327
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   67.5   1.4   5.5e-18         5       114 .]    523568    523461 ..    523571    523460 ..   1031938    0.84
+
+  Alignment:
+  score: 67.5 bits
+          U6_snRNA      5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagagg 91    
+                          tcct+cgg  c catt++  aaattg+aacgatacagagaagattagcatgg ccctgc+caaggatgacac ct   +ct     g
+  Supercontig_3.19 523568 TCCTTCGGGACACATTAA--AAATTGGAACGATACAGAGAAGATTAGCATGGTCCCTGCACAAGGATGACACACTTCGTCTTCTGAG 523484
+                          566777777788888877..999*************************************************998776665544444 PP
+
+          U6_snRNA     92 attgccctacggggcaagttttt 114   
+                             gc ct+cgg gcaa ttttt
+  Supercontig_3.19 523483 GAAGCTCTTCGGAGCAAATTTTT 523461
+                          45677889999999999988875 PP
+
+>> Supercontig_3.13  of Allomyces macrogynus ATCC 38327
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   67.4   0.9   6.1e-18         5       114 .]    999532    999425 ..    999536    999424 ..   1334280    0.82
+
+  Alignment:
+  score: 67.4 bits
+          U6_snRNA      5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagagg 91    
+                          tcct+cgg  c catt +  aaattg+aacgatacagagaagattagcatgg ccctgc+caaggatgacac ct   +ct     g
+  Supercontig_3.13 999532 TCCTTCGGGACACATTCA--AAATTGGAACGATACAGAGAAGATTAGCATGGTCCCTGCACAAGGATGACACACTTCGTCTTCTGAG 999448
+                          556666666667777666..899*************************************************998776665544444 PP
+
+          U6_snRNA     92 attgccctacggggcaagttttt 114   
+                             gc ct+cgg gcaa ttttt
+  Supercontig_3.13 999447 GAAGCTCTTCGGAGCAAATTTTT 999425
+                          45677889999999999988875 PP
+
+>> Supercontig_3.21  of Allomyces macrogynus ATCC 38327
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   67.4   0.9   6.1e-18         5       114 .]    311787    311894 ..    311783    311895 ..   1072379    0.82
+
+  Alignment:
+  score: 67.4 bits
+          U6_snRNA      5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagagg 91    
+                          tcct+cgg  c catt +  aaattg+aacgatacagagaagattagcatgg ccctgc+caaggatgacac ct   +ct     g
+  Supercontig_3.21 311787 TCCTTCGGGACACATTCA--AAATTGGAACGATACAGAGAAGATTAGCATGGTCCCTGCACAAGGATGACACACTTCGTCTTCTGAG 311871
+                          556666666667777666..899*************************************************998776665544444 PP
+
+          U6_snRNA     92 attgccctacggggcaagttttt 114   
+                             gc ct+cgg gcaa ttttt
+  Supercontig_3.21 311872 GAAGCTCTTCGGAGCAAATTTTT 311894
+                          45677889999999999988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          101  (114121146 residues searched)
+Residues passing SSV filter:            967818  (0.00848); expected (0.02)
+Residues passing bias filter:           967034  (0.00847); expected (0.02)
+Residues passing Vit filter:            109039  (0.000955); expected (0.003)
+Residues passing Fwd filter:              2643  (2.32e-05); expected (3e-05)
+Total number of hits:                        4  (3.79e-06)
+# CPU time: 4.90u 0.48s 00:00:05.38 Elapsed: 00:00:01.91
+# Mc/sec: 6811.42
+//
+[ok]

@@ -1,0 +1,133 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Lichtheimia_corymbifera_FSU_9682.fasta
+# output directed to file:         results/U6_snRNA-vs-Lichtheimia_corymbifera_FSU_9682.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Lichtheimia_corymbifera_FSU_9682.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence        start     end  Description
+    ------- ------ -----  --------        -----   -----  -----------
+    3.3e-20   73.9   1.5  CBTN010000007   74332   74437  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN0000000
+    3.7e-20   73.8   1.5  CBTN010000126   30742   30847  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN0000000
+      4e-20   73.7   1.6  CBTN010000036  321311  321416  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN0000000
+    4.7e-17   63.8   1.7  CBTN010000001  461905  461811  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN0000000
+  ------ inclusion threshold ------
+        2.8   10.0   0.5  CBTN010000005  731423  731480  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN0000000
+        8.5    8.5   4.9  CBTN010000047  172419  172468  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN0000000
+
+
+Annotation for each hit  (and alignments):
+>> CBTN010000007  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN000000000 data, contig SCAF00007, whole genome s
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.9   1.5   3.3e-20         7       114 .]     74332     74437 ..     74321     74439 ..    968936    0.88
+
+  Alignment:
+  score: 73.9 bits
+       U6_snRNA     7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgcc 97   
+                      ctc g    c+ tt  taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +   +ctgaga ggat gc 
+  CBTN010000007 74332 CTCTG---TCACTTCTTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAACTCTCTGAGAtGGATAGCT 74420
+                      44444...45556777889**************************************************************95489999*** PP
+
+       U6_snRNA    98 ctacggggcaagttttt 114  
+                      ctacgg gcaa ttttt
+  CBTN010000007 74421 CTACGGAGCAAATTTTT 74437
+                      ***********988875 PP
+
+>> CBTN010000126  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN000000000 data, contig SCAF00128, whole genome s
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.8   1.5   3.7e-20         7       114 .]     30742     30847 ..     30732     30850 ..     37162    0.89
+
+  Alignment:
+  score: 73.8 bits
+       U6_snRNA     7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgcc 97   
+                      ctc g    c+ tt  taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +   +ctgaga ggat gc 
+  CBTN010000126 30742 CTCTG---TCACTTCTTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAACTCTCTGAGAtGGATAGCT 30830
+                      44544...455667778899*************************************************************95489999*** PP
+
+       U6_snRNA    98 ctacggggcaagttttt 114  
+                      ctacgg gcaa ttttt
+  CBTN010000126 30831 CTACGGAGCAAATTTTT 30847
+                      ***********988775 PP
+
+>> CBTN010000036  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN000000000 data, contig SCAF00036, whole genome s
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.7   1.6     4e-20         7       114 .]    321311    321416 ..    321301    321418 ..    337952    0.89
+
+  Alignment:
+  score: 73.7 bits
+       U6_snRNA      7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattg 95    
+                       ctc g    c+ tt  taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +   +ctgaga ggat g
+  CBTN010000036 321311 CTCTG---TCACTTCTTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAACTCTCTGAGAtGGATAG 321397
+                       44544...45566777889**************************************************************95489999* PP
+
+       U6_snRNA     96 ccctacggggcaagttttt 114   
+                       c ctacgg gcaa ttttt
+  CBTN010000036 321398 CTCTACGGAGCAAATTTTT 321416
+                       *************988875 PP
+
+>> CBTN010000001  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN000000000 data, contig SCAF00001, whole genome s
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   63.8   1.7   4.7e-17        22       114 .]    461905    461811 ..    461923    461811 ..   1313670    0.84
+
+  Alignment:
+  score: 63.8 bits
+       U6_snRNA     22 gtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga..ggattgccctacggggcaag 109   
+                        ta a+ttg+aac atacagagaagattagcatggcccctgc+caaggatgacac  + a +ctgaga  g+   gc c a +gggcaa 
+  CBTN010000001 461905 CTACATTTGGAACTATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAATACTCTGAGAcgGATAAGCTCGAATGGGCAAT 461816
+                       4567899***********************************************************983244455666667788888888 PP
+
+       U6_snRNA    110 ttttt 114   
+                       ttttt
+  CBTN010000001 461815 TTTTT 461811
+                       88775 PP
+
+>> CBTN010000005  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN000000000 data, contig SCAF00005, whole genome s
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.0   0.5       2.8        43        98 ..    731423    731480 ..    731403    731491 ..    845416    0.86
+
+  Alignment:
+  score: 10.0 bits
+       U6_snRNA     43 gaagattagcatggcccctgcg..caaggatgacacgctaaaactgagaggattgccc 98    
+                       ga gat agca ggc  ctgc   ca ggat aca  c+a  +ct  gagg +tgc  
+  CBTN010000005 731423 GATGATGAGCAAGGCTTCTGCTtaCATGGATAACAATCAACGTCTTCGAGGTGTGCTT 731480
+                       789*****************9756899*****************99999998887655 PP
+
+>> CBTN010000047  Lichtheimia corymbifera JMRC:FSU:9682 WGS project CBTN000000000 data, contig SCAF00047, whole genome s
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.5   4.9       8.5        36        90 ..    172419    172468 ..    172399    172485 ..    257232    0.85
+
+  Alignment:
+  score: 8.5 bits
+       U6_snRNA     36 atacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagag 90    
+                       a  cagag agat+agca ggc      ++aaggatg  ac++ aa ++tgaga 
+  CBTN010000047 172419 AACCAGAGTAGATCAGCAAGGC-----AATAAGGATGGTACTTGAAGCTTGAGAT 172468
+                       4569****************97.....46*************9999999998865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          209  (67063446 residues searched)
+Residues passing SSV filter:           1810640  (0.027); expected (0.02)
+Residues passing bias filter:          1761914  (0.0263); expected (0.02)
+Residues passing Vit filter:            275111  (0.0041); expected (0.003)
+Residues passing Fwd filter:             16511  (0.000246); expected (3e-05)
+Total number of hits:                        6  (7.77e-06)
+# CPU time: 3.81u 0.18s 00:00:03.99 Elapsed: 00:00:02.95
+# Mc/sec: 2591.60
+//
+[ok]

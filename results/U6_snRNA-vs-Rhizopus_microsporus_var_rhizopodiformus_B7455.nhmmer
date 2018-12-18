@@ -1,0 +1,141 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Rhizopus_microsporus_var_rhizopodiformus_B7455.fasta
+# output directed to file:         results/U6_snRNA-vs-Rhizopus_microsporus_var_rhizopodiformus_B7455.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Rhizopus_microsporus_var_rhizopodiformus_B7455.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    4.3e-20   74.1   1.8  JNER01003396    600    704  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000184957_
+    4.9e-20   73.9   1.9  JNER01004456  55192  55296  Rhizopus microsporus var rhizopodiformus B7455 jtg7180000184954f
+  ------ inclusion threshold ------
+        3.8   10.1   1.5  JNER01002722  28203  28264  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000184195_
+        3.8   10.1   1.5  JNER01003283     62    123  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000184810_
+        4.2   10.0   1.6  JNER01000823    132    193  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000182160_
+        7.7    9.1   3.7  JNER01003533   5319   5266  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000185113_
+          9    8.9   4.2  JNER01002049  10422  10534  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000183481_
+
+
+Annotation for each hit  (and alignments):
+>> JNER01003396  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000184957_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.1   1.8   4.3e-20         6       113 ..       600       704 ..       590       710 ..     22587    0.87
+
+  Alignment:
+  score: 74.1 bits
+      U6_snRNA   6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacg 102
+                   cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga g  tgc ctacg
+  JNER01003396 600 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGACGGATGCTCTACG 693
+                   444444...45567788899***************************************************************************** PP
+
+      U6_snRNA 103 gggcaag.tttt 113
+                   g gcaa  t tt
+  JNER01003396 694 GAGCAACaT-TT 704
+                   ***999852.33 PP
+
+>> JNER01004456  Rhizopus microsporus var rhizopodiformus B7455 jtg7180000184954f_7180000184955f_7180000184956f_1, whole
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.9   1.9   4.9e-20         6       113 ..     55192     55296 ..     55182     55301 ..     59877    0.87
+
+  Alignment:
+  score: 73.9 bits
+      U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98   
+                     cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga g  tgc c
+  JNER01004456 55192 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGACGGATGCTC 55281
+                     444444...45567788899************************************************************************* PP
+
+      U6_snRNA    99 tacggggcaag.tttt 113  
+                     tacgg gcaa  t tt
+  JNER01004456 55282 TACGGAGCAACaT-TT 55296
+                     *******999852.33 PP
+
+>> JNER01002722  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000184195_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.1   1.5       3.8        17        87 ..     28203     28264 ..     28192     28284 ..     28410    0.77
+
+  Alignment:
+  score: 10.1 bits
+      U6_snRNA    17 cattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactga 87   
+                       ttgg+a+  ttg+aacga acagagaagat a   tggc       caa g tgacacg   aa+c+ a
+  JNER01002722 28203 TGTTGGAATCCTTGGAACGA-ACAGAGAAGATGAT-TTGGC-------CAATGTTGACACGAGCAACCAAA 28264
+                     56788999999*******98.8**********984.24444.......57888899999888777666554 PP
+
+>> JNER01003283  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000184810_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.1   1.5       3.8        17        87 ..        62       123 ..        51       143 ..      7877    0.77
+
+  Alignment:
+  score: 10.1 bits
+      U6_snRNA  17 cattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactga 87 
+                     ttgg+a+  ttg+aacga acagagaagat a   tggc       caa g tgacacg   aa+c+ a
+  JNER01003283  62 TGTTGGAATCCTTGGAACGA-ACAGAGAAGATGAT-TTGGC-------CAATGTTGACACGAGCAACCAAA 123
+                   56788999999*******98.8**********984.24444.......57888899999888777666554 PP
+
+>> JNER01000823  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000182160_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.0   1.6       4.2        17        87 ..       132       193 ..       121       212 ..      2981    0.77
+
+  Alignment:
+  score: 10.0 bits
+      U6_snRNA  17 cattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactga 87 
+                     ttgg+a+  ttg+aacga acagagaagat a   tggc       caa g tgacacg   aa+c+ a
+  JNER01000823 132 TGTTGGAATCCTTGGAACGA-ACAGAGAAGATGAT-TTGGC-------CAATGTTGACACGAGCAACCAAA 193
+                   56788999999*******98.8**********984.24444.......67888899999888777666554 PP
+
+>> JNER01003533  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000185113_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.1   3.7       7.7        28        83 ..      5319      5266 ..      5339      5244 ..     40450    0.74
+
+  Alignment:
+  score: 9.1 bits
+      U6_snRNA   28 ttgaaacgatacagagaagattagcatggcccctgcg..caaggatgacacgctaaaa 83  
+                    ttgaa+    a agagaagat ag       cctgc    aaggatgac cg+  a++
+  JNER01003533 5319 TTGAATA--AAAAGAGAAGATGAGT--TAATCCTGCTtgAAAGGATGACGCGTACACT 5266
+                    6666654..4558**********94..44568899864379********999875544 PP
+
+>> JNER01002049  Rhizopus microsporus var rhizopodiformus B7455 ctg7180000183481_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.9   4.2         9        18        78 ..     10422     10534 ..     10403     10558 ..     27756    0.67
+
+  Alignment:
+  score: 8.9 bits
+      U6_snRNA    18 attggtaaaattgaaacgatacagagaagat..................................................tagcatggcc.. 58   
+                     +  + t+  at gaaacga acagagaagat                                                  tagc t   c  
+  JNER01002049 10422 TCAACTCCGATAGAAACGACACAGAGAAGATattgtttttgccgtattgatggtatcatcgtgctcattacaacagggaaaTAGCCTTAACaa 10514
+                     445556677899******************988888888888888888888887777777777777777766666666666444433322222 PP
+
+      U6_snRNA    59 cctgcgcaaggatgacacgc 78   
+                     cctg+ +a gg t a ac  
+  JNER01002049 10515 CCTGTTTAGGGCTAATACAT 10534
+                     55666665555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         3519  (96016082 residues searched)
+Residues passing SSV filter:           2824722  (0.0294); expected (0.02)
+Residues passing bias filter:          2588442  (0.027); expected (0.02)
+Residues passing Vit filter:            324017  (0.00337); expected (0.003)
+Residues passing Fwd filter:             13957  (0.000145); expected (3e-05)
+Total number of hits:                        7  (5.86e-06)
+# CPU time: 5.53u 0.52s 00:00:06.05 Elapsed: 00:00:08.75
+# Mc/sec: 1250.95
+//
+[ok]

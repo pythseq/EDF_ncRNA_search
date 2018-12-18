@@ -1,0 +1,70 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Cunninghamella_bertholletiae_175.fasta
+# output directed to file:         results/U6_snRNA-vs-Cunninghamella_bertholletiae_175.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Cunninghamella_bertholletiae_175.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    2.1e-19   71.3   1.8  JNEG01000620  44288  44189  Cunninghamella bertholletiae 175 ctg7180000073515_1, whole genom
+    2.1e-19   71.3   1.8  JNEG01000682 171748 171847  Cunninghamella bertholletiae 175 ctg7180000073642_1, whole genom
+
+
+Annotation for each hit  (and alignments):
+>> JNEG01000620  Cunninghamella bertholletiae 175 ctg7180000073515_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.3   1.8   2.1e-19        16       114 .]     44288     44189 ..     44304     44187 ..    111529    0.90
+
+  Alignment:
+  score: 71.3 bits
+      U6_snRNA    16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgccctacggggca 107  
+                     c+ t++ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga gga  gc ctacgg gc+
+  JNEG01000620 44288 CACTCATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGAtGGAACGCTCTACGGAGCC 44196
+                     4556777889**************************************************************95488999999********** PP
+
+      U6_snRNA   108 agttttt 114  
+                     a ttttt
+  JNEG01000620 44195 ACTTTTT 44189
+                     9988775 PP
+
+>> JNEG01000682  Cunninghamella bertholletiae 175 ctg7180000073642_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.3   1.8   2.1e-19        16       114 .]    171748    171847 ..    171732    171849 ..    464370    0.90
+
+  Alignment:
+  score: 71.3 bits
+      U6_snRNA     16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgccctacgggg 105   
+                      c+ t++ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga gga  gc ctacgg g
+  JNEG01000682 171748 CACTCATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAACTTCTGAGAtGGAACGCTCTACGGAG 171838
+                      4556777889**************************************************************95488999999******** PP
+
+      U6_snRNA    106 caagttttt 114   
+                      c+a ttttt
+  JNEG01000682 171839 CCACTTTTT 171847
+                      **9988775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          391  (61762804 residues searched)
+Residues passing SSV filter:           1638246  (0.0265); expected (0.02)
+Residues passing bias filter:          1179240  (0.0191); expected (0.02)
+Residues passing Vit filter:             96585  (0.00156); expected (0.003)
+Residues passing Fwd filter:              2578  (4.17e-05); expected (3e-05)
+Total number of hits:                        2  (3.24e-06)
+# CPU time: 3.15u 0.18s 00:00:03.33 Elapsed: 00:00:02.79
+# Mc/sec: 2523.64
+//
+[ok]

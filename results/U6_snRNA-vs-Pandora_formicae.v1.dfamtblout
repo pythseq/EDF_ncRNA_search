@@ -1,0 +1,10 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+gb|GCRV01028975.1|    (null)               U6_snRNA               66.2   1.2e-17   1.9       6     113    +        50     148      46     150     211   TSA: insect metagenome Unigene16363_All transcribed RNA sequence
+gb|GCRV01010684.1|    (null)               U6_snRNA                8.8       9.8   4.4      20      71    -       935     881     951     861    3311   TSA: insect metagenome CL3935.Contig1_All transcribed RNA sequence
+gb|GCRV01010685.1|    (null)               U6_snRNA                8.8       9.8   4.4      20      71    -       835     781     851     761    3211   TSA: insect metagenome CL3935.Contig2_All transcribed RNA sequence
+gb|GCRV01010686.1|    (null)               U6_snRNA                8.8       9.8   4.4      20      71    -       935     881     951     861    1546   TSA: insect metagenome CL3935.Contig3_All transcribed RNA sequence
+gb|GCRV01010687.1|    (null)               U6_snRNA                8.8       9.8   4.4      20      71    -       835     781     851     761    1446   TSA: insect metagenome CL3935.Contig4_All transcribed RNA sequence

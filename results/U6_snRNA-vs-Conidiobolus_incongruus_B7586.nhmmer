@@ -1,0 +1,174 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Conidiobolus_incongruus_B7586.fasta
+# output directed to file:         results/U6_snRNA-vs-Conidiobolus_incongruus_B7586.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Conidiobolus_incongruus_B7586.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    1.3e-19   73.3   1.9  JNEM01010190    852    753  Conidiobolus incongruus B7586 ctg7180000968180_1, whole genome s
+    1.3e-19   73.3   1.9  JNEM01012342  18595  18694  Conidiobolus incongruus B7586 ctg7180000971936_1, whole genome s
+    1.5e-19   73.2   1.9  JNEM01010917  11486  11387  Conidiobolus incongruus B7586 ctg7180000969440_1, whole genome s
+    1.5e-19   73.2   1.9  JNEM01011667  11807  11906  Conidiobolus incongruus B7586 ctg7180000970778_1, whole genome s
+    1.6e-19   73.1   2.0  JNEM01000419    852    753  Conidiobolus incongruus B7586 ctg7180000813176_1, whole genome s
+    1.7e-19   73.0   2.0  JNEM01010568   7768   7669  Conidiobolus incongruus B7586 ctg7180000968805_1, whole genome s
+    1.1e-17   67.2   2.1  JNEM01010116  28349  28262  Conidiobolus incongruus B7586 ctg7180000968082_1, whole genome s
+  ------ inclusion threshold ------
+        2.6   11.5   1.4  JNEM01011206  16766  16619  Conidiobolus incongruus B7586 ctg7180000969980_1, whole genome s
+
+
+Annotation for each hit  (and alignments):
+>> JNEM01010190  Conidiobolus incongruus B7586 ctg7180000968180_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.3   1.9   1.3e-19        16       113 ..       852       753 ..       871       749 ..      6888    0.77
+
+  Alignment:
+  score: 73.3 bits
+      U6_snRNA  16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggg..gcaagt 110
+                   c+  tg+ aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg++aa ++tgag+ggat gc  ++  gg  gcaa t
+  JNEM01010190 852 CACATGACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTAAATCTTGAGTGGATAGCATCTTCGGatGCAAAT 756
+                   33445677899*****************************************************************999876655444312444444 PP
+
+      U6_snRNA 111 ttt 113
+                   ttt
+  JNEM01010190 755 TTT 753
+                   444 PP
+
+>> JNEM01012342  Conidiobolus incongruus B7586 ctg7180000971936_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.3   1.9   1.3e-19        16       113 ..     18595     18694 ..     18576     18698 ..     19037    0.77
+
+  Alignment:
+  score: 73.3 bits
+      U6_snRNA    16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggg..gc 106  
+                     c+  tg+ aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg++aa ++tgag+ggat gc  ++  gg  gc
+  JNEM01012342 18595 CACATGACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTAAATCTTGAGTGGATAGCATCTTCGGatGC 18687
+                     33445677899*****************************************************************99987665544431244 PP
+
+      U6_snRNA   107 aagtttt 113  
+                     aa tttt
+  JNEM01012342 18688 AAATTTT 18694
+                     4444444 PP
+
+>> JNEM01010917  Conidiobolus incongruus B7586 ctg7180000969440_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.2   1.9   1.5e-19        16       113 ..     11486     11387 ..     11505     11384 ..     23353    0.78
+
+  Alignment:
+  score: 73.2 bits
+      U6_snRNA    16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggg..gc 106  
+                     c+  tg+ aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg++aa ++tgag+ggat gc  ++  gg  gc
+  JNEM01010917 11486 CACATGACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTAAATCTTGAGTGGATAGCATCTTCGGatGC 11394
+                     33445677899*****************************************************************99987665544431244 PP
+
+      U6_snRNA   107 aagtttt 113  
+                     aa tttt
+  JNEM01010917 11393 AAATTTT 11387
+                     4445544 PP
+
+>> JNEM01011667  Conidiobolus incongruus B7586 ctg7180000970778_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.2   1.9   1.5e-19        16       113 ..     11807     11906 ..     11788     11909 ..     17346    0.78
+
+  Alignment:
+  score: 73.2 bits
+      U6_snRNA    16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggg..gc 106  
+                     c+  tg+ aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg++aa ++tgag+ggat gc  ++  gg  gc
+  JNEM01011667 11807 CACATGACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTAAATCTTGAGTGGATAGCATCTTCGGatGC 11899
+                     33445677899*****************************************************************99987665544431244 PP
+
+      U6_snRNA   107 aagtttt 113  
+                     aa tttt
+  JNEM01011667 11900 AAATTTT 11906
+                     4445544 PP
+
+>> JNEM01000419  Conidiobolus incongruus B7586 ctg7180000813176_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.1   2.0   1.6e-19        16       113 ..       852       753 ..       871       749 ..      2047    0.78
+
+  Alignment:
+  score: 73.1 bits
+      U6_snRNA  16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggg..gcaagt 110
+                   c+  tg+ aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg++aa ++tgag+ggat gc  ++  gg  gcaa t
+  JNEM01000419 852 CACATGACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTAAATCTTGAGTGGATAGCATCTTCGGatGCAAAT 756
+                   33456677899*****************************************************************999876655444312444444 PP
+
+      U6_snRNA 111 ttt 113
+                   ttt
+  JNEM01000419 755 TTT 753
+                   444 PP
+
+>> JNEM01010568  Conidiobolus incongruus B7586 ctg7180000968805_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.0   2.0   1.7e-19        16       113 ..      7768      7669 ..      7787      7667 ..     43195    0.78
+
+  Alignment:
+  score: 73.0 bits
+      U6_snRNA   16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggg..gcaa 108 
+                    c+  tg+ aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg++aa ++tgag+ggat gc  ++  gg  gcaa
+  JNEM01010568 7768 CACATGACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTAAATCTTGAGTGGATAGCATCTTCGGatGCAA 7674
+                    33445677899*****************************************************************9998766554443124555 PP
+
+      U6_snRNA  109 gtttt 113 
+                     tttt
+  JNEM01010568 7673 ATTTT 7669
+                    55555 PP
+
+>> JNEM01010116  Conidiobolus incongruus B7586 ctg7180000968082_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   67.2   2.1   1.1e-17        27       112 ..     28349     28262 ..     28369     28258 ..     31777    0.82
+
+  Alignment:
+  score: 67.2 bits
+      U6_snRNA    27 attgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggg..gcaagttt 112  
+                     + tg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg  aa ++tgag+ggat gc  ++  gg  gcaa ttt
+  JNEM01010116 28349 TATGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTAAATCTTGAGTGGATAGCATCTTCGGatGCAAATTT 28262
+                     34799************************************************************99888655544431244444444 PP
+
+>> JNEM01011206  Conidiobolus incongruus B7586 ctg7180000969980_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.5   1.4       2.6         7        77 ..     16766     16619 ..     16772     16599 ..     77814    0.88
+
+  Alignment:
+  score: 11.5 bits
+      U6_snRNA     7 ctccggagcccattggtaaaattgaaacgatacagagaagat................................................... 48   
+                     c   gg +cc+a t+g+a a ttg+a+ ga aca aga gat                                                   
+  JNEM01011206 16766 CATTGGTCCCAAATAGAAGACTTGGATAGAGACAAAGACGATggttgtgataagactatttgtcctgtaaactacgagagatcaggtatgatt 16674
+                     55677888999999999**************************************************************************** PP
+
+      U6_snRNA    49 ....................tagcatgg.....cccctgcg.caaggatgacacg 77   
+                                         ta catgg     ccc t c  caaggatg ca  
+  JNEM01011206 16673 attcacgatgagatgaacgaTATCATGGttaagCCCTTACCtCAAGGATGTCATT 16619
+                     ********************99999985444448888888889*****9987754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                        11127  (181023400 residues searched)
+Residues passing SSV filter:           3452958  (0.0191); expected (0.02)
+Residues passing bias filter:          2515910  (0.0139); expected (0.02)
+Residues passing Vit filter:            170739  (0.000943); expected (0.003)
+Residues passing Fwd filter:              8846  (4.89e-05); expected (3e-05)
+Total number of hits:                        8  (4.62e-06)
+# CPU time: 8.93u 0.49s 00:00:09.42 Elapsed: 00:00:06.81
+# Mc/sec: 3030.35
+//
+[ok]

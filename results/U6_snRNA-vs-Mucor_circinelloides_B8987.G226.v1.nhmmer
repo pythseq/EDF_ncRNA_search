@@ -1,0 +1,141 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Mucor_circinelloides_B8987.G226.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Mucor_circinelloides_B8987.G226.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Mucor_circinelloides_B8987.G226.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence          start    end  Description
+    ------- ------ -----  --------          -----  -----  -----------
+    1.1e-20   75.6   2.5  jcf7180000539097  38867  38972  
+    1.3e-20   75.4   2.6  jcf7180000539046   3575   3680  
+  ------ inclusion threshold ------
+          2   10.6   1.4  jcf7180000539571  22878  22916  
+        2.8   10.2   3.0  jcf7180000539514 109191 109261  
+        3.4    9.9   1.1  jcf7180000539662  68879  68968  
+        6.8    8.9   2.3  jcf7180000539387   6979   6929  
+        7.9    8.7   3.1  jcf7180000539534  63773  63742  
+
+
+Annotation for each hit  (and alignments):
+>> jcf7180000539097  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   75.6   2.5   1.1e-20         6       114 .]     38867     38972 ..     38857     38974 ..     80584    0.89
+
+  Alignment:
+  score: 75.6 bits
+          U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggatt 94   
+                         cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g   
+  jcf7180000539097 38867 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAA 38952
+                         444444...45567888899********************************************************************* PP
+
+          U6_snRNA    95 gccctacggggcaagttttt 114  
+                         gc ctacgg gca  ttttt
+  jcf7180000539097 38953 GCTCTACGGAGCACATTTTT 38972
+                         ************99988775 PP
+
+>> jcf7180000539046  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   75.4   2.6   1.3e-20         6       114 .]      3575      3680 ..      3566      3682 ..     70569    0.90
+
+  Alignment:
+  score: 75.4 bits
+          U6_snRNA    6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgc 96  
+                        cctc+g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a  +ctgaga g   gc
+  jcf7180000539046 3575 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGC 3662
+                        444544...45567788889*********************************************************************** PP
+
+          U6_snRNA   97 cctacggggcaagttttt 114 
+                         ctacgg gca  ttttt
+  jcf7180000539046 3663 TCTACGGAGCACATTTTT 3680
+                        **********99988775 PP
+
+>> jcf7180000539571  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.6   1.4         2        26        62 ..     22878     22916 ..     22858     22936 ..    103717    0.73
+
+  Alignment:
+  score: 10.6 bits
+          U6_snRNA    26 aattgaaacgatacagagaagattagcatggc..ccctg 62   
+                          +t+ aa+ ga a agaga gat a catggc  cc tg
+  jcf7180000539571 22878 TTTGAAATAGACATAGAGAGGATCATCATGGCcaCCTTG 22916
+                         33444577899999******************5334444 PP
+
+>> jcf7180000539514  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.2   3.0       2.8        26        84 ..    109191    109261 ..    109170    109281 ..    115124    0.79
+
+  Alignment:
+  score: 10.2 bits
+          U6_snRNA     26 aattgaaacgatacagagaa...gattagcatggcccctgcgca.........aggatgacacgctaaaac 84    
+                          aa  gaaa  a acagaga    gatt gcatggcc ct  ++a         ag atgac c c+ +a++
+  jcf7180000539514 109191 AAAAGAAATTAAACAGAGATctgGATTTGCATGGCCACTATATAtactaaatcAGAATGACCCCCGTGACT 109261
+                          45568888999********5555*************99988766556666666899999999988776655 PP
+
+>> jcf7180000539662  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.9   1.1       3.4        29        86 ..     68879     68968 ..     68859     68988 ..     75043    0.74
+
+  Alignment:
+  score: 9.9 bits
+          U6_snRNA    29 tgaaacgatacagagaagat.............................tagcatggc...ccctgcgcaaggatgacacgctaaaact 85   
+                         tga + +a  c gagaagat                             t  cat gc   ccctgc++ aggatgac   c+  aa+t
+  jcf7180000539662 68879 TGACTACAATCTGAGAAGATcttcaagttcaatgaactatgatcaatgaTGCCATTGCctgCCCTGCATGAGGATGACCATCAGTAATT 68967
+                         455566677788999999999999999999999999999999998888855566666645579***************98887665554 PP
+
+          U6_snRNA    86 g 86   
+                          
+  jcf7180000539662 68968 A 68968
+                         4 PP
+
+>> jcf7180000539387  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.9   2.3       6.8        17        77 ..      6979      6929 ..      6997      6911 ..     14815    0.78
+
+  Alignment:
+  score: 8.9 bits
+          U6_snRNA   17 cattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacg 77  
+                        c tt +   +attgaaacgatacag g  g ttagca      ctg ++aa gat   acg
+  jcf7180000539387 6979 CGTTCA--TCATTGAAACGATACAGTGCTGTTTAGCAA-----CTGTATAATGAT---ACG 6929
+                        444444..7899************************96.....888888865544...444 PP
+
+>> jcf7180000539534  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.7   3.1       7.9        24        55 ..     63773     63742 ..     63791     63722 ..    149106    0.80
+
+  Alignment:
+  score: 8.7 bits
+          U6_snRNA    24 aaaattgaaacgatacagagaagattagcatg 55   
+                         aaa+ttg a+c atacaga aagat ag a g
+  jcf7180000539534 63773 AAATTTGTATCTATACAGACAAGATGAGAAAG 63742
+                         47899********************9986654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         1582  (73540270 residues searched)
+Residues passing SSV filter:           1940656  (0.0264); expected (0.02)
+Residues passing bias filter:          1822879  (0.0248); expected (0.02)
+Residues passing Vit filter:            243337  (0.00331); expected (0.003)
+Residues passing Fwd filter:             17089  (0.000232); expected (3e-05)
+Total number of hits:                        7  (6.73e-06)
+# CPU time: 4.11u 0.24s 00:00:04.35 Elapsed: 00:00:03.57
+# Mc/sec: 2348.34
+//
+[ok]

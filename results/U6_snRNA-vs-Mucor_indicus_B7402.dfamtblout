@@ -1,0 +1,18 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+JNEK01001424          (null)               U6_snRNA               72.5   1.1e-19   3.4      13     114    +     64362   64463   64348   64466   85031   Mucor indicus B7402 ctg7180000282166_1, whole genome shotgun sequence.
+JNEK01001424          (null)               U6_snRNA               72.4   1.1e-19   3.4      13     114    -     52417   52316   52431   52313   85031   Mucor indicus B7402 ctg7180000282166_1, whole genome shotgun sequence.
+JNEK01000982          (null)               U6_snRNA               72.1   1.5e-19   3.7      16     113    -      8452    8355    8469    8349   12258   Mucor indicus B7402 ctg7180000281378_1, whole genome shotgun sequence.
+JNEK01001109          (null)               U6_snRNA               72.1   1.5e-19   3.7      16     113    +     31283   31380   31266   31386   36157   Mucor indicus B7402 ctg7180000281532_1, whole genome shotgun sequence.
+JNEK01002428          (null)               U6_snRNA               72.1   1.5e-19   3.7      16     113    -      3054    2957    3071    2951    3223   Mucor indicus B7402 ctg7180000283690_1, whole genome shotgun sequence.
+JNEK01002742          (null)               U6_snRNA               72.1   1.5e-19   3.7      16     113    +     26971   27068   26954   27074   27363   Mucor indicus B7402 jtg7180000281551f_7180000281552f_1, whole genome shotgun sequence.
+JNEK01001384          (null)               U6_snRNA               71.9   1.7e-19   3.8      16     113    +     44340   44437   44323   44442   65282   Mucor indicus B7402 ctg7180000282079_1, whole genome shotgun sequence.
+JNEK01002742          (null)               U6_snRNA               64.3   3.8e-17   3.9      16      98    -        86       4     103       1   27363   Mucor indicus B7402 jtg7180000281551f_7180000281552f_1, whole genome shotgun sequence.
+JNEK01002788          (null)               U6_snRNA               22.0   0.00059   0.3      27      65    +     36534   36572   36514   36580   52952   Mucor indicus B7402 jtg7180000282206f_7180000282207f_7180000282208f_1, whole genome shotgun sequence.
+JNEK01002696          (null)               U6_snRNA               13.4      0.29   4.6      37      99    +     63089   63149   63063   63160  120950   Mucor indicus B7402 jtg7180000280799r_7180000282362f_1, whole genome shotgun sequence.
+JNEK01003078          (null)               U6_snRNA               10.3       2.7   1.3      33      63    +     64753   64788   64734   64809  182505   Mucor indicus B7402 jtg7180000282849f_7180000282850f_7180000282851f_1, whole genome shotgun sequence.
+JNEK01001479          (null)               U6_snRNA                9.8       3.9   2.6      20     113    +      2096    2186    2079    2187   10881   Mucor indicus B7402 ctg7180000282283_1, whole genome shotgun sequence.
+JNEK01002995          (null)               U6_snRNA                9.2       5.7   3.1      14      53    +     35367   35406   35356   35414  120748   Mucor indicus B7402 jtg7180000283159f_7180000283160f_1, whole genome shotgun sequence.

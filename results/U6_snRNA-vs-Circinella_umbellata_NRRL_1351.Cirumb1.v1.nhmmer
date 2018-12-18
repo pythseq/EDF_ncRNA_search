@@ -1,0 +1,102 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Circinella_umbellata_NRRL_1351.Cirumb1.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Circinella_umbellata_NRRL_1351.Cirumb1.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Circinella_umbellata_NRRL_1351.Cirumb1.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence     start    end  Description
+    ------- ------ -----  --------     -----  -----  -----------
+    1.6e-19   72.3   0.4  scaffold_97  61304  61407  
+    1.8e-19   72.2   0.4  scaffold_56 226329 226431  
+    1.8e-19   72.1   0.5  scaffold_12 280035 279932  
+  ------ inclusion threshold ------
+        7.4    9.3   2.0  scaffold_6  825851 825889  
+
+
+Annotation for each hit  (and alignments):
+>> scaffold_97  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.3   0.4   1.6e-19         9       114 .]     61304     61407 ..     61290     61410 ..    105708    0.86
+
+  Alignment:
+  score: 72.3 bits
+     U6_snRNA     9 ccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgccctac 101  
+                    c g    c+  t +taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  + + +c+gag+ ggat gc ct+c
+  scaffold_97 61304 CTG---TCACATTATAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAACGCTCAGAGTtGGATCGCACTTC 61394
+                    433...3334455678999************************************************************954899999999*** PP
+
+     U6_snRNA   102 ggggcaagttttt 114  
+                    gg gc+a ttttt
+  scaffold_97 61395 GGTGCCACTTTTT 61407
+                    **99999977765 PP
+
+>> scaffold_56  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.2   0.4   1.8e-19        10       114 .]    226329    226431 ..    226315    226434 ..    289433    0.86
+
+  Alignment:
+  score: 72.2 bits
+     U6_snRNA     10 cggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgcccta 100   
+                      g    c+  t +taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  + + +c+gag+ ggat gc ct+
+  scaffold_56 226329 TG---TCACATTATAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAACGCTCAGAGTtGGATCGCACTT 226417
+                     33...3334455678999************************************************************954899999999** PP
+
+     U6_snRNA    101 cggggcaagttttt 114   
+                     cgg gc+a ttttt
+  scaffold_56 226418 CGGTGCCACTTTTT 226431
+                     ***99999977765 PP
+
+>> scaffold_12  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.1   0.5   1.8e-19         9       114 .]    280035    279932 ..    280049    279930 ..    902207    0.86
+
+  Alignment:
+  score: 72.1 bits
+     U6_snRNA      9 ccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgccct 99    
+                     c g    c+  t +taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  + + +c+gag+ ggat gc ct
+  scaffold_12 280035 CTG---TCACATTATAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAACGCTCAGAGTtGGATCGCACT 279947
+                     433...3334455678999************************************************************954899999999* PP
+
+     U6_snRNA    100 acggggcaagttttt 114   
+                     +cgg gc+a ttttt
+  scaffold_12 279946 TCGGTGCCACTTTTT 279932
+                     ******999988775 PP
+
+>> scaffold_6  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.3   2.0       7.4        25        71 ..    825851    825889 ..    825834    825913 ..   1130698    0.77
+
+  Alignment:
+  score: 9.3 bits
+    U6_snRNA     25 aaattgaaacgatacagagaagattagcatggcccctgcgcaaggat 71    
+                      attg+a c ata aga a gat agcat         +caaggat
+  scaffold_6 825851 GTATTGGACCAATATAGACATGATGAGCATT--------ACAAGGAT 825889
+                    5689*************************94........66777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          313  (102540200 residues searched)
+Residues passing SSV filter:           2740867  (0.0267); expected (0.02)
+Residues passing bias filter:          2296751  (0.0224); expected (0.02)
+Residues passing Vit filter:            255195  (0.00249); expected (0.003)
+Residues passing Fwd filter:             10545  (0.000103); expected (3e-05)
+Total number of hits:                        4  (3.41e-06)
+# CPU time: 5.46u 0.31s 00:00:05.77 Elapsed: 00:00:04.88
+# Mc/sec: 2390.51
+//
+[ok]

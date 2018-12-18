@@ -1,0 +1,260 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Rhizopus_oryzae_99-892.fasta
+# output directed to file:         results/U6_snRNA-vs-Rhizopus_oryzae_99-892.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Rhizopus_oryzae_99-892.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    1.9e-20   74.7   2.5  JNEB01007848   2767   2664  Rhizopus oryzae 99-892 NODE_15377_length_239814_cov_9.569796_18,
+    2.1e-20   74.6   2.6  JNEB01009429    833    937  Rhizopus oryzae 99-892 NODE_16048_length_111812_cov_9.650986_10,
+    2.5e-18   67.9   2.4  JNEB01007885   3262   3365  Rhizopus oryzae 99-892 NODE_15377_length_239814_cov_9.569796_56,
+    2.9e-15   58.1   2.5  JNEB01000022    839    909  Rhizopus oryzae 99-892 NODE_85_length_81578_cov_9.574885_17, who
+      2e-14   55.4   7.9  JNEB01008501   2432   2336  Rhizopus oryzae 99-892 NODE_15582_length_71331_cov_9.869958_17, 
+    2.9e-13   51.7   2.8  JNEB01011001     47    134  Rhizopus oryzae 99-892 NODE_16346_length_253797_cov_9.909692_37,
+    9.6e-13   50.0   6.6  JNEB01008680   5386   5285  Rhizopus oryzae 99-892 NODE_15623_length_124705_cov_9.302321_50,
+    2.4e-09   39.1   2.8  JNEB01007733   2068   1997  Rhizopus oryzae 99-892 NODE_15332_length_102971_cov_10.384778_33
+    2.9e-06   29.2   3.2  JNEB01007495   3942   3881  Rhizopus oryzae 99-892 NODE_15205_length_245888_cov_9.407186_14,
+    4.6e-06   28.6   1.4  JNEB01000070    776    834  Rhizopus oryzae 99-892 NODE_477_length_187171_cov_9.533208_15, w
+    5.6e-06   28.3   7.3  JNEB01001247   3062   2964  Rhizopus oryzae 99-892 NODE_5298_length_67105_cov_10.588526_5, w
+    5.5e-05   25.1   2.4  JNEB01014873   2109   2167  Rhizopus oryzae 99-892 NODE_25145_length_416521_cov_10.148473_15
+     0.0099   17.9   1.5  JNEB01002233   2609   2662  Rhizopus oryzae 99-892 NODE_7350_length_39067_cov_9.144112_15, w
+  ------ inclusion threshold ------
+       0.96   11.5   0.5  JNEB01003972    828    797  Rhizopus oryzae 99-892 NODE_11729_length_28941_cov_10.322484_7, 
+        4.5    9.4   1.8  JNEB01013680   1663   1693  Rhizopus oryzae 99-892 NODE_22796_length_139736_cov_9.781967_34,
+
+
+Annotation for each hit  (and alignments):
+>> JNEB01007848  Rhizopus oryzae 99-892 NODE_15377_length_239814_cov_9.569796_18, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.7   2.5   1.9e-20         7       113 ..      2767      2664 ..      2775      2659 ..      3616    0.89
+
+  Alignment:
+  score: 74.7 bits
+      U6_snRNA    7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctac 101 
+                    ctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g   gc ctac
+  JNEB01007848 2767 CTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTCTAC 2676
+                    45555...56677888899**************************************************************************** PP
+
+      U6_snRNA  102 ggggcaag.tttt 113 
+                    gg gcaa  t tt
+  JNEB01007848 2675 GGAGCAACaT-TT 2664
+                    *****99852.33 PP
+
+>> JNEB01009429  Rhizopus oryzae 99-892 NODE_16048_length_111812_cov_9.650986_10, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.6   2.6   2.1e-20         6       113 ..       833       937 ..       828       942 ..      1066    0.89
+
+  Alignment:
+  score: 74.6 bits
+      U6_snRNA   6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacg 102
+                   cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc ctacg
+  JNEB01009429 833 CCTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTCTACG 926
+                   566666...56677888889***************************************************************************** PP
+
+      U6_snRNA 103 gggcaag.tttt 113
+                   g gcaa  t tt
+  JNEB01009429 927 GAGCAACaT-TT 937
+                   ****99852.33 PP
+
+>> JNEB01007885  Rhizopus oryzae 99-892 NODE_15377_length_239814_cov_9.569796_56, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   67.9   2.4   2.5e-18         7       113 ..      3262      3365 ..      3255      3368 ..      4370    0.90
+
+  Alignment:
+  score: 67.9 bits
+      U6_snRNA    7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctac 101 
+                    ctc g    c+ ttg taaaattg+aacgat cagagaagattagcatggcccctg++caaggatgacac  +a ++ctgaga g   gc cta 
+  JNEB01007885 3262 CTCTG---TCACTTGTTAAAATTGGAACGATGCAGAGAAGATTAGCATGGCCCCTGTACAAGGATGACACTAAATCTCTGAGAAGGAAGCTCTAT 3353
+                    55544...6677899999***************************************************************************** PP
+
+      U6_snRNA  102 ggggcaagtttt 113 
+                    gg gcaa  ttt
+  JNEB01007885 3354 GGAGCAACATTT 3365
+                    999999884443 PP
+
+>> JNEB01000022  Rhizopus oryzae 99-892 NODE_85_length_81578_cov_9.574885_17, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   58.1   2.5   2.9e-15         7        80 ..       839       909 ..       830       929 ..      1280    0.84
+
+  Alignment:
+  score: 58.1 bits
+      U6_snRNA   7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgcta 80 
+                   ctc g    c+ t + taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatga ac   a
+  JNEB01000022 839 CTCTG---TCACTGATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGATACTAAA 909
+                   45544...444555667789***********************************************9997664 PP
+
+>> JNEB01008501  Rhizopus oryzae 99-892 NODE_15582_length_71331_cov_9.869958_17, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   55.4   7.9     2e-14        15       111 ..      2432      2336 ..      2445      2333 ..     11667    0.91
+
+  Alignment:
+  score: 55.4 bits
+      U6_snRNA   15 cccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaag 109 
+                     c  tt  taaaattg+aac ata agagaagattagcatggcccctg++caaggat acac   a + ctga a ga  g  ctacgg gcaa 
+  JNEB01008501 2432 TCACTTATTAAAATTGGAACAATATAGAGAAGATTAGCATGGCCCCTGTACAAGGATAACACTAAATCTCTGAAAAGAAAGTTCTACGGAGCAAC 2338
+                    456677888999*****************************************************************************999887 PP
+
+      U6_snRNA  110 tt 111 
+                     t
+  JNEB01008501 2337 AT 2336
+                    54 PP
+
+>> JNEB01011001  Rhizopus oryzae 99-892 NODE_16346_length_253797_cov_9.909692_37, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   51.7   2.8   2.9e-13         6        96 ..        47       134 ..        42       154 ..      2324    0.83
+
+  Alignment:
+  score: 51.7 bits
+      U6_snRNA   6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgc 96 
+                   cctc g    c+ t + taaaattg+aacgatacagagaagattag atg cccctgc+caaggatg cac   a +act a ag attg 
+  JNEB01011001  47 CCTCTG---TCACTGATTAAAATTGGAACGATACAGAGAAGATTAGTATGACCCCTGCACAAGGATGGCACTAAATCACTTACAGCATTGA 134
+                   566666...4444555677899*************************************************99998888877777666555 PP
+
+>> JNEB01008680  Rhizopus oryzae 99-892 NODE_15623_length_124705_cov_9.302321_50, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   50.0   6.6   9.6e-13         5       109 ..      5386      5285 ..      5390      5277 ..      6452    0.81
+
+  Alignment:
+  score: 50.0 bits
+      U6_snRNA    5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccct 99  
+                    +cctc g    c  tt  t a attg+aacgataca agaagattagcat gcccctgc+ aaggatgaca    a ++ tgaga     gc ct
+  JNEB01008680 5386 GCCTCTG---TCACTTATTGAGATTGGAACGATACAAAGAAGATTAGCATAGCCCCTGCAAAAGGATGACAATAAATCTATGAGAATGAAGCTCT 5295
+                    5677777...4455566666899************************************************999988888888887777777777 PP
+
+      U6_snRNA  100 acggggcaag 109 
+                    acg   caa 
+  JNEB01008680 5294 ACGAAACAAC 5285
+                    7776666555 PP
+
+>> JNEB01007733  Rhizopus oryzae 99-892 NODE_15332_length_102971_cov_10.384778_33, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   39.1   2.8   2.4e-09         7        81 ..      2068      1997 ..      2075      1977 ..      2701    0.87
+
+  Alignment:
+  score: 39.1 bits
+      U6_snRNA    7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaa 81  
+                    ctc g    c  ttg taaaatt +aacg tacagagaagattagc t g  cctgc+caaggatgacac    a
+  JNEB01007733 2068 CTCTG---TCACTTGTTAAAATTAGAACGCTACAGAGAAGATTAGCGTAGATCCTGCACAAGGATGACACTACCA 1997
+                    45544...66778899999**************************************************986654 PP
+
+>> JNEB01007495  Rhizopus oryzae 99-892 NODE_15205_length_245888_cov_9.407186_14, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   29.2   3.2   2.9e-06        24        85 ..      3942      3881 ..      3961      3861 ..      4912    0.86
+
+  Alignment:
+  score: 29.2 bits
+      U6_snRNA   24 aaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaact 85  
+                    aaaa tg+aac  ta aga aag ttag atggcccctgc+c aggatga ac  t + act
+  JNEB01007495 3942 AAAACTGGAACTGTATAGATAAGCTTAGTATGGCCCCTGCACCAGGATGATACTTTTGGACT 3881
+                    467789999*****************************************999887666655 PP
+
+>> JNEB01000070  Rhizopus oryzae 99-892 NODE_477_length_187171_cov_9.533208_15, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   28.6   1.4   4.6e-06        25        78 ..       776       834 ..       759       853 ..      5850    0.75
+
+  Alignment:
+  score: 28.6 bits
+      U6_snRNA  25 aaattgaaacgat...acag..agaagattagcatggcccctgcgcaaggatgacacgc 78 
+                   a  t g+aacgat   a ag  a aagattagcatgg ccctgc caaggatgac c  
+  JNEB01000070 776 AGTTAGGAACGATtttAAAGgaAAAAGATTAGCATGGTCCCTGCTCAAGGATGACGCCA 834
+                   55555666666532222222224589****************************98754 PP
+
+>> JNEB01001247  Rhizopus oryzae 99-892 NODE_5298_length_67105_cov_10.588526_5, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   28.3   7.3   5.6e-06        15       107 ..      3062      2964 ..      3074      2956 ..      7081    0.74
+
+  Alignment:
+  score: 28.3 bits
+      U6_snRNA   15 cccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgag.......aggattgccctacg 102 
+                    +c +tt  taaaat g+aacgatacagagaag t    a g  c ctgc+caaggat acac   a ++ctgag       ag    g  ctacg
+  JNEB01001247 3062 TCACTTAATAAAATAGGAACGATACAGAGAAGGTGGATAGGATCACTGCACAAGGATAACACTAAATCTCTGAGgaggaggAG-GAGGATCTACG 2969
+                    56778899999*********************998777778889********************9999999986211111111.22334555555 PP
+
+      U6_snRNA  103 gggca 107 
+                    g g a
+  JNEB01001247 2968 GAGTA 2964
+                    55555 PP
+
+>> JNEB01014873  Rhizopus oryzae 99-892 NODE_25145_length_416521_cov_10.148473_155, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   25.1   2.4   5.5e-05        20        80 ..      2109      2167 ..      2094      2188 ..      8608    0.79
+
+  Alignment:
+  score: 25.1 bits
+      U6_snRNA   20 tggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgcta 80  
+                    tg+taaaa tgaa  ga a   aga gattag atg cc ctgc+caa gatgacac   +
+  JNEB01014873 2109 TGATAAAACTGAAGTGACA--TAGAGGATTAGTATGTCCTCTGCACAAAGATGACACTAGC 2167
+                    5667788888988887655..55666******************************98764 PP
+
+>> JNEB01002233  Rhizopus oryzae 99-892 NODE_7350_length_39067_cov_9.144112_15, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   17.9   1.5    0.0099        12        65 ..      2609      2662 ..      2598      2682 ..      9218    0.87
+
+  Alignment:
+  score: 17.9 bits
+      U6_snRNA   12 gagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgc 65  
+                      g c  ttg t a a tg+aac at cagagaaga tag atg c cctgc+c
+  JNEB01002233 2609 CTGTCACTTGTTGACACTGGAACAATGCAGAGAAGACTAGAATGACACCTGCAC 2662
+                    45567778888899999**********************************986 PP
+
+>> JNEB01003972  Rhizopus oryzae 99-892 NODE_11729_length_28941_cov_10.322484_7, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.5   0.5      0.96        31        62 ..       828       797 ..       848       784 ..      4069    0.80
+
+  Alignment:
+  score: 11.5 bits
+      U6_snRNA  31 aaacgatacagagaagattagcatggcccctg 62 
+                   aa+c atacagagaag ttagc t  ccc tg
+  JNEB01003972 828 AATCCATACAGAGAAGGTTAGCCTTACCCTTG 797
+                   57899*****************9999888766 PP
+
+>> JNEB01013680  Rhizopus oryzae 99-892 NODE_22796_length_139736_cov_9.781967_34, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.4   1.8       4.5        37        67 ..      1663      1693 ..      1643      1713 ..      2404    0.88
+
+  Alignment:
+  score: 9.4 bits
+      U6_snRNA   37 tacagagaagattagcatggcccctgcgcaa 67  
+                     acagagaagatt g atgg  cctg g+aa
+  JNEB01013680 1663 CACAGAGAAGATTGGGATGGTTCCTGAGTAA 1693
+                    48***********************998776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                        10347  (68800572 residues searched)
+Residues passing SSV filter:           1925148  (0.028); expected (0.02)
+Residues passing bias filter:          1754087  (0.0255); expected (0.02)
+Residues passing Vit filter:            204632  (0.00297); expected (0.003)
+Residues passing Fwd filter:             18344  (0.000267); expected (3e-05)
+Total number of hits:                       15  (1.66e-05)
+# CPU time: 4.11u 0.28s 00:00:04.39 Elapsed: 00:00:02.98
+# Mc/sec: 2631.97
+//
+[ok]

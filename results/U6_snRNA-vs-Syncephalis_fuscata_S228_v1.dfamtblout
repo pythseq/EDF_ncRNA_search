@@ -1,0 +1,7 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+scaffold_2            (null)               U6_snRNA               74.3   2.2e-20   4.1      12     113    +    803046  803147  803029  803150  995840   -
+scaffold_27           (null)               U6_snRNA               13.6      0.18   1.5      19      65    +     70890   70937   70874   70958  394702   -

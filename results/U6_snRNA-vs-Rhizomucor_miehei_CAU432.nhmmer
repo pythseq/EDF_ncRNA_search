@@ -1,0 +1,136 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Rhizomucor_miehei_CAU432.fasta
+# output directed to file:         results/U6_snRNA-vs-Rhizomucor_miehei_CAU432.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Rhizomucor_miehei_CAU432.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    3.7e-19   70.6   0.7  KK100013      77255  77149  Rhizomucor miehei CAU432 unplaced genomic scaffold RhzM_scaffold
+    6.9e-14   53.8   0.9  AGBC01000098  17306  17207  Rhizomucor miehei CAU432 WGS:AGBC01:contig03118, whole genome sh
+  ------ inclusion threshold ------
+       0.14   14.3   0.0  AGBC01002627   1649   1702  Rhizomucor miehei CAU432 WGS:AGBC01:contig02575, whole genome sh
+       0.14   14.3   0.0  KK100031      53634  53687  Rhizomucor miehei CAU432 unplaced genomic scaffold RhzM_scaffold
+        4.9    9.3   1.8  AGBC01000567   6670   6728  Rhizomucor miehei CAU432 WGS:AGBC01:contig02297, whole genome sh
+        5.9    9.1   1.8  AGBC01002468   2536   2594  Rhizomucor miehei CAU432 WGS:AGBC01:contig02841, whole genome sh
+        9.5    8.4   2.6  AGBC01002477  20580  20512  Rhizomucor miehei CAU432 WGS:AGBC01:contig03578, whole genome sh
+
+
+Annotation for each hit  (and alignments):
+>> KK100013  Rhizomucor miehei CAU432 unplaced genomic scaffold RhzM_scaffold71, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   70.6   0.7   3.7e-19         5       113 ..     77255     77149 ..     77265     77144 ..    148075    0.83
+
+  Alignment:
+  score: 70.6 bits
+  U6_snRNA     5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattgcccta 100  
+                 +cctc gg       t+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +   +ctgaga gga  gc ct+
+  KK100013 77255 CCCTCTGGCA---CATATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAGCTTCTGAGAtGGACAGCTCTT 77162
+                 4556666444...4455667899************************************************************96477888899999 PP
+
+  U6_snRNA   101 cggggcaag.tttt 113  
+                 cgg gca   t tt
+  KK100013 77161 CGGAGCACTaT-TT 77149
+                 99999887642.22 PP
+
+>> AGBC01000098  Rhizomucor miehei CAU432 WGS:AGBC01:contig03118, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   53.8   0.9   6.9e-14        10       111 ..     17306     17207 ..     17322     17204 ..     66290    0.78
+
+  Alignment:
+  score: 53.8 bits
+      U6_snRNA    10 cggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgag.aggattgccctac 101  
+                     +gg  c      + aaaa tg+aa+gatacagagaag ttagcatggcccctgc+caaggatgac c+ +   +ctg g +ggat gc ct c
+  AGBC01000098 17306 TGGCAC------ACAAAACTGGAAAGATACAGAGAAGGTTAGCATGGCCCCTGCACAAGGATGACGCTAAGCTTCTGGGaTGGATAGCTCTGC 17220
+                     333333......234788899*********************************************999988888877625788888899998 PP
+
+      U6_snRNA   102 ggggcaag...tt 111  
+                     gg gc a    tt
+  AGBC01000098 17219 GGAGCGATctgTT 17207
+                     8888766533344 PP
+
+>> AGBC01002627  Rhizomucor miehei CAU432 WGS:AGBC01:contig02575, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   14.3   0.0      0.14        58       111 ..      1649      1702 ..      1367      1709 ..     11733    0.62
+
+  Alignment:
+  score: 14.3 bits
+      U6_snRNA   58 ccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaagtt 111 
+                    c   gc+caaggatgacac  t   +++g  aggat+gc ct cgg gc a tt
+  AGBC01002627 1649 CTAAGCACAAGGATGACACTATGTTCTAGGAAGGATAGCTCTGCGGAGCGATTT 1702
+                    4445899**************************************999987655 PP
+
+>> KK100031  Rhizomucor miehei CAU432 unplaced genomic scaffold RhzM_scaffold82, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   14.3   0.0      0.14        58       111 ..     53634     53687 ..     53352     53694 ..    133365    0.62
+
+  Alignment:
+  score: 14.3 bits
+  U6_snRNA    58 ccctgcgcaaggatgacacgctaaaactgagaggattgccctacggggcaagtt 111  
+                 c   gc+caaggatgacac  t   +++g  aggat+gc ct cgg gc a tt
+  KK100031 53634 CTAAGCACAAGGATGACACTATGTTCTAGGAAGGATAGCTCTGCGGAGCGATTT 53687
+                 4445899**************************************999987655 PP
+
+>> AGBC01000567  Rhizomucor miehei CAU432 WGS:AGBC01:contig02297, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.3   1.8       4.9        18        85 ..      6670      6728 ..      6659      6748 ..     11348    0.79
+
+  Alignment:
+  score: 9.3 bits
+      U6_snRNA   18 attggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaact 85  
+                     tt+g+ +  ttg+aacg  acagagaagat a        cctg  caa g tgacacg   aa+ +
+  AGBC01000567 6670 GTTAGAGTCCTTGGAACG-GACAGAGAAGATGA--------CCTGGCCAATGTTGACACGAGCAACGA 6728
+                    456677788899999998.69**********99........778888999999****99987666544 PP
+
+>> AGBC01002468  Rhizomucor miehei CAU432 WGS:AGBC01:contig02841, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.1   1.8       5.9        18        85 ..      2536      2594 ..      2525      2614 ..      5879    0.79
+
+  Alignment:
+  score: 9.1 bits
+      U6_snRNA   18 attggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaact 85  
+                     ttgg+ +  ttg+aacg  acagagaagat a        cctg  caa g tgacacg   aa+ +
+  AGBC01002468 2536 GTTGGAGTCCTTGGAACG-GACAGAGAAGATAA--------CCTGGCCAATGTTGACACGAGCAACGA 2594
+                    466777788899999988.69**********98........777878899999****99987666544 PP
+
+>> AGBC01002477  Rhizomucor miehei CAU432 WGS:AGBC01:contig03578, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.4   2.6       9.5        28        85 ..     20580     20512 ..     20601     20493 ..     67377    0.72
+
+  Alignment:
+  score: 8.4 bits
+      U6_snRNA    28 ttgaaacgatacagagaagat..............tagcatggcccctgcg.caaggatgacacgctaaaact 85   
+                       g+a  ga acagaga gat                    ggc  ctgc  caa gatgaca g  a  +c 
+  AGBC01002477 20580 CAGGACAGAAACAGAGAGGATaacttacggttacaG----AGGCATCTGCTtCAAAGATGACAAGGCATTTCC 20512
+                     3478999*************9777776666644321....3667779**9999*********98877655544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         2264  (72431084 residues searched)
+Residues passing SSV filter:           1655153  (0.0229); expected (0.02)
+Residues passing bias filter:          1606254  (0.0222); expected (0.02)
+Residues passing Vit filter:            240188  (0.00332); expected (0.003)
+Residues passing Fwd filter:             10219  (0.000141); expected (3e-05)
+Total number of hits:                        7  (6.93e-06)
+# CPU time: 3.94u 0.23s 00:00:04.17 Elapsed: 00:00:03.14
+# Mc/sec: 2629.66
+//
+[ok]

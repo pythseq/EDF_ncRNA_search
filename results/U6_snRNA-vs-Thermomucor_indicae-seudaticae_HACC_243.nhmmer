@@ -1,0 +1,61 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Thermomucor_indicae-seudaticae_HACC_243.fasta
+# output directed to file:         results/U6_snRNA-vs-Thermomucor_indicae-seudaticae_HACC_243.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Thermomucor_indicae-seudaticae_HACC_243.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+  ------ inclusion threshold ------
+       0.73   11.7   0.0  JSYX01000251  10567  10525  Thermomucor indicae-seudaticae strain HACC 243 contig0251, whole
+        1.2   11.0   0.0  JSYX01000466  26254  26229  Thermomucor indicae-seudaticae strain HACC 243 contig0466, whole
+
+
+Annotation for each hit  (and alignments):
+>> JSYX01000251  Thermomucor indicae-seudaticae strain HACC 243 contig0251, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.7   0.0      0.73        45        81 ..     10567     10525 ..     10587     10505 ..     47560    0.79
+
+  Alignment:
+  score: 11.7 bits
+      U6_snRNA    45 agat.....tagcatggc.ccctgcgcaaggatgacacgctaa 81   
+                     agat     tagcatg c c  tgcgcaaggatga  cg   a
+  JSYX01000251 10567 AGATgccttTAGCATGTCaCTGTGCGCAAGGATGAACCGTGCA 10525
+                     3443444449********9999*************98887654 PP
+
+>> JSYX01000466  Thermomucor indicae-seudaticae strain HACC 243 contig0466, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.0   0.0       1.2        42        67 ..     26254     26229 ..     26272     26209 ..     28152    0.89
+
+  Alignment:
+  score: 11.0 bits
+      U6_snRNA    42 agaagattagcatggcccctgcgcaa 67   
+                     ag agattagcatg  ccctgcgcaa
+  JSYX01000466 26254 AGGAGATTAGCATGATCCCTGCGCAA 26229
+                     6779*******************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         1870  (59016922 residues searched)
+Residues passing SSV filter:           1296589  (0.022); expected (0.02)
+Residues passing bias filter:          1267022  (0.0215); expected (0.02)
+Residues passing Vit filter:            155190  (0.00263); expected (0.003)
+Residues passing Fwd filter:              6140  (0.000104); expected (3e-05)
+Total number of hits:                        2  (1.17e-06)
+# CPU time: 3.13u 0.23s 00:00:03.36 Elapsed: 00:00:02.49
+# Mc/sec: 2701.98
+//
+[ok]

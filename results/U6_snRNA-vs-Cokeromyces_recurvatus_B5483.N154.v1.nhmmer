@@ -1,0 +1,110 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Cokeromyces_recurvatus_B5483.N154.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Cokeromyces_recurvatus_B5483.N154.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Cokeromyces_recurvatus_B5483.N154.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence          start    end  Description
+    ------- ------ -----  --------          -----  -----  -----------
+    1.1e-20   75.3   1.7  jcf7180000210509  47898  47793  
+    1.8e-20   74.6   2.1  jcf7180000210417  31787  31683  
+  ------ inclusion threshold ------
+        4.7    9.1   2.0  jcf7180000210471  49865  49812  
+        6.3    8.7   1.8  jcf7180000210325  58962  58917  
+        8.7    8.3   1.4  jcf7180000210324  26765  26820  
+
+
+Annotation for each hit  (and alignments):
+>> jcf7180000210509  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   75.3   1.7   1.1e-20         5       113 ..     47898     47793 ..     47908     47787 ..    100165    0.87
+
+  Alignment:
+  score: 75.3 bits
+          U6_snRNA     5 tcctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggat 93   
+                          cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g  
+  jcf7180000210509 47898 ACCTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGA 47813
+                         4455555...55667888899******************************************************************** PP
+
+          U6_snRNA    94 tgccctacggggcaag.tttt 113  
+                         tgc ctacgg gca   t tt
+  jcf7180000210509 47812 TGCTCTACGGAGCACTaT-TT 47793
+                         ***********9987642.22 PP
+
+>> jcf7180000210417  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.6   2.1   1.8e-20         6       113 ..     31787     31683 ..     31797     31678 ..     91217    0.88
+
+  Alignment:
+  score: 74.6 bits
+          U6_snRNA     6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggatt 94   
+                         cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g  t
+  jcf7180000210417 31787 CCTCTG---TCACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAT 31702
+                         455555...55667888899********************************************************************* PP
+
+          U6_snRNA    95 gccctacggggcaag.tttt 113  
+                         gc ctacgg gca   t tt
+  jcf7180000210417 31701 GCTCTACGGAGCACTaT-TT 31683
+                         **********9987642.22 PP
+
+>> jcf7180000210471  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.1   2.0       4.7         4        55 ..     49865     49812 ..     49868     49789 ..     57399    0.81
+
+  Alignment:
+  score: 9.1 bits
+          U6_snRNA     4 gtcctccggagcccattggtaaaattgaaacgatacagagaaga..ttagcatg 55   
+                         +tcct+ g +g +  t+g++++ +ttgaaa ga acagaga ga  t ag a g
+  jcf7180000210471 49865 TTCCTTGGACGATTGTCGAACTTTTTGAAAGGAAACAGAGAGGAgcTCAGGAAG 49812
+                         56788888899999999**********************997663355555555 PP
+
+>> jcf7180000210325  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.7   1.8       6.3         4        49 ..     58962     58917 ..     58965     58897 ..     79638    0.91
+
+  Alignment:
+  score: 8.7 bits
+          U6_snRNA     4 gtcctccggagcccattggtaaaattgaaacgatacagagaagatt 49   
+                         g+cctc g +  cc+t g +   attgaa+cga a  gagaagatt
+  jcf7180000210325 58962 GCCCTCTGTCTTCCTTGGTAGTTATTGAATCGAAAAGGAGAAGATT 58917
+                         78999***9999999999999***********************95 PP
+
+>> jcf7180000210324  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.3   1.4       8.7        22        76 ..     26765     26820 ..     26748     26840 ..     43055    0.83
+
+  Alignment:
+  score: 8.3 bits
+          U6_snRNA    22 gtaaaattgaaacgatacagagaagattagcatggcccctgcg.caaggatgacac 76   
+                          t aaattg+a  g  ac  aga gat agca  g ccct c+ + ag  tga ac
+  jcf7180000210324 26765 CTTAAATTGGACGGTCACCAAGATGATCAGCAGAGTCCCTACAaTGAGTTTGAAAC 26820
+                         5668899********************************98765555555665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         1606  (58859346 residues searched)
+Residues passing SSV filter:           1706862  (0.029); expected (0.02)
+Residues passing bias filter:          1427120  (0.0242); expected (0.02)
+Residues passing Vit filter:            135502  (0.0023); expected (0.003)
+Residues passing Fwd filter:              9361  (0.000159); expected (3e-05)
+Total number of hits:                        5  (6.24e-06)
+# CPU time: 3.15u 0.19s 00:00:03.34 Elapsed: 00:00:02.70
+# Mc/sec: 2485.17
+//
+[ok]

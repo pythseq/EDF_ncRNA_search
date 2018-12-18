@@ -1,0 +1,66 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Mucor_irregularis_B50.fasta
+# output directed to file:         results/U6_snRNA-vs-Mucor_irregularis_B50.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Mucor_irregularis_B50.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    1.7e-20   74.3   3.2  KK076488 316373 316476  Mucor irregularis B50 unplaced genomic scaffold scaffold25.1, whole 
+  ------ inclusion threshold ------
+        1.1   10.8   1.6  KK076469   2825   2790  Mucor irregularis B50 unplaced genomic scaffold scaffold199.1, whole
+
+
+Annotation for each hit  (and alignments):
+>> KK076488  Mucor irregularis B50 unplaced genomic scaffold scaffold25.1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.3   3.2   1.7e-20         8       114 .]    316373    316476 ..    316366    316478 ..    711698    0.91
+
+  Alignment:
+  score: 74.3 bits
+  U6_snRNA      8 tccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacg 102   
+                  tc+g    c  tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc ctacg
+  KK076488 316373 TCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTCTACG 316464
+                  5554...45667788889***************************************************************************** PP
+
+  U6_snRNA    103 gggcaagttttt 114   
+                  g gca  ttttt
+  KK076488 316465 GAGCACATTTTT 316476
+                  ****99988775 PP
+
+>> KK076469  Mucor irregularis B50 unplaced genomic scaffold scaffold199.1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.8   1.6       1.1        44        74 ..      2825      2790 ..      2845      2767 ..     18122    0.81
+
+  Alignment:
+  score: 10.8 bits
+  U6_snRNA   44 aagattagcatggc.ccctgcg..caaggat..gac 74  
+                aagattagcatgg  cc tgc+  +aaggat  gac
+  KK076469 2825 AAGATTAGCATGGTgCCTTGCAcaTAAGGATtgGAC 2790
+                789***********9*****9866789999843344 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          112  (44674118 residues searched)
+Residues passing SSV filter:           1054514  (0.0236); expected (0.02)
+Residues passing bias filter:           968585  (0.0217); expected (0.02)
+Residues passing Vit filter:            116384  (0.00261); expected (0.003)
+Residues passing Fwd filter:              7518  (0.000168); expected (3e-05)
+Total number of hits:                        2  (3.13e-06)
+# CPU time: 2.34u 0.15s 00:00:02.48 Elapsed: 00:00:02.17
+# Mc/sec: 2346.94
+//
+[ok]

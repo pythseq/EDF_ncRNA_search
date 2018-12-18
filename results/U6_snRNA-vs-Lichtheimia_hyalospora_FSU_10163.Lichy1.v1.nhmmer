@@ -1,0 +1,159 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Lichtheimia_hyalospora_FSU_10163.Lichy1.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Lichtheimia_hyalospora_FSU_10163.Lichy1.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Lichtheimia_hyalospora_FSU_10163.Lichy1.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence             start    end  Description
+    ------- ------ -----  --------             -----  -----  -----------
+    3.9e-20   73.7   1.6  Lichy1|scaffold_210    383    278  
+    3.9e-20   73.7   1.6  Lichy1|scaffold_288    383    278  
+    8.2e-07   31.0   3.1  Lichy1|scaffold_3   207611 207672  
+  ------ inclusion threshold ------
+        1.1   11.3   1.5  Lichy1|scaffold_128  86316  86418  
+        2.3   10.3   0.6  Lichy1|scaffold_8   276798 276761  
+        2.8   10.0   1.0  Lichy1|scaffold_245   2483   2509  
+        3.2    9.8   2.3  Lichy1|scaffold_136    946   1072  
+        5.2    9.1   1.7  Lichy1|scaffold_35  131270 131228  
+
+
+Annotation for each hit  (and alignments):
+>> Lichy1|scaffold_210  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.7   1.6   3.9e-20         7       114 .]       383       278 ..       393       276 ..     45674    0.89
+
+  Alignment:
+  score: 73.7 bits
+             U6_snRNA   7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattg 95 
+                          ctc g    c+ tt  taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +   +ctgaga ggat g
+  Lichy1|scaffold_210 383 CTCTG---TCACTTCTTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAACTCTCTGAGAtGGATAG 297
+                          44544...45566777889**************************************************************95489999* PP
+
+             U6_snRNA  96 ccctacggggcaagttttt 114
+                          c ctacgg gcaa ttttt
+  Lichy1|scaffold_210 296 CTCTACGGAGCAAATTTTT 278
+                          *************988875 PP
+
+>> Lichy1|scaffold_288  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   73.7   1.6   3.9e-20         7       114 .]       383       278 ..       393       276 ..     18824    0.89
+
+  Alignment:
+  score: 73.7 bits
+             U6_snRNA   7 ctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgaga.ggattg 95 
+                          ctc g    c+ tt  taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +   +ctgaga ggat g
+  Lichy1|scaffold_288 383 CTCTG---TCACTTCTTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAACTCTCTGAGAtGGATAG 297
+                          44544...45566777889**************************************************************95489999* PP
+
+             U6_snRNA  96 ccctacggggcaagttttt 114
+                          c ctacgg gcaa ttttt
+  Lichy1|scaffold_288 296 CTCTACGGAGCAAATTTTT 278
+                          *************988875 PP
+
+>> Lichy1|scaffold_3  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   31.0   3.1   8.2e-07        25        86 ..    207611    207672 ..    207591    207692 ..    384115    0.83
+
+  Alignment:
+  score: 31.0 bits
+           U6_snRNA     25 aaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactg 86    
+                           a attg+aa gatacagagaa  ttagcatgg ccc gc+caa gatg ca   +  + ctg
+  Lichy1|scaffold_3 207611 AGATTGGAATGATACAGAGAATGTTAGCATGGTCCCAGCACAAAGATGGCAATGATGCTCTG 207672
+                           56899*******************************************99988776666654 PP
+
+>> Lichy1|scaffold_128  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.3   1.5       1.1        27        90 ..     86316     86418 ..     86295     86438 ..     90903    0.71
+
+  Alignment:
+  score: 11.3 bits
+             U6_snRNA    27 attgaaacgatacagagaagat.......................................tagcatggcccctgcgcaaggatga 73   
+                            at g aac   a ag g  gat                                        ag at g cc tgcg+aagg tga
+  Lichy1|scaffold_128 86316 ATCGTAACCTAATAGTGTTGATgataagaacaccattcgtttgtcaaccattcttccatacCAGTATTGTCCTTGCGTAAGGTTGA 86401
+                            55555555555566655555555556666677777777777777777777777777777778999********************* PP
+
+             U6_snRNA    74 cacgctaaaactgagag 90   
+                            ca g ta  + +ga ag
+  Lichy1|scaffold_128 86402 CATGTTATCCAAGATAG 86418
+                            **999877666555444 PP
+
+>> Lichy1|scaffold_8  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.3   0.6       2.3        27        64 ..    276798    276761 ..    276815    276741 ..    305797    0.79
+
+  Alignment:
+  score: 10.3 bits
+           U6_snRNA     27 attga..aacgatacagagaagattagcatggcccctgcg 64    
+                            ttga  aa  a ac gagaagat agcat   ccctgc+
+  Lichy1|scaffold_8 276798 TTTGAtcAATTAGACGGAGAAGATGAGCATT--CCCTGCA 276761
+                           44443224445779***************96..8889886 PP
+
+>> Lichy1|scaffold_245  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.0   1.0       2.8        42        67 ..      2483      2509 ..      2463      2529 ..     33470    0.88
+
+  Alignment:
+  score: 10.0 bits
+             U6_snRNA   42 agaagattagcatggc.ccctgcgcaa 67  
+                           agaagatt gcat gc ccctg+gcaa
+  Lichy1|scaffold_245 2483 AGAAGATTGGCATAGCcCCCTGTGCAA 2509
+                           89**************999****9986 PP
+
+>> Lichy1|scaffold_136  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.8   2.3       3.2        19        81 ..       946      1072 ..       931      1093 ..     81960    0.87
+
+  Alignment:
+  score: 9.8 bits
+             U6_snRNA   19 ttggtaaaattgaaacgatacagagaagat.......................................................... 48  
+                           t++g  a +ttg+a+c ata agaga  a                                                           
+  Lichy1|scaffold_136  946 TCAG--ACTTTGGATCAATAAAGAGATAACaggttgacattccaatagcgaataatcctcatagttatgtatgctattgacaagtgga 1031
+                           4444..7789*************998766688889999************************************************** PP
+
+             U6_snRNA   49 ........tagcatggcccctgcgcaaggatgacacgctaa 81  
+                                    agcatgg c  tgcgcaa  atga a g  a 
+  Lichy1|scaffold_136 1032 attgacgcCAGCATGGTCTGTGCGCAACAATGAAATGTGAT 1072
+                           ****************************9999988777654 PP
+
+>> Lichy1|scaffold_35  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.1   1.7       5.2         6        48 ..    131270    131228 ..    131274    131207 ..    189103    0.87
+
+  Alignment:
+  score: 9.1 bits
+            U6_snRNA      6 cctccggagcccattggtaaaattgaaacgatacagagaagat 48    
+                            cc c g  g  + t g ++a  ttgaa+cgatacaga aaga 
+  Lichy1|scaffold_35 131270 CCCCTGCTGTAAGTGGTACATTTTGAATCGATACAGATAAGAA 131228
+                            666778888888888999999****************999985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         2222  (66564814 residues searched)
+Residues passing SSV filter:           1628451  (0.0245); expected (0.02)
+Residues passing bias filter:          1498564  (0.0225); expected (0.02)
+Residues passing Vit filter:            166769  (0.00251); expected (0.003)
+Residues passing Fwd filter:             10412  (0.000156); expected (3e-05)
+Total number of hits:                        8  (9.19e-06)
+# CPU time: 3.51u 0.21s 00:00:03.72 Elapsed: 00:00:02.54
+# Mc/sec: 2987.55
+//
+[ok]

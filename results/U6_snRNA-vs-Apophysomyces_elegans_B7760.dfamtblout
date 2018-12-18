@@ -1,0 +1,10 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+JNDQ01001127          (null)               U6_snRNA               73.0     7e-20   1.6       5     114    +     56269   56376   56259   56377   98094   Apophysomyces elegans B7760 ctg7180000076348_1, whole genome shotgun sequence.
+JNDQ01001289          (null)               U6_snRNA               72.3   1.2e-19   1.3       5     114    -    113717  113610  113727  113608  386217   Apophysomyces elegans B7760 ctg7180000076590_1, whole genome shotgun sequence.
+JNDQ01001520          (null)               U6_snRNA               12.0      0.78   0.9      48      96    -     46533   46484   46553   46468   54656   Apophysomyces elegans B7760 jtg7180000076190f_7180000076191f_1, whole genome shotgun sequence.
+JNDQ01000868          (null)               U6_snRNA               11.8      0.89   2.8      29      53    +      9714    9738    9693    9748   59597   Apophysomyces elegans B7760 ctg7180000076049_1, whole genome shotgun sequence.
+JNDQ01001438          (null)               U6_snRNA               10.2       2.7   1.8      23      53    -     16671   16641   16685   16621   38046   Apophysomyces elegans B7760 jtg7180000076296f_7180000076297f_1, whole genome shotgun sequence.

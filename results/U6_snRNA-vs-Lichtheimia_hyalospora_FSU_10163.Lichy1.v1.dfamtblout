@@ -1,0 +1,13 @@
+# hit scores
+# ----------
+#
+# target name         acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# ------------------- -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+Lichy1|scaffold_210   (null)               U6_snRNA               73.7   3.9e-20   1.6       7     114    -       383     278     393     276   45674   -
+Lichy1|scaffold_288   (null)               U6_snRNA               73.7   3.9e-20   1.6       7     114    -       383     278     393     276   18824   -
+Lichy1|scaffold_3     (null)               U6_snRNA               31.0   8.2e-07   3.1      25      86    +    207611  207672  207591  207692  384115   -
+Lichy1|scaffold_128   (null)               U6_snRNA               11.3       1.1   1.5      27      90    +     86316   86418   86295   86438   90903   -
+Lichy1|scaffold_8     (null)               U6_snRNA               10.3       2.3   0.6      27      64    -    276798  276761  276815  276741  305797   -
+Lichy1|scaffold_245   (null)               U6_snRNA               10.0       2.8   1.0      42      67    +      2483    2509    2463    2529   33470   -
+Lichy1|scaffold_136   (null)               U6_snRNA                9.8       3.2   2.3      19      81    +       946    1072     931    1093   81960   -
+Lichy1|scaffold_35    (null)               U6_snRNA                9.1       5.2   1.7       6      48    -    131270  131228  131274  131207  189103   -

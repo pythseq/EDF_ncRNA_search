@@ -1,0 +1,8 @@
+# hit scores
+# ----------
+#
+# target name                      acc                  query name             bits   e-value  bias  hmm-st  hmm-en strand  ali-st  ali-en  env-st  env-en  sq-len   description of target
+# -------------------              -------------------  -------------------  ------ --------- ----- ------- ------- ------ ------- ------- ------- ------- -------   ---------------------
+NODE_182_length_34025_cov_343.671  (null)               U6_snRNA               78.3   7.3e-22   1.0       6     114    +     27593   27698   27583   27700   34025   -
+NODE_3294_length_2362_cov_13.586   (null)               U6_snRNA                9.7       1.8   1.2      39     108    +      1421    1489    1411    1501    2362   -
+NODE_815_length_10972_cov_820.192  (null)               U6_snRNA                8.6       3.9   1.5      49      76    +     10069   10096    9983   10117   10972   -

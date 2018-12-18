@@ -1,0 +1,79 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Linderina_pennispora_ATCC_12442.Linpe1.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Linderina_pennispora_ATCC_12442.Linpe1.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Linderina_pennispora_ATCC_12442.Linpe1.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start     end  Description
+    ------- ------ -----  --------      -----   -----  -----------
+    1.3e-12   49.2   3.8  scaffold_13   22270   22160  
+  ------ inclusion threshold ------
+          1   11.1   1.0  scaffold_2  1158098 1158051  
+        2.9    9.6   1.1  scaffold_3   136412  136441  
+
+
+Annotation for each hit  (and alignments):
+>> scaffold_13  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   49.2   3.8   1.3e-12         5       114 .]     22270     22160 ..     22274     22158 ..    707623    0.84
+
+  Alignment:
+  score: 49.2 bits
+     U6_snRNA     5 tcctccggagcccattggtaaaatt.gaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgcc 97   
+                    +c tccg +g+ ca t g+ aaat   aaa gatacagagaagattagcat  cccctgc++aaggatg  ac  t a ++tga  gg tt+  
+  scaffold_13 22270 CCGTCCGAGGGTCACTTGATAAATGaAAAAAGATACAGAGAAGATTAGCATTTCCCCTGCATAAGGATGGAACTTTGATCTTGAACGGTTTCTT 22177
+                    56677777766666655555555541456789************************************************************** PP
+
+     U6_snRNA    98 ctacggggcaagttttt 114  
+                    ct+cgg  +a  ttttt
+  scaffold_13 22176 CTTCGGAAGACATTTTT 22160
+                    ***99998888876664 PP
+
+>> scaffold_2  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.1   1.0         1        30        78 ..   1158098   1158051 ..   1158118   1158027 ..   1730256    0.78
+
+  Alignment:
+  score: 11.1 bits
+    U6_snRNA      30 gaaacgatacagagaagattagcatggcccctgcg.caaggatgacacgc 78     
+                     g+a c   acag gaag t a cat g ccctgc+ +aa gatg ca   
+  scaffold_2 1158098 GGACC--AACAGGGAAGCTGATCATTGACCCTGCAaTAATGATGCCAATG 1158051
+                     55544..479************************999*999999776543 PP
+
+>> scaffold_3  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.6   1.1       2.9        37        66 ..    136412    136441 ..    136392    136461 ..   1709611    0.87
+
+  Alignment:
+  score: 9.6 bits
+    U6_snRNA     37 tacagagaagattagcatggcccctgcgca 66    
+                     acagagaaga  a catggc cctg+g+a
+  scaffold_3 136412 CACAGAGAAGACAACCATGGCGCCTGTGTA 136441
+                    589***********************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          227  (52405090 residues searched)
+Residues passing SSV filter:            836829  (0.016); expected (0.02)
+Residues passing bias filter:           831944  (0.0159); expected (0.02)
+Residues passing Vit filter:            127741  (0.00244); expected (0.003)
+Residues passing Fwd filter:              4880  (9.31e-05); expected (3e-05)
+Total number of hits:                        3  (3.61e-06)
+# CPU time: 2.58u 0.16s 00:00:02.74 Elapsed: 00:00:02.02
+# Mc/sec: 2957.51
+//
+[ok]

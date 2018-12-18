@@ -1,0 +1,88 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Conidiobolus_coronatus_NRRL_28638.Conco1.v1.fasta
+# output directed to file:         results/U6_snRNA-vs-Conidiobolus_coronatus_NRRL_28638.Conco1.v1.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Conidiobolus_coronatus_NRRL_28638.Conco1.v1.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence             start    end  Description
+    ------- ------ -----  --------             -----  -----  -----------
+    9.2e-20   72.7   2.4  Conco1|scaffold_116  53140  53041  
+    1.2e-19   72.3   2.7  Conco1|scaffold_393   1116   1215  
+      2e-19   71.6   3.0  Conco1|scaffold_116  78584  78486  
+
+
+Annotation for each hit  (and alignments):
+>> Conco1|scaffold_116  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.7   2.4   9.2e-20        16       113 ..     53140     53041 ..     53159     53037 ..     98747    0.78
+
+  Alignment:
+  score: 72.7 bits
+             U6_snRNA    16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctac 101  
+                            c+  tg+ aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg++aa ++tgag+ggat gc  ++ 
+  Conco1|scaffold_116 53140 CACATGACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTAAATCTTGAGTGGATAGCATCTT 53055
+                            33445677899*****************************************************************9998876655 PP
+
+             U6_snRNA   102 ggg..gcaagtttt 113  
+                             gg  gcaa tttt
+  Conco1|scaffold_116 53054 AGGatGCAAATTTT 53041
+                            44422555555554 PP
+
+>> Conco1|scaffold_393  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.3   2.7   1.2e-19        16       113 ..      1116      1215 ..      1097      1218 ..     25847    0.79
+
+  Alignment:
+  score: 72.3 bits
+             U6_snRNA   16 ccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacgg 103 
+                           c+  tg+ aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg++aa ++tgag+ggat gc  ++  g
+  Conco1|scaffold_393 1116 CACATGACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTAAATCTTGAGTGGATAGCATCTTAG 1203
+                           33456677899*****************************************************************999887665444 PP
+
+             U6_snRNA  104 g..gcaagtttt 113 
+                           g  gcaa tttt
+  Conco1|scaffold_393 1204 GatGCAAATTTT 1215
+                           322555555554 PP
+
+>> Conco1|scaffold_116  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   71.6   3.0     2e-19        17       113 ..     78584     78486 ..     78602     78484 ..     98747    0.82
+
+  Alignment:
+  score: 71.6 bits
+             U6_snRNA    17 cattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccctacg 102  
+                            +  tg+ aaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacacg+ aa ++tgag+ggat gc  ++  
+  Conco1|scaffold_116 78584 ACATGACAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACGTAAATCTTGAGTGGATAGCATCTTA 78499
+                            4456777899*****************************************************************99988766544 PP
+
+             U6_snRNA   103 gg..gcaagtttt 113  
+                            gg  gcaa tttt
+  Conco1|scaffold_116 78498 GGatGCAAATTTT 78486
+                            4322555556655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                         1050  (79807322 residues searched)
+Residues passing SSV filter:           1176646  (0.0147); expected (0.02)
+Residues passing bias filter:           950146  (0.0119); expected (0.02)
+Residues passing Vit filter:             97589  (0.00122); expected (0.003)
+Residues passing Fwd filter:              6505  (8.15e-05); expected (3e-05)
+Total number of hits:                        3  (3.75e-06)
+# CPU time: 3.78u 0.22s 00:00:04.00 Elapsed: 00:00:02.59
+# Mc/sec: 3512.75
+//
+[ok]

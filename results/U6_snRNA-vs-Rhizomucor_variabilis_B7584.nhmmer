@@ -1,0 +1,123 @@
+# nhmmer :: search a DNA model or alignment against a DNA database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      db/U6_snRNA.hmm
+# target sequence database:        genomes/Rhizomucor_variabilis_B7584.fasta
+# output directed to file:         results/U6_snRNA-vs-Rhizomucor_variabilis_B7584.nhmmer
+# hits output in Dfam format:      results/U6_snRNA-vs-Rhizomucor_variabilis_B7584.dfamtblout
+# number of worker threads:        64
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       U6_snRNA  [M=114]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start    end  Description
+    ------- ------ -----  --------      -----  -----  -----------
+    8.8e-21   75.7   2.4  JNES01000922 136589 136484  Rhizomucor variabilis B7584 jtg7180000132613f_7180000132614f_718
+    2.4e-20   74.3   3.2  JNES01000918 120555 120452  Rhizomucor variabilis B7584 jtg7180000132364f_7180000132365f_1, 
+  ------ inclusion threshold ------
+        1.6   10.8   1.6  JNES01000847   5228   5263  Rhizomucor variabilis B7584 ctg7180000132766_1, whole genome sho
+          4    9.5   1.2  JNES01000617   5916   5951  Rhizomucor variabilis B7584 ctg7180000132383_1, whole genome sho
+          4    9.5   1.2  JNES01000901  34192  34227  Rhizomucor variabilis B7584 jtg7180000132050f_7180000132051f_1, 
+        6.8    8.8   1.4  JNES01000582  13439  13414  Rhizomucor variabilis B7584 ctg7180000132327_1, whole genome sho
+
+
+Annotation for each hit  (and alignments):
+>> JNES01000922  Rhizomucor variabilis B7584 jtg7180000132613f_7180000132614f_7180000132615f_1, whole genome shotgun seq
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   75.7   2.4   8.8e-21         6       114 .]    136589    136484 ..    136599    136481 ..    236911    0.89
+
+  Alignment:
+  score: 75.7 bits
+      U6_snRNA      6 cctccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgc 96    
+                      cctc g    c+ tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac  +a ++ctgaga g   gc
+  JNES01000922 136589 CCTCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGC 136502
+                      444444...45567788899*********************************************************************** PP
+
+      U6_snRNA     97 cctacggggcaagttttt 114   
+                       ctacgg gca  ttttt
+  JNES01000922 136501 TCTACGGAGCACATTTTT 136484
+                      **********99987765 PP
+
+>> JNES01000918  Rhizomucor variabilis B7584 jtg7180000132364f_7180000132365f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   74.3   3.2   2.4e-20         8       114 .]    120555    120452 ..    120562    120450 ..    196077    0.91
+
+  Alignment:
+  score: 74.3 bits
+      U6_snRNA      8 tccggagcccattggtaaaattgaaacgatacagagaagattagcatggcccctgcgcaaggatgacacgctaaaactgagaggattgccc 98    
+                      tc+g    c  tt+ taaaattg+aacgatacagagaagattagcatggcccctgc+caaggatgacac   a ++ctgaga g   gc c
+  JNES01000918 120555 TCTG---ACACTTATTAAAATTGGAACGATACAGAGAAGATTAGCATGGCCCCTGCACAAGGATGACACTAAATCTCTGAGAAGGAAGCTC 120468
+                      5554...45667788889************************************************************************* PP
+
+      U6_snRNA     99 tacggggcaagttttt 114   
+                      tacgg gca  ttttt
+  JNES01000918 120467 TACGGAGCACATTTTT 120452
+                      ********99988775 PP
+
+>> JNES01000847  Rhizomucor variabilis B7584 ctg7180000132766_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   10.8   1.6       1.6        44        74 ..      5228      5263 ..      5208      5286 ..     13504    0.81
+
+  Alignment:
+  score: 10.8 bits
+      U6_snRNA   44 aagattagcatggc.ccctgcg..caaggat..gac 74  
+                    aagattagcatgg  cc tgc+  +aaggat  gac
+  JNES01000847 5228 AAGATTAGCATGGTgCCTTGCAcaTAAGGATtgGAC 5263
+                    789***********9*****9866789999843344 PP
+
+>> JNES01000617  Rhizomucor variabilis B7584 ctg7180000132383_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.5   1.2         4        45        75 ..      5916      5951 ..      5896      5973 ..    146160    0.80
+
+  Alignment:
+  score: 9.5 bits
+      U6_snRNA   45 agattagcatggc.ccctgcg..caaggat..gaca 75  
+                    agattagcatgg  cc tgc+  +aaggat  gac 
+  JNES01000617 5916 AGATTAGCATGGTgCCTTGCAcaTAAGGATtgGACT 5951
+                    689**********9*****98667899998444443 PP
+
+>> JNES01000901  Rhizomucor variabilis B7584 jtg7180000132050f_7180000132051f_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    9.5   1.2         4        45        75 ..     34192     34227 ..     34172     34249 ..     34448    0.80
+
+  Alignment:
+  score: 9.5 bits
+      U6_snRNA    45 agattagcatggc.ccctgcg..caaggat..gaca 75   
+                     agattagcatgg  cc tgc+  +aaggat  gac 
+  JNES01000901 34192 AGATTAGCATGGTgCCTTGCAcaTAAGGATtgGACT 34227
+                     689**********9*****98667899998444443 PP
+
+>> JNES01000582  Rhizomucor variabilis B7584 ctg7180000132327_1, whole genome shotgun sequence.
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?    8.8   1.4       6.8        44        68 ..     13439     13414 ..     13459     13394 ..     22078    0.87
+
+  Alignment:
+  score: 8.8 bits
+      U6_snRNA    44 aagattagcatggcccctgcg.caag 68   
+                     aagat agca ggcccctg+g caag
+  JNES01000582 13439 AAGATAAGCAAGGCCCCTGTGtCAAG 13414
+                     789*****************966665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (114 nodes)
+Target sequences:                          732  (65799368 residues searched)
+Residues passing SSV filter:           1656697  (0.0252); expected (0.02)
+Residues passing bias filter:          1515648  (0.023); expected (0.02)
+Residues passing Vit filter:            162553  (0.00247); expected (0.003)
+Residues passing Fwd filter:              6170  (9.38e-05); expected (3e-05)
+Total number of hits:                        6  (5.23e-06)
+# CPU time: 3.45u 0.18s 00:00:03.63 Elapsed: 00:00:02.74
+# Mc/sec: 2737.64
+//
+[ok]
